@@ -8,7 +8,7 @@
 
 #import "AnimationViewController.h"
 #import "AnimationControl.h"
-
+#import <QuartzCore/QuartzCore.h>
 
 @interface AnimationViewController ()
 @property (weak, nonatomic) IBOutlet UIView *showView;
@@ -43,6 +43,27 @@
 
 - (IBAction)jump:(id)sender {
     [AnimationControl animationStartJump:self.showView];
+}
+- (IBAction)cover:(id)sender {
+
+    
+    self.showView.layer.transform = CATransform3DMakeScale(-1.0, -1.0, 1.0);
+    self.showView.layer.affineTransform =CGAffineTransformMakeRotation(45.0);
+
+    CAKeyframeAnimation  *animation=[CAKeyframeAnimation animationWithKeyPath:@"position"];
+    //设置view行动的轨迹
+    NSArray *values=[NSArray arrayWithObjects:[NSValue valueWithCGPoint:CGPointMake(100,100)],
+                     [NSValue valueWithCGPoint:self.showView.center],
+                     [NSValue valueWithCGPoint:CGPointMake(150, 150)],
+                     [NSValue valueWithCGPoint:CGPointMake(200, 200)],
+                     [NSValue valueWithCGPoint:self.showView.center],nil];
+    //获得点
+    [animation setValues:values];
+    //设置时常
+    [animation setDuration:5.0];
+
+    [self.showView.layer  addAnimation:animation forKey:@"img-position"];
+    
 }
 
 @end

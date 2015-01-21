@@ -54,4 +54,17 @@
     }];
 
 }
+
+
++ (void) animationStartCover:(UIView *) animationView{
+
+    __block typeof (animationView) otheranimationView = animationView;
+    
+    CGAffineTransform endAngle = CGAffineTransformMakeRotation((M_PI / 180.0f));
+    
+    [UIView animateWithDuration:0.01 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
+        otheranimationView.transform = endAngle;
+    } completion:^(BOOL finished) {
+    }];
+}
 @end

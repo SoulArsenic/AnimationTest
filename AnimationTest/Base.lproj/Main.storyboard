@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zJK-83-bxZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zJK-83-bxZ">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
@@ -124,9 +125,19 @@
                                 <rect key="frame" x="250" y="144" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.1960784495" green="0.72156864399999998" blue="0.81568634510000004" alpha="1" colorSpace="deviceRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKF-28-SRm">
+                                <rect key="frame" x="104" y="530" width="30" height="30"/>
+                                <state key="normal" title="移动">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cover:" destination="Aa1-T2-fge" eventType="touchUpInside" id="fhy-M1-RvG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="rKF-28-SRm" secondAttribute="bottom" constant="40" id="dS9-h5-kXu"/>
                             <constraint firstAttribute="centerX" secondItem="Ner-Yp-ia4" secondAttribute="centerX" id="fig-RR-3GK"/>
                             <constraint firstAttribute="bottom" secondItem="8WK-Rt-bxO" secondAttribute="bottom" constant="40" id="nDD-dP-neV"/>
                         </constraints>

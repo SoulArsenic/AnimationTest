@@ -13,4 +13,5 @@
 @property (nonatomic, assign) CGPoint temp,center;
 
 + (void) animationStartJump:(UIView *) animationView;
++ (void) animationStartCover:(UIView *) animationView;
 @end
