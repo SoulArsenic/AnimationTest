@@ -9,6 +9,11 @@
 #import "AnimationControl.h"
 
 @implementation AnimationControl
+/**
+ *  跳动动画
+ *
+ *  @param animationView 需要操作的对象
+ */
 +(void)animationStartJump:(UIView *)animationView{
 
     AnimationControl * control = [[AnimationControl alloc] init];
