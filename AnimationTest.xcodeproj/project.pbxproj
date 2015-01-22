@@ -18,6 +18,8 @@
 		84675F9A1A6FA2ED00A51E0F /* AnimationControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 84675F971A6FA2ED00A51E0F /* AnimationControl.m */; };
 		84675F9B1A6FA2ED00A51E0F /* TouchHandleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84675F991A6FA2ED00A51E0F /* TouchHandleView.m */; };
 		84675F9E1A6FA44300A51E0F /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84675F9D1A6FA44300A51E0F /* AnimationViewController.m */; };
+		847C16381A70CD95001C7552 /* CombinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C16371A70CD95001C7552 /* CombinationViewController.m */; };
+		847C163B1A70CE03001C7552 /* CombinationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C163A1A70CE03001C7552 /* CombinationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		84675F991A6FA2ED00A51E0F /* TouchHandleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchHandleView.m; sourceTree = "<group>"; };
 		84675F9C1A6FA44300A51E0F /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
 		84675F9D1A6FA44300A51E0F /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
+		847C16361A70CD95001C7552 /* CombinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombinationViewController.h; sourceTree = "<group>"; };
+		847C16371A70CD95001C7552 /* CombinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombinationViewController.m; sourceTree = "<group>"; };
+		847C16391A70CE03001C7552 /* CombinationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombinationView.h; sourceTree = "<group>"; };
+		847C163A1A70CE03001C7552 /* CombinationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombinationView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,10 @@
 				84675F781A6FA2D500A51E0F /* ViewController.m */,
 				84675F9C1A6FA44300A51E0F /* AnimationViewController.h */,
 				84675F9D1A6FA44300A51E0F /* AnimationViewController.m */,
+				847C16361A70CD95001C7552 /* CombinationViewController.h */,
+				847C16371A70CD95001C7552 /* CombinationViewController.m */,
+				847C16391A70CE03001C7552 /* CombinationView.h */,
+				847C163A1A70CE03001C7552 /* CombinationView.m */,
 				84675F7A1A6FA2D500A51E0F /* Main.storyboard */,
 				84675F7D1A6FA2D500A51E0F /* Images.xcassets */,
 				84675F7F1A6FA2D500A51E0F /* LaunchScreen.xib */,
@@ -237,8 +247,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847C16381A70CD95001C7552 /* CombinationViewController.m in Sources */,
 				84675F9B1A6FA2ED00A51E0F /* TouchHandleView.m in Sources */,
 				84675F731A6FA2D500A51E0F /* AppDelegate.m in Sources */,
+				847C163B1A70CE03001C7552 /* CombinationView.m in Sources */,
 				84675F9E1A6FA44300A51E0F /* AnimationViewController.m in Sources */,
 				84675F701A6FA2D400A51E0F /* main.m in Sources */,
 				84675F9A1A6FA2ED00A51E0F /* AnimationControl.m in Sources */,

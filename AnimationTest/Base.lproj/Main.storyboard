@@ -43,7 +43,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0W1-Zj-oo3">
-                                <rect key="frame" x="285" y="184" width="30" height="30"/>
+                                <rect key="frame" x="285" y="168" width="30" height="30"/>
                                 <state key="normal" title="动效">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -51,11 +51,21 @@
                                     <segue destination="Aa1-T2-fge" kind="push" id="ClN-cQ-WvV"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5d-xN-ZI2">
+                                <rect key="frame" x="270" y="206" width="60" height="30"/>
+                                <state key="normal" title="组合动画">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xt3-Ol-yjo" kind="push" id="cVX-yI-TEE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="MJz-bA-i1k" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="130" id="AQd-wZ-iMU"/>
-                            <constraint firstItem="0W1-Zj-oo3" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="184" id="mQi-Ut-YAu"/>
+                            <constraint firstAttribute="centerX" secondItem="M5d-xN-ZI2" secondAttribute="centerX" id="kEt-Yv-zkT"/>
+                            <constraint firstItem="0W1-Zj-oo3" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="168" id="mQi-Ut-YAu"/>
                             <constraint firstAttribute="centerX" secondItem="0W1-Zj-oo3" secondAttribute="centerX" id="o9s-JH-WlG"/>
                             <constraint firstAttribute="centerX" secondItem="MJz-bA-i1k" secondAttribute="centerX" id="qBR-sk-aSs"/>
                         </constraints>
@@ -171,10 +181,10 @@
             </objects>
             <point key="canvasLocation" x="841" y="406"/>
         </scene>
-        <!--View Controller-->
+        <!--组合-->
         <scene sceneID="guQ-i1-11A">
             <objects>
-                <viewController id="xt3-Ol-yjo" sceneMemberID="viewController">
+                <viewController id="xt3-Ol-yjo" customClass="CombinationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="baT-yx-N3c"/>
                         <viewControllerLayoutGuide type="bottom" id="hQK-U8-ybB"/>
@@ -182,8 +192,69 @@
                     <view key="view" contentMode="scaleToFill" id="3Yh-i6-MfS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5HZ-2h-bBc">
+                                <rect key="frame" x="16" y="550" width="46" height="30"/>
+                                <state key="normal" title="多个圈">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="view1ResetAction:" destination="xt3-Ol-yjo" eventType="touchUpInside" id="Dg6-oe-Bd5"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bpy-Ji-dXL">
+                                <rect key="frame" x="225" y="101" width="150" height="150"/>
+                                <subviews>
+                                    <view alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DHR-Vp-eKg" userLabel="View1" customClass="CombinationView">
+                                        <rect key="frame" x="50" y="50" width="50" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yLZ-K5-Y5C" userLabel="View2" customClass="CombinationView">
+                                        <rect key="frame" x="50" y="50" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.52238278434728658" green="1" blue="0.2293853058722064" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eTK-I6-t02" userLabel="View3" customClass="CombinationView">
+                                        <rect key="frame" x="50" y="50" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.38274011638324246" green="0.45217757297864269" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ka2-o6-uoT" userLabel="View4" customClass="CombinationView">
+                                        <rect key="frame" x="50" y="50" width="50" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.965441035025556" blue="0.38952137815291443" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oRs-hh-mmp" userLabel="View5" customClass="CombinationView">
+                                        <rect key="frame" x="50" y="50" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.1960784495" green="0.72156864399999998" blue="0.81568634510000004" alpha="1" colorSpace="deviceRGB"/>
+                                    </view>
+                                    <view alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h1w-vX-Aeu" userLabel="View6" customClass="CombinationView">
+                                        <rect key="frame" x="50" y="50" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.37291988017758071" green="1" blue="0.7928519599771775" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2oK-RX-cTT" userLabel="View7" customClass="CombinationView">
+                                        <rect key="frame" x="50" y="50" width="50" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.37348777296711022" blue="0.73176479417065066" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="5HZ-2h-bBc" secondAttribute="bottom" constant="20" id="9ZW-VN-dH9"/>
+                            <constraint firstItem="Bpy-Ji-dXL" firstAttribute="top" secondItem="3Yh-i6-MfS" secondAttribute="top" constant="101" id="KzB-UV-GX7"/>
+                            <constraint firstAttribute="centerX" secondItem="Bpy-Ji-dXL" secondAttribute="centerX" id="Mcf-0a-ru5"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="组合" id="L3u-lN-1xo"/>
+                    <connections>
+                        <outlet property="view1" destination="Bpy-Ji-dXL" id="vXA-kK-UNz"/>
+                        <outlet property="view1_1" destination="DHR-Vp-eKg" id="UtG-Zh-bM3"/>
+                        <outlet property="view1_2" destination="yLZ-K5-Y5C" id="IBG-cB-H9o"/>
+                        <outlet property="view1_3" destination="eTK-I6-t02" id="quz-gM-zoG"/>
+                        <outlet property="view1_4" destination="ka2-o6-uoT" id="siu-dp-EXF"/>
+                        <outlet property="view1_5" destination="oRs-hh-mmp" id="4Kg-Ma-jwK"/>
+                        <outlet property="view1_6" destination="h1w-vX-Aeu" id="QX1-Fw-emw"/>
+                        <outlet property="view1_7" destination="2oK-RX-cTT" id="jbQ-ca-hk8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vbr-UV-X2F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

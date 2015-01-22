@@ -8,6 +8,7 @@
 
 #import "AnimationControl.h"
 
+
 @implementation AnimationControl
 /**
  *  跳动动画
@@ -162,4 +163,164 @@
 }
 
 
+/**
+ *  组合动画
+ *
+ *  @param circles   内部的图形
+ *  @param superview 外部view
+ *
+ *#mark sina c = 3/1
+        cos c  = 2/3
+ 
+              C
+             /|
+           1/ | 2
+           /  |
+          -----
+            3
+ */
++(void)animationCombiationCircle:(NSArray *)circles andSuperView:(UIView *)superview{
+    
+    AnimationControl  * control = [[AnimationControl alloc] init];
+    control.circles = circles;
+    control.tempSuperView = superview;
+    control.Points1 = [NSMutableArray array];
+    UIView * temp = circles.lastObject;
+    NSInteger  count = circles.count;
+    
+    CGFloat oneCorner = 360.0/count;
+    CGPoint center = control.oldPoint = CGPointMake(superview.frame.size.width/2, superview.frame.size.height/2);
+
+        //定义出边
+    CGFloat width = temp.frame.size.width*1.5;
+
+    //    float a = sin(30*M_PI/180);
+
+
+    //顺时针计算
+    for (NSInteger i =0; i<count; i++) {
+        CGPoint newCneter ;
+
+        //计算角度 求出圆上点相对圆心的坐标值 无符号
+        CGFloat x , y;
+        CGFloat currentAngle =oneCorner*i + 90;
+        if (currentAngle > 360 ) {
+            currentAngle -=360;
+        }
+        if (currentAngle == 0) {
+            //x轴负向 0°
+            x = - width;
+            y = 0;
+        }
+        else if (currentAngle < 90){
+            
+            //第一象限 0°<   < 90°
+            float cos_a = cos(currentAngle*M_PI/180);
+            float sin_a = sin(currentAngle*M_PI/180);
+            x = -cos_a *width;
+            y = -sin_a *width;
+        }
+        else if (currentAngle == 90){
+            //y轴正向 90°
+            x  = 0;
+            y  = -width;
+        }
+        else if ((90 < currentAngle) && ( currentAngle < 180)){
+            //第二象限 90°<   < 180°
+            
+            x  = cos((180 - currentAngle)*M_PI/180)*width;
+            y  = -sin((180 - currentAngle)*M_PI/180)*width;
+        }
+        else if (currentAngle == 180){
+            //x正向 180°
+            x = width;
+            y = 0;
+        }
+        else if ((180 < currentAngle) && ( currentAngle < (270))){
+            //第三象限 180°<   < 270°
+            
+            x  = cos((currentAngle - 180)*M_PI/180)*width;
+            y  = sin((currentAngle - 180)*M_PI/180)*width;
+            
+        }
+        else if (currentAngle == (270)){
+            //270°
+            x  = 0;
+            y  = width;
+        }
+        else if (((270) < currentAngle) && ( currentAngle < (360))){
+            //第三象限 270°<   < 360°
+            
+            x  = -cos((360 - currentAngle) *M_PI/180)*width;
+            y  = sin((360 - currentAngle) *M_PI/180)*width;
+
+        }else{
+            
+        }
+        CGAffineTransform endAngle = CGAffineTransformMakeRotation((currentAngle-90) * (M_PI / 180.0f));
+        UIView * tempView =  control.circles[i];
+        tempView.transform = endAngle;
+
+        newCneter = CGPointMake(center.x + x, center.y + y);
+//        tempView.center = newCneter;
+        [control.Points1 addObject:NSStringFromCGPoint(newCneter)];
+    }
+    
+    
+    control.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:control selector:@selector(change) userInfo:nil repeats:YES];
+    
+}
+- (void) change{
+
+    [UIView animateWithDuration:1 animations:^{
+        self.tempSuperView.transform = CGAffineTransformScale(self.tempSuperView.transform, -1, -1);
+    }];
+    
+    if (!self.status) {
+        
+        [UIView animateWithDuration:1 animations:^{
+            
+            for (NSInteger i = 0; i<self.circles.count; i++) {
+                UIView* temp = self.circles[i];
+                temp.center = CGPointFromString(self.Points1[i]);
+                temp.transform = CGAffineTransformScale(temp.transform, -1, -1);
+                temp.alpha = 1;
+            }
+            
+        }];
+        
+
+    }else{
+        [UIView animateWithDuration:1 animations:^{
+            
+            for (NSInteger i = 0; i<self.circles.count; i++) {
+                UIView* temp = self.circles[i];
+                temp.center = self.oldPoint;
+                temp.alpha = .4;
+            }
+        }];
+        
+
+    }
+    
+    self.status = !self.status;
+}
+
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
