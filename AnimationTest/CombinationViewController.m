@@ -21,6 +21,9 @@
 
 @property (weak, nonatomic) IBOutlet CombinationView *view1_6;
 @property (weak, nonatomic) IBOutlet CombinationView *view1_7;
+
+
+@property (weak, nonatomic) IBOutlet UIView *view2;
 @end
 
 @implementation CombinationViewController
@@ -34,7 +37,8 @@
 //    if (self.view1.hidden) {
 //        self.view1.hidden = NO;
 //    }
-
+    self.view1.hidden = NO;
+    self.view2.hidden = YES;
     [self startAnimation];
 }
 
@@ -46,6 +50,11 @@
     
     
     
+}
+- (IBAction)otherViewAction:(id)sender {
+    self.view1.hidden = YES;
+    self.view2.hidden = NO;
+    [AnimationControl animationCombiationSuperView:self.view2 withMaxSize: 100 andCellSize:10 andCellCount:10];
 }
 
 

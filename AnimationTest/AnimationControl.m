@@ -7,7 +7,7 @@
 //
 
 #import "AnimationControl.h"
-
+#import "CombiationBackGroundView.h"
 
 @implementation AnimationControl
 /**
@@ -17,6 +17,7 @@
  */
 +(void)animationStartJump:(UIView *)animationView{
 
+    
     AnimationControl * control = [[AnimationControl alloc] init];
     __block typeof (control) weakSelf = control;
     control.center = control.temp = animationView.center;
@@ -106,7 +107,7 @@
          *  @return 变幻后的结果
          */
         otheranimationView.transform = CGAffineTransformScale(otheranimationView.transform, 1.0, -1.0);
-
+        
     }];
 
 }
@@ -304,6 +305,24 @@
     }
     
     self.status = !self.status;
+}
+
+
++ (void) animationCombiationSuperView:(UIView *)superview withMaxSize:(CGFloat )maxSize andCellSize:(CGFloat)cellsize  andCellCount:(NSInteger)count{
+    CGFloat oneCorner = 360.0/count;
+
+    for (NSInteger i = 0; i<count; i++) {
+        
+        CombiationBackGroundView * view = [[CombiationBackGroundView alloc] init];
+        view.selfSize = maxSize;
+        view.cellSize = cellsize;
+        view.center = CGPointMake(superview.frame.size.width/2, superview.frame.size.height/2);
+        [view startAnimation];
+        [superview addSubview:view];
+//        view.transform = CGAffineTransformMakeRotation((oneCorner * i + 90) * (M_PI / 180.0f));
+        view.transform = CGAffineTransformRotate(view.transform, (oneCorner * i + 90) * (M_PI / 180.0f)); //实现的是旋转
+    }
+    
 }
 
 @end

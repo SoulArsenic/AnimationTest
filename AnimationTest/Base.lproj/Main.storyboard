@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zJK-83-bxZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zJK-83-bxZ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
@@ -236,12 +236,27 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KoX-NU-2jk">
+                                <rect key="frame" x="225" y="101" width="150" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bge-lz-IM6">
+                                <rect key="frame" x="91" y="550" width="90" height="30"/>
+                                <state key="normal" title="另一种多个圈">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="otherViewAction:" destination="xt3-Ol-yjo" eventType="touchUpInside" id="9I6-Sf-hhJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="5HZ-2h-bBc" secondAttribute="bottom" constant="20" id="9ZW-VN-dH9"/>
+                            <constraint firstAttribute="bottom" secondItem="Bge-lz-IM6" secondAttribute="bottom" constant="20" id="F9a-Eb-3ba"/>
                             <constraint firstItem="Bpy-Ji-dXL" firstAttribute="top" secondItem="3Yh-i6-MfS" secondAttribute="top" constant="101" id="KzB-UV-GX7"/>
                             <constraint firstAttribute="centerX" secondItem="Bpy-Ji-dXL" secondAttribute="centerX" id="Mcf-0a-ru5"/>
+                            <constraint firstAttribute="centerX" secondItem="KoX-NU-2jk" secondAttribute="centerX" id="S2j-AF-dDY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="组合" id="L3u-lN-1xo"/>
@@ -254,6 +269,7 @@
                         <outlet property="view1_5" destination="oRs-hh-mmp" id="4Kg-Ma-jwK"/>
                         <outlet property="view1_6" destination="h1w-vX-Aeu" id="QX1-Fw-emw"/>
                         <outlet property="view1_7" destination="2oK-RX-cTT" id="jbQ-ca-hk8"/>
+                        <outlet property="view2" destination="KoX-NU-2jk" id="XG2-2n-2zN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vbr-UV-X2F" userLabel="First Responder" sceneMemberID="firstResponder"/>
