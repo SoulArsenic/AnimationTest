@@ -118,11 +118,12 @@
 
     NSInteger i = 0;
     NSInteger number = 0;
-    if (tsubViews.count < defaultshowNumber) {
-        number = tsubViews.count;
-    }else{
-        number =defaultshowNumber;
-    }
+//    if (tsubViews.count < defaultshowNumber) {
+
+    number = tsubViews.count;
+//    }else{
+//        number =defaultshowNumber;
+//    }
     
     for (i = 0 ; i< number; i++) {
         UIView * temp =tsubViews[i];
@@ -138,6 +139,8 @@
         //        temp.alpha = 1 - number*.1 + i*.1;
     }
 }
+
+
 
 /*
 // Only override drawRect: if you perform custom drawing.
@@ -170,4 +173,6 @@
         [superView addSubview:temp];
     }
 }
+
+
 @end

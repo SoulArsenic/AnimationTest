@@ -22,6 +22,11 @@
     
     self.showView.layer.masksToBounds = YES;
     self.showView.layer.cornerRadius = 50;
+    self.showView.layer.shadowColor = [UIColor blackColor].CGColor;
+    self.showView.layer.shadowOpacity = 0.5;
+    self.showView.layer.shadowOffset = CGSizeMake(0, 1.5);
+    self.showView.layer.shouldRasterize = YES;
+    self.showView.layer.rasterizationScale = [[UIScreen mainScreen] scale];
 
     // Do any additional setup after loading the view.
 }
@@ -45,25 +50,15 @@
     [AnimationControl animationStartJump:self.showView];
 }
 - (IBAction)cover:(id)sender {
-
+    [AnimationControl animationStartCover:self.showView];
+}
+- (IBAction)move:(id)sender {
+    [AnimationControl animationStartMove:self.showView withPoints:nil];
+}
+- (IBAction)sys_action:(id)sender {
     
-    self.showView.layer.transform = CATransform3DMakeScale(-1.0, -1.0, 1.0);
-    self.showView.layer.affineTransform =CGAffineTransformMakeRotation(45.0);
-
-    CAKeyframeAnimation  *animation=[CAKeyframeAnimation animationWithKeyPath:@"position"];
-    //设置view行动的轨迹
-    NSArray *values=[NSArray arrayWithObjects:[NSValue valueWithCGPoint:CGPointMake(100,100)],
-                     [NSValue valueWithCGPoint:self.showView.center],
-                     [NSValue valueWithCGPoint:CGPointMake(150, 150)],
-                     [NSValue valueWithCGPoint:CGPointMake(200, 200)],
-                     [NSValue valueWithCGPoint:self.showView.center],nil];
-    //获得点
-    [animation setValues:values];
-    //设置时常
-    [animation setDuration:5.0];
-
-    [self.showView.layer  addAnimation:animation forKey:@"img-position"];
-    
+    [self.showView performSelector:@selector(setBackgroundColor:) withObject:[UIColor colorWithRed:arc4random()%10 *.1 green:arc4random()%10 *.1 blue:arc4random()%10 *.1 alpha:1] afterDelay:.8];
+    [AnimationControl animationSystem:self.showView];
 }
 
 @end

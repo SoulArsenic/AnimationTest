@@ -60,16 +60,106 @@
 
 }
 
++(void) animationStartMove:(UIView *)animationView withPoints:(NSArray *)array{
+    
+    CAKeyframeAnimation  *animation=[CAKeyframeAnimation animationWithKeyPath:@"position"];
+    //设置view行动的轨迹
+    NSArray *values = nil;
+    if (!array || !array.count) {
+        values =[NSArray arrayWithObjects:
+                 [NSValue valueWithCGPoint:animationView.center],
+                 [NSValue valueWithCGPoint:CGPointMake(animationView.center.x -100,
+                                                       animationView.center.y )],
+                 [NSValue valueWithCGPoint:CGPointMake(animationView.center.x -100,
+                                                       animationView.center.y +100)],
+                 [NSValue valueWithCGPoint:CGPointMake(animationView.center.x +100,
+                                                       animationView.center.y +100)],
+                 [NSValue valueWithCGPoint:CGPointMake(animationView.center.x +100,
+                                                       animationView.center.y )],
+                 [NSValue valueWithCGPoint:animationView.center],nil];
+    }
+    
+    //获得点
+    [animation setValues:values];
+    //设置时常
+    [animation setDuration:2.0];
+    
+    [animationView.layer  addAnimation:animation forKey:@"view-position"];
+
+    
+}
 
 + (void) animationStartCover:(UIView *) animationView{
 
+
     __block typeof (animationView) otheranimationView = animationView;
     
-    CGAffineTransform endAngle = CGAffineTransformMakeRotation((M_PI / 180.0f));
-    
-    [UIView animateWithDuration:0.01 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
-        otheranimationView.transform = endAngle;
-    } completion:^(BOOL finished) {
+    [UIView animateWithDuration:.5 animations:^{
+        /**
+         *  旋转说明
+         *
+         *  @param otheranimationView.transform 旋转方法
+         *  @param 1.0                          水平
+         *  @param -1.0                         竖直
+         *
+         *  @return 变幻后的结果
+         */
+        otheranimationView.transform = CGAffineTransformScale(otheranimationView.transform, 1.0, -1.0);
+
     }];
+
 }
++ (void) animationSystem:(UIView *)animationView{
+    
+    CATransition *animation = [CATransition animation];
+    //动画时间
+    animation.duration = 1;
+    //先慢后快
+    animation.timingFunction = UIViewAnimationCurveEaseInOut;
+    animation.fillMode = kCAFillModeForwards;
+    //animation.removedOnCompletion = NO;
+    
+    //各种动画效果
+    /*
+     kCATransitionFade;
+     kCATransitionMoveIn;
+     kCATransitionPush;z
+     kCATransitionReveal;
+     */
+    /*
+     kCATransitionFromRight;
+     kCATransitionFromLeft;
+     kCATransitionFromTop;
+     kCATransitionFromBottom;
+     */
+    //各种组合
+    animation.type = kCATransitionPush;
+    animation.subtype = kCATransitionFromRight;
+    
+    [animationView.layer addAnimation:animation forKey:@"animation"];
+    
+    /*
+    fade     //交叉淡化过渡(不支持过渡方向) kCATransitionFade
+    push     //新视图把旧视图推出去  kCATransitionPush
+    moveIn   //新视图移到旧视图上面   kCATransitionMoveIn
+    reveal   //将旧视图移开,显示下面的新视图  kCATransitionReveal
+    cube     //立方体翻滚效果
+    oglFlip  //上下左右翻转效果
+    suckEffect   //收缩效果，如一块布被抽走(不支持过渡方向)
+    rippleEffect //滴水效果(不支持过渡方向)
+    pageCurl     //向上翻页效果
+    pageUnCurl   //向下翻页效果
+    cameraIrisHollowOpen  //相机镜头打开效果(不支持过渡方向)
+    cameraIrisHollowClose //相机镜头关上效果(不支持过渡方向)
+    */
+    /* 过渡方向
+     kCATransitionFromRight
+     kCATransitionFromLeft
+     kCATransitionFromBottom
+     kCATransitionFromTop
+     */
+
+}
+
+
 @end
