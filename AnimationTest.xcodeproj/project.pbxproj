@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5E823B7D1A713A9000665DEC /* CombiationBackGroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E823B7C1A713A9000665DEC /* CombiationBackGroundView.m */; };
+		84408FF41A71F4D4009A8A1C /* GraphicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84408FF31A71F4D4009A8A1C /* GraphicsViewController.m */; };
+		84408FF71A71F4E8009A8A1C /* GraphicsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84408FF61A71F4E8009A8A1C /* GraphicsView.m */; };
 		84675F701A6FA2D400A51E0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84675F6F1A6FA2D400A51E0F /* main.m */; };
 		84675F731A6FA2D500A51E0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84675F721A6FA2D500A51E0F /* AppDelegate.m */; };
 		84675F761A6FA2D500A51E0F /* AnimationTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84675F741A6FA2D500A51E0F /* AnimationTest.xcdatamodeld */; };
@@ -36,6 +38,10 @@
 /* Begin PBXFileReference section */
 		5E823B7B1A713A9000665DEC /* CombiationBackGroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombiationBackGroundView.h; sourceTree = "<group>"; };
 		5E823B7C1A713A9000665DEC /* CombiationBackGroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombiationBackGroundView.m; sourceTree = "<group>"; };
+		84408FF21A71F4D4009A8A1C /* GraphicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicsViewController.h; sourceTree = "<group>"; };
+		84408FF31A71F4D4009A8A1C /* GraphicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphicsViewController.m; sourceTree = "<group>"; };
+		84408FF51A71F4E8009A8A1C /* GraphicsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicsView.h; sourceTree = "<group>"; };
+		84408FF61A71F4E8009A8A1C /* GraphicsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphicsView.m; sourceTree = "<group>"; };
 		84675F6A1A6FA2D400A51E0F /* AnimationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84675F6E1A6FA2D400A51E0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84675F6F1A6FA2D400A51E0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -117,6 +123,10 @@
 				847C16371A70CD95001C7552 /* CombinationViewController.m */,
 				847C16391A70CE03001C7552 /* CombinationView.h */,
 				847C163A1A70CE03001C7552 /* CombinationView.m */,
+				84408FF21A71F4D4009A8A1C /* GraphicsViewController.h */,
+				84408FF31A71F4D4009A8A1C /* GraphicsViewController.m */,
+				84408FF51A71F4E8009A8A1C /* GraphicsView.h */,
+				84408FF61A71F4E8009A8A1C /* GraphicsView.m */,
 				84675F7A1A6FA2D500A51E0F /* Main.storyboard */,
 				84675F7D1A6FA2D500A51E0F /* Images.xcassets */,
 				84675F7F1A6FA2D500A51E0F /* LaunchScreen.xib */,
@@ -257,10 +267,12 @@
 				84675F731A6FA2D500A51E0F /* AppDelegate.m in Sources */,
 				5E823B7D1A713A9000665DEC /* CombiationBackGroundView.m in Sources */,
 				847C163B1A70CE03001C7552 /* CombinationView.m in Sources */,
+				84408FF71A71F4E8009A8A1C /* GraphicsView.m in Sources */,
 				84675F9E1A6FA44300A51E0F /* AnimationViewController.m in Sources */,
 				84675F701A6FA2D400A51E0F /* main.m in Sources */,
 				84675F9A1A6FA2ED00A51E0F /* AnimationControl.m in Sources */,
 				84675F791A6FA2D500A51E0F /* ViewController.m in Sources */,
+				84408FF41A71F4D4009A8A1C /* GraphicsViewController.m in Sources */,
 				84675F761A6FA2D500A51E0F /* AnimationTest.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

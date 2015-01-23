@@ -54,7 +54,7 @@
 - (IBAction)otherViewAction:(id)sender {
     self.view1.hidden = YES;
     self.view2.hidden = NO;
-    [AnimationControl animationCombiationSuperView:self.view2 withMaxSize: 100 andCellSize:10 andCellCount:10];
+    [AnimationControl animationCombiationSuperView:self.view2 withMaxSize: 100 andCellSize:10 andCellCount:20];
 }
 
 

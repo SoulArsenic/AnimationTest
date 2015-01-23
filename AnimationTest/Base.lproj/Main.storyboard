@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zJK-83-bxZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zJK-83-bxZ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
@@ -60,10 +60,20 @@
                                     <segue destination="xt3-Ol-yjo" kind="push" id="cVX-yI-TEE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ev-iN-boo">
+                                <rect key="frame" x="270" y="244" width="60" height="30"/>
+                                <state key="normal" title="图形绘制">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3ZY-wV-7RH" kind="push" id="59m-OH-IPT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="MJz-bA-i1k" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="130" id="AQd-wZ-iMU"/>
+                            <constraint firstAttribute="centerX" secondItem="1ev-iN-boo" secondAttribute="centerX" id="OuE-RR-OWl"/>
                             <constraint firstAttribute="centerX" secondItem="M5d-xN-ZI2" secondAttribute="centerX" id="kEt-Yv-zkT"/>
                             <constraint firstItem="0W1-Zj-oo3" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="168" id="mQi-Ut-YAu"/>
                             <constraint firstAttribute="centerX" secondItem="0W1-Zj-oo3" secondAttribute="centerX" id="o9s-JH-WlG"/>
@@ -275,6 +285,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vbr-UV-X2F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="841" y="1088"/>
+        </scene>
+        <!--Graphics-->
+        <scene sceneID="WEh-o4-W2I">
+            <objects>
+                <viewController id="3ZY-wV-7RH" customClass="GraphicsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lwi-9Z-Rzy"/>
+                        <viewControllerLayoutGuide type="bottom" id="kbg-b7-ZqI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9sL-y5-3Jf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gBr-GA-FYx" customClass="GraphicsView">
+                                <rect key="frame" x="0.0" y="64" width="600" height="400"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9e-VX-RY1">
+                                <rect key="frame" x="16" y="550" width="46" height="30"/>
+                                <state key="normal" title="画图形">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="action:" destination="3ZY-wV-7RH" eventType="touchUpInside" id="jKS-Du-wV1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.85621708990674694" blue="0.92588830394888832" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="gBr-GA-FYx" secondAttribute="centerX" id="H5Y-cq-2iM"/>
+                            <constraint firstItem="gBr-GA-FYx" firstAttribute="leading" secondItem="9sL-y5-3Jf" secondAttribute="leading" id="WQG-CP-pQO"/>
+                            <constraint firstAttribute="trailing" secondItem="gBr-GA-FYx" secondAttribute="trailing" id="qiq-Gd-8Ln"/>
+                            <constraint firstAttribute="bottom" secondItem="M9e-VX-RY1" secondAttribute="bottom" constant="20" id="wGh-ox-aVr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Graphics" id="wYR-6I-MY6"/>
+                    <connections>
+                        <outlet property="drawingView" destination="gBr-GA-FYx" id="djH-dq-1on"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cla-0s-1t2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="841" y="1780"/>
         </scene>
     </scenes>
 </document>
