@@ -113,9 +113,15 @@
     
  
 
-    UIBezierPath * bezPointo = [UIBezierPath bezierPathWithArcCenter:CGPointMake(self.end.x - ((self.end.x - self.start.x)/20), locationy) radius:20 startAngle:0 endAngle:DEGREES_TO_RADIANS(360) clockwise:YES];
+    UIBezierPath * bezPointo = [UIBezierPath bezierPathWithArcCenter:
+                                CGPointMake(self.end.x , locationy)
+                                                              radius:20
+                                                          startAngle:0 endAngle:DEGREES_TO_RADIANS(360) clockwise:YES];
     [bezPointo fill];
-   [red set];
+    
+    //填充色
+    [red set];
+    
     [bezierpath addArcWithCenter:CGPointMake(nXpox ,
                                              nYpox )
                           radius:radius
