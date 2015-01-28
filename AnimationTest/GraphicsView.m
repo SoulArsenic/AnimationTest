@@ -333,7 +333,7 @@
 
         
     }else{
-        if (self.end.y > p1.y) {
+        if (self.end.y >= p1.y) {
             
             startAngle = M_PI_2;
         }else{
@@ -375,7 +375,7 @@
                 
             default:{
 
-                if (p1.x < self.start.x) {
+                if (p1.x <= self.start.x) {
                     endAngle = 0;
                 }else{
                     endAngle  = M_PI;
