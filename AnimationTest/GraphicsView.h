@@ -9,9 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface GraphicsView : UIView
-@property (nonatomic) float radious ;
+
 
 @property (nonatomic) CGPoint start ;
 @property (nonatomic) CGPoint end;
 @property (nonatomic) BOOL outOfBounds;
- @end
+
+@property (nonatomic) CGFloat pointWidth;
+
+@end

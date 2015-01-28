@@ -10,6 +10,8 @@
 #import "CombiationBackGroundView.h"
 
 @implementation AnimationControl
+
+
 /**
  *  跳动动画
  *

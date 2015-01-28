@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5E823B7D1A713A9000665DEC /* CombiationBackGroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E823B7C1A713A9000665DEC /* CombiationBackGroundView.m */; };
+		5EBE64411A788910009A9EAE /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBE64401A788910009A9EAE /* Tool.m */; };
 		84408FF41A71F4D4009A8A1C /* GraphicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84408FF31A71F4D4009A8A1C /* GraphicsViewController.m */; };
 		84408FF71A71F4E8009A8A1C /* GraphicsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84408FF61A71F4E8009A8A1C /* GraphicsView.m */; };
 		84675F701A6FA2D400A51E0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84675F6F1A6FA2D400A51E0F /* main.m */; };
@@ -38,6 +39,8 @@
 /* Begin PBXFileReference section */
 		5E823B7B1A713A9000665DEC /* CombiationBackGroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombiationBackGroundView.h; sourceTree = "<group>"; };
 		5E823B7C1A713A9000665DEC /* CombiationBackGroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombiationBackGroundView.m; sourceTree = "<group>"; };
+		5EBE643F1A788910009A9EAE /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
+		5EBE64401A788910009A9EAE /* Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
 		84408FF21A71F4D4009A8A1C /* GraphicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicsViewController.h; sourceTree = "<group>"; };
 		84408FF31A71F4D4009A8A1C /* GraphicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphicsViewController.m; sourceTree = "<group>"; };
 		84408FF51A71F4E8009A8A1C /* GraphicsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicsView.h; sourceTree = "<group>"; };
@@ -109,6 +112,8 @@
 			children = (
 				84675F961A6FA2ED00A51E0F /* AnimationControl.h */,
 				84675F971A6FA2ED00A51E0F /* AnimationControl.m */,
+				5EBE643F1A788910009A9EAE /* Tool.h */,
+				5EBE64401A788910009A9EAE /* Tool.m */,
 				5E823B7B1A713A9000665DEC /* CombiationBackGroundView.h */,
 				5E823B7C1A713A9000665DEC /* CombiationBackGroundView.m */,
 				84675F981A6FA2ED00A51E0F /* TouchHandleView.h */,
@@ -262,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EBE64411A788910009A9EAE /* Tool.m in Sources */,
 				847C16381A70CD95001C7552 /* CombinationViewController.m in Sources */,
 				84675F9B1A6FA2ED00A51E0F /* TouchHandleView.m in Sources */,
 				84675F731A6FA2D500A51E0F /* AppDelegate.m in Sources */,
