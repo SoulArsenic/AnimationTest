@@ -12,7 +12,7 @@
 @interface ScrollControlViewController ()<UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *bgController;
 @property (weak, nonatomic) IBOutlet UIScrollView *contentController;
-
+@property (assign) CGFloat temp;
 @end
 
 
@@ -22,14 +22,23 @@
     
 //    self.bgController.contentSize = CGSizeMake(1000, 0);
     self.contentController.contentSize = CGSizeMake(0, 1000);
+
+}
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    self.temp = self.bgController.contentOffset.y;
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
 }
 
--(void)scrollViewDidScroll:(UIScrollView *)scrollView{
 
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    
     if (self.contentController.contentOffset.y<=0) {
-        self.bgController.contentOffset= self.contentController.contentOffset;
+        self.bgController.contentOffset= CGPointMake(self.contentController.contentOffset.x, self.contentController.contentOffset.y + self.temp);
     }
-    if (self.bgController.contentOffset.y < -120) {
+    if (self.bgController.contentOffset.y < -160) {
         [self.navigationController popViewControllerAnimated:YES];
     }
 

@@ -366,17 +366,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGD-kY-ejl">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dMc-PY-3YB">
-                                        <rect key="frame" x="0.0" y="119" width="600" height="417"/>
+                                        <rect key="frame" x="0.0" y="119" width="600" height="481"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bKO-QT-ilF">
-                                        <rect key="frame" x="0.0" y="128" width="287" height="365"/>
+                                        <rect key="frame" x="0.0" y="128" width="286" height="477"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S0a-Kw-5tF">
-                                                <rect key="frame" x="0.0" y="0.0" width="287" height="93"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="405" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                         </subviews>
@@ -396,7 +396,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="gGD-kY-ejl" secondAttribute="bottom" id="EDu-05-gID"/>
-                            <constraint firstItem="gGD-kY-ejl" firstAttribute="top" secondItem="uW9-kv-IjQ" secondAttribute="top" constant="64" id="N9f-Of-bP7"/>
+                            <constraint firstItem="gGD-kY-ejl" firstAttribute="top" secondItem="uW9-kv-IjQ" secondAttribute="top" id="N9f-Of-bP7"/>
                             <constraint firstItem="gGD-kY-ejl" firstAttribute="leading" secondItem="uW9-kv-IjQ" secondAttribute="leading" id="g59-u8-bRy"/>
                             <constraint firstAttribute="trailing" secondItem="gGD-kY-ejl" secondAttribute="trailing" id="wNa-w8-NAq"/>
                         </constraints>
