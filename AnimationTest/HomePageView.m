@@ -52,49 +52,86 @@
         }
     }
     
-    CGPoint center  = CGPointMake(200, 200);
-    CGFloat widthRed = 60;
+    CGPoint center  = CGPointMake(160, 170);
+    CGFloat widthRed = 100;
     CGFloat widthGreen = widthRed - 4;
     CGFloat widthbule = widthGreen - 4;
     CGFloat widthPurple = widthbule - 4;
 
+    CGFloat startCorner = 91;
     
+    //红 背景
+    UIBezierPath * bezPointRedBG = [UIBezierPath bezierPathWithArcCenter:center
+                                                                radius:widthRed
+                                                            startAngle:DEGREES(startCorner)
+                                                              endAngle:DEGREES((startCorner + 359))
+                                                             clockwise:YES];
+    //    + (UIColor *)redColor;        // 1.0, 0.0, 0.0 RGB
+
+    [self.layer addSublayer:[self getShapeLayerWith:bezPointRedBG.CGPath andStrokeColor:[UIColor colorWithRed:1 green:0 blue:0 alpha:.3] ndFillColor:nil andLineWidth:2]];
     
-    //红
+//    前景
     UIBezierPath * bezPointRed = [UIBezierPath bezierPathWithArcCenter:center
                                                                 radius:widthRed
-                                                            startAngle:DEGREES(182)
-                                                              endAngle:DEGREES((182 + _percentred * 358))
+                                                            startAngle:DEGREES(startCorner)
+                                                              endAngle:DEGREES((startCorner + _percentred * 359))
                                                              clockwise:YES];
     
     [self.layer addSublayer:[self getShapeLayerWith:bezPointRed.CGPath andStrokeColor:[UIColor redColor] ndFillColor:nil andLineWidth:2]];
     
     
     //绿
+    UIBezierPath * bezPointGreenBG = [UIBezierPath bezierPathWithArcCenter:center
+                                                                  radius:widthGreen
+                                                              startAngle:DEGREES(startCorner)
+                                                                endAngle:DEGREES((startCorner + 359))
+                                                               clockwise:YES];
+    [self.layer addSublayer:[self getShapeLayerWith:bezPointGreenBG.CGPath andStrokeColor:[UIColor colorWithRed:0 green:1 blue:0 alpha:.3] ndFillColor:nil andLineWidth:2]];
+    
     UIBezierPath * bezPointGreen = [UIBezierPath bezierPathWithArcCenter:center
                                                                   radius:widthGreen
-                                                              startAngle:DEGREES(182)
-                                                                endAngle:DEGREES((182 + _percentgreen * 358))
+                                                              startAngle:DEGREES(startCorner)
+                                                                endAngle:DEGREES((startCorner + _percentgreen * 359))
                                                                clockwise:YES];
     [self.layer addSublayer:[self getShapeLayerWith:bezPointGreen.CGPath andStrokeColor:[UIColor greenColor] ndFillColor:nil andLineWidth:2]];
     
     
     //蓝
+    
+    
+    UIBezierPath * bezPointblueColorBG = [UIBezierPath bezierPathWithArcCenter:center
+                                                                      radius:widthbule
+                                                                  startAngle:DEGREES(startCorner)
+                                                                    endAngle:DEGREES((startCorner +  359))
+                                                                   clockwise:YES];
+    
+    [self.layer addSublayer:[self getShapeLayerWith:bezPointblueColorBG.CGPath andStrokeColor:[UIColor colorWithRed:0 green:0 blue:1 alpha:.3] ndFillColor:nil andLineWidth:2]];
+    
+    
     UIBezierPath * bezPointblueColor = [UIBezierPath bezierPathWithArcCenter:center
                                                                       radius:widthbule
-                                                                  startAngle:DEGREES(182)
-                                                                    endAngle:DEGREES((182 + _percentblue * 358))
+                                                                  startAngle:DEGREES(startCorner)
+                                                                    endAngle:DEGREES((startCorner + _percentblue * 359))
                                                                    clockwise:YES];
 
     [self.layer addSublayer:[self getShapeLayerWith:bezPointblueColor.CGPath andStrokeColor:[UIColor blueColor] ndFillColor:nil andLineWidth:2]];
     //紫
+    UIBezierPath * bezPointpurpleColorBG = [UIBezierPath bezierPathWithArcCenter:center
+                                                                        radius:widthPurple
+                                                                    startAngle:DEGREES(startCorner)
+                                                                      endAngle:DEGREES((startCorner + 359))
+                                                                     clockwise:YES];
+    
+    [self.layer addSublayer:[self getShapeLayerWith:bezPointpurpleColorBG.CGPath andStrokeColor:[UIColor colorWithRed:.5 green:0 blue:.5 alpha:.3] ndFillColor:nil andLineWidth:2]];
+    
+    
     UIBezierPath * bezPointpurpleColor = [UIBezierPath bezierPathWithArcCenter:center
                                                                         radius:widthPurple
-                                                                    startAngle:DEGREES(182)
-                                                                      endAngle:DEGREES((182 + _percentpurple * 358))
+                                                                    startAngle:DEGREES(startCorner)
+                                                                      endAngle:DEGREES((startCorner + _percentpurple * 359))
                                                                      clockwise:YES];
 
-        [self.layer addSublayer:[self getShapeLayerWith:bezPointpurpleColor.CGPath andStrokeColor:[UIColor purpleColor] ndFillColor:nil andLineWidth:2]];
+    [self.layer addSublayer:[self getShapeLayerWith:bezPointpurpleColor.CGPath andStrokeColor:[UIColor purpleColor] ndFillColor:nil andLineWidth:2]];
 }
 
 - (CABasicAnimation *) getAnimation{
@@ -117,53 +154,53 @@
     return arcLayer;
 }
 
--(void)drawRect:(CGRect)rect{
-    return;
-    CGPoint center  = CGPointMake(200, 200);
-    CGFloat widthRed = 50;
-    CGFloat widthGreen = widthRed - 3;
-    CGFloat widthbule = widthGreen - 2;
-    CGFloat widthPurple = widthbule - 2;
-    //红
-    UIBezierPath * bezPointRed = [UIBezierPath bezierPathWithArcCenter:center
-                                                             radius:widthRed
-                                                         startAngle:DEGREES(182)
-                                                           endAngle:DEGREES((182 + _percentred * 358))
-                                                          clockwise:YES];
-    bezPointRed.lineWidth = 4;
-    [[UIColor redColor] set];
-    [UIView animateWithDuration:5 animations:^{
-        [bezPointRed stroke];        
-    }];
-
-       //绿
-    UIBezierPath * bezPointGreen = [UIBezierPath bezierPathWithArcCenter:center
-                                                                radius:widthGreen
-                                                            startAngle:DEGREES(182)
-                                                              endAngle:DEGREES((182 + _percentgreen * 358))
-                                                             clockwise:YES];
-    bezPointGreen.lineWidth = 3;
-    [[UIColor greenColor] set];
-    [bezPointGreen stroke];
-        //蓝
-    UIBezierPath * bezPointblueColor = [UIBezierPath bezierPathWithArcCenter:center
-                                                                radius:widthbule
-                                                            startAngle:DEGREES(182)
-                                                              endAngle:DEGREES((182 + _percentblue * 358))
-                                                             clockwise:YES];
-    bezPointblueColor.lineWidth = 2;
-    [[UIColor blueColor] set];
-    [bezPointblueColor stroke];
-        //紫
-    UIBezierPath * bezPointpurpleColor = [UIBezierPath bezierPathWithArcCenter:center
-                                                                radius:widthPurple
-                                                            startAngle:DEGREES(182)
-                                                              endAngle:DEGREES((182 + _percentpurple * 358))
-                                                             clockwise:YES];
-    bezPointpurpleColor.lineWidth = 1;
-    [[UIColor purpleColor] set];
-    [bezPointpurpleColor stroke];
-
-}
+//-(void)drawRect:(CGRect)rect{
+//    return;
+//    CGPoint center  = CGPointMake(200, 200);
+//    CGFloat widthRed = 50;
+//    CGFloat widthGreen = widthRed - 3;
+//    CGFloat widthbule = widthGreen - 2;
+//    CGFloat widthPurple = widthbule - 2;
+//    //红
+//    UIBezierPath * bezPointRed = [UIBezierPath bezierPathWithArcCenter:center
+//                                                             radius:widthRed
+//                                                         startAngle:DEGREES(startCorner)
+//                                                           endAngle:DEGREES((startCorner + _percentred * 359))
+//                                                          clockwise:YES];
+//    bezPointRed.lineWidth = 4;
+//    [[UIColor redColor] set];
+//    [UIView animateWithDuration:5 animations:^{
+//        [bezPointRed stroke];        
+//    }];
+//
+//       //绿
+//    UIBezierPath * bezPointGreen = [UIBezierPath bezierPathWithArcCenter:center
+//                                                                radius:widthGreen
+//                                                            startAngle:DEGREES(startCorner)
+//                                                              endAngle:DEGREES((startCorner + _percentgreen * 359))
+//                                                             clockwise:YES];
+//    bezPointGreen.lineWidth = 3;
+//    [[UIColor greenColor] set];
+//    [bezPointGreen stroke];
+//        //蓝
+//    UIBezierPath * bezPointblueColor = [UIBezierPath bezierPathWithArcCenter:center
+//                                                                radius:widthbule
+//                                                            startAngle:DEGREES(startCorner)
+//                                                              endAngle:DEGREES((startCorner + _percentblue * 359))
+//                                                             clockwise:YES];
+//    bezPointblueColor.lineWidth = 2;
+//    [[UIColor blueColor] set];
+//    [bezPointblueColor stroke];
+//        //紫
+//    UIBezierPath * bezPointpurpleColor = [UIBezierPath bezierPathWithArcCenter:center
+//                                                                radius:widthPurple
+//                                                            startAngle:DEGREES(startCorner)
+//                                                              endAngle:DEGREES((startCorner + _percentpurple * 359))
+//                                                             clockwise:YES];
+//    bezPointpurpleColor.lineWidth = 1;
+//    [[UIColor purpleColor] set];
+//    [bezPointpurpleColor stroke];
+//
+//}
 
 @end

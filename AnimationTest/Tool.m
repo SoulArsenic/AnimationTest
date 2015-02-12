@@ -35,8 +35,6 @@
         }
     
     }
-
-    NSLog(@"五行之外");
     return QuadrantLocation_None;
 }
 
