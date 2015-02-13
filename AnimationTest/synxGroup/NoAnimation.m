@@ -10,6 +10,8 @@
 
 @implementation NoAnimation
 -(void) perform{
-    [[[self sourceViewController] navigationController] pushViewController:[self   destinationViewController] animated:YES];
+    [[self sourceViewController] navigationController].modalPresentationStyle= UIModalPresentationCurrentContext;
+
+    [[self sourceViewController] presentationController:[self   destinationViewController] viewControllerForAdaptivePresentationStyle:UIModalPresentationOverCurrentContext];
 }
 @end
