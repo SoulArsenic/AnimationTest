@@ -21,7 +21,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hAE-Il-ALh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-330.66666666666669" y="358.78666666666669"/>
+            <point key="canvasLocation" x="-1062" y="368"/>
         </scene>
         <!--动画-->
         <scene sceneID="65C-Kq-gco">
@@ -121,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUE-cL-vIg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="26.133333333333333" y="358.78666666666669"/>
+            <point key="canvasLocation" x="-543" y="368"/>
         </scene>
         <!--Home Page View Controller-->
         <scene sceneID="cMu-XA-IjC">
@@ -195,10 +195,6 @@
                                 <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wSl-Cc-feK" customClass="HomePageView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="541"/>
-                                <color key="backgroundColor" white="0.85826994243421062" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DeP-QM-5kC">
                                 <rect key="frame" x="277" y="614" width="30" height="30"/>
                                 <state key="normal" title="动">
@@ -208,6 +204,10 @@
                                     <action selector="action:" destination="MO5-dl-cvj" eventType="touchUpInside" id="YDk-AY-rN3"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wSl-Cc-feK" customClass="HomePageView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="541"/>
+                                <color key="backgroundColor" white="0.85826994243421062" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -243,7 +243,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="exH-wu-wdc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="805.86666666666667" y="1671.8133333333333"/>
+            <point key="canvasLocation" x="-1479" y="1285"/>
         </scene>
         <!--卡牌-->
         <scene sceneID="ufC-wZ-h7g">
@@ -277,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="448.5333333333333" y="-255.59999999999999"/>
+            <point key="canvasLocation" x="-2399" y="2092"/>
         </scene>
         <!--动效-->
         <scene sceneID="QuB-Na-5m6">
@@ -353,7 +353,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RBL-K7-Dow" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="448.5333333333333" y="384.34666666666664"/>
+            <point key="canvasLocation" x="-567" y="2087"/>
         </scene>
         <!--My Scroll View Controller-->
         <scene sceneID="mWj-iB-xn4">
@@ -433,7 +433,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rPN-M2-xvz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="26" y="1242"/>
+            <point key="canvasLocation" x="-1470" y="2087"/>
         </scene>
         <!--组合-->
         <scene sceneID="guQ-i1-11A">
@@ -536,9 +536,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vbr-UV-X2F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="448.5333333333333" y="1029.9733333333334"/>
+            <point key="canvasLocation" x="-1015" y="2087"/>
         </scene>
-        <!--Secret Animation Table View Controller-->
+        <!--仿秘密-->
         <scene sceneID="p9i-wu-I91">
             <objects>
                 <tableViewController id="l2g-wn-s02" customClass="SecretAnimationTableViewController" sceneMemberID="viewController">
@@ -582,20 +582,20 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QY4-Dn-cMJ">
-                                                    <rect key="frame" x="391" y="94" width="200" height="153"/>
+                                                    <rect key="frame" x="407" y="94" width="200" height="153"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
+                                                <constraint firstAttribute="centerY" secondItem="QY4-Dn-cMJ" secondAttribute="centerY" id="0zt-2D-QI4"/>
                                                 <constraint firstAttribute="centerY" secondItem="OcI-jA-VHe" secondAttribute="centerY" id="7hw-4k-fbn"/>
-                                                <constraint firstItem="OcI-jA-VHe" firstAttribute="centerY" secondItem="QY4-Dn-cMJ" secondAttribute="centerY" id="Dj3-J7-VV8"/>
-                                                <constraint firstAttribute="trailing" secondItem="QY4-Dn-cMJ" secondAttribute="trailing" constant="200" id="IRS-TW-Djm"/>
                                                 <constraint firstAttribute="trailing" secondItem="569-Tb-qUT" secondAttribute="trailing" id="P9l-hY-3AQ"/>
                                                 <constraint firstAttribute="trailing" secondItem="kCT-vi-Nle" secondAttribute="trailing" constant="105" id="QtR-u0-fkf"/>
                                                 <constraint firstAttribute="bottom" secondItem="kCT-vi-Nle" secondAttribute="bottom" constant="18.5" id="dSb-dU-BNW"/>
                                                 <constraint firstItem="OcI-jA-VHe" firstAttribute="leading" secondItem="laF-Mu-bJh" secondAttribute="leading" constant="-30" id="j6k-fh-lIF"/>
                                                 <constraint firstAttribute="bottom" secondItem="569-Tb-qUT" secondAttribute="bottom" constant="18.5" id="wJ1-iL-tXd"/>
+                                                <constraint firstItem="QY4-Dn-cMJ" firstAttribute="leading" secondItem="laF-Mu-bJh" secondAttribute="leading" constant="407" id="xGE-tM-teY"/>
                                             </constraints>
                                         </view>
                                     </subviews>
@@ -619,11 +619,11 @@
                             <outlet property="delegate" destination="l2g-wn-s02" id="PI1-ua-uYv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Nla-bu-vpP"/>
+                    <navigationItem key="navigationItem" title="仿秘密" id="Nla-bu-vpP"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Bz-DQ-AMx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="805.86666666666667" y="2323.1199999999999"/>
+            <point key="canvasLocation" x="-1975" y="1285"/>
         </scene>
         <!--Graphics-->
         <scene sceneID="WEh-o4-W2I">
@@ -687,7 +687,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cla-0s-1t2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="805.86666666666667" y="1029.9733333333334"/>
+            <point key="canvasLocation" x="-1925" y="2087"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="h1Y-FY-abg">
@@ -706,7 +706,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJj-TP-GWB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="125.86666666666666" y="194.06666666666666"/>
+            <point key="canvasLocation" x="201" y="-418"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
