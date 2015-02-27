@@ -20,6 +20,10 @@
 
 
 + (void) animationStartJump:(UIView *) animationView;
+
++ (void) animationStartShake:(UIView *) animationView onComplete:(void (^)())completion;
+
+
 + (void) animationStartMove:(UIView *)animationView withPoints:(NSArray *)array;
 + (void) animationStartCover:(UIView *) animationView;
 + (void) animationSystem:(UIView *)animationView;

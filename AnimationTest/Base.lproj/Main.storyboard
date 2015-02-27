@@ -546,6 +546,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SecretAnimationTableViewControllerCell" rowHeight="334" id="d2T-Ua-dOh" customClass="SecretAnimationCell">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -570,32 +571,39 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="2lI-kx-qdr"/>
                                                         <constraint firstAttribute="width" constant="105" id="kOu-Wr-0fa"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="105" id="sIM-k9-I6d"/>
                                                     </constraints>
                                                     <state key="normal" title="赞">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="❤️" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OcI-jA-VHe">
-                                                    <rect key="frame" x="-30" y="160" width="23" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QY4-Dn-cMJ">
-                                                    <rect key="frame" x="407" y="94" width="200" height="153"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QY4-Dn-cMJ">
+                                                    <rect key="frame" x="414" y="94" width="200" height="153"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="200" id="8bf-KG-GgK"/>
+                                                        <constraint firstAttribute="height" constant="153" id="QsD-f0-CUe"/>
+                                                    </constraints>
                                                 </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar-heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gxz-Ad-iyi">
+                                                    <rect key="frame" x="-40" y="150" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="ILS-xD-Jdc"/>
+                                                        <constraint firstAttribute="width" constant="40" id="sCt-kJ-w6L"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <gestureRecognizers/>
                                             <constraints>
-                                                <constraint firstAttribute="centerY" secondItem="QY4-Dn-cMJ" secondAttribute="centerY" id="0zt-2D-QI4"/>
-                                                <constraint firstAttribute="centerY" secondItem="OcI-jA-VHe" secondAttribute="centerY" id="7hw-4k-fbn"/>
+                                                <constraint firstAttribute="centerY" secondItem="Gxz-Ad-iyi" secondAttribute="centerY" id="Cg9-E7-mF5"/>
+                                                <constraint firstItem="Gxz-Ad-iyi" firstAttribute="leading" secondItem="laF-Mu-bJh" secondAttribute="leading" constant="-40" id="KYB-4r-H0T"/>
                                                 <constraint firstAttribute="trailing" secondItem="569-Tb-qUT" secondAttribute="trailing" id="P9l-hY-3AQ"/>
                                                 <constraint firstAttribute="trailing" secondItem="kCT-vi-Nle" secondAttribute="trailing" constant="105" id="QtR-u0-fkf"/>
                                                 <constraint firstAttribute="bottom" secondItem="kCT-vi-Nle" secondAttribute="bottom" constant="18.5" id="dSb-dU-BNW"/>
-                                                <constraint firstItem="OcI-jA-VHe" firstAttribute="leading" secondItem="laF-Mu-bJh" secondAttribute="leading" constant="-30" id="j6k-fh-lIF"/>
+                                                <constraint firstAttribute="trailing" secondItem="QY4-Dn-cMJ" secondAttribute="trailing" constant="-200" id="o70-cN-yAR"/>
+                                                <constraint firstAttribute="centerY" secondItem="QY4-Dn-cMJ" secondAttribute="centerY" id="sXC-LS-SGP"/>
                                                 <constraint firstAttribute="bottom" secondItem="569-Tb-qUT" secondAttribute="bottom" constant="18.5" id="wJ1-iL-tXd"/>
-                                                <constraint firstItem="QY4-Dn-cMJ" firstAttribute="leading" secondItem="laF-Mu-bJh" secondAttribute="leading" constant="407" id="xGE-tM-teY"/>
                                             </constraints>
                                         </view>
                                     </subviews>
@@ -610,18 +618,29 @@
                                 <connections>
                                     <outlet property="actionView" destination="QY4-Dn-cMJ" id="FDn-bH-1aZ"/>
                                     <outlet property="bg" destination="laF-Mu-bJh" id="9FD-4i-iU9"/>
-                                    <outlet property="heart" destination="OcI-jA-VHe" id="7vy-2p-Tqx"/>
+                                    <outlet property="heart" destination="Gxz-Ad-iyi" id="8Wc-dd-sO8"/>
+                                    <outlet property="likeBtn" destination="569-Tb-qUT" id="sJq-i2-0D0"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="l2g-wn-s02" id="6OT-1d-ySX"/>
                             <outlet property="delegate" destination="l2g-wn-s02" id="PI1-ua-uYv"/>
+                            <outletCollection property="gestureRecognizers" destination="exu-fg-SBP" appends="YES" id="ZQ0-mA-o3X"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="仿秘密" id="Nla-bu-vpP"/>
+                    <connections>
+                        <outlet property="myPanGesture" destination="exu-fg-SBP" id="Cgs-Nc-oBD"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Bz-DQ-AMx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="exu-fg-SBP">
+                    <connections>
+                        <action selector="myPanAction:" destination="l2g-wn-s02" id="Njj-w7-ji1"/>
+                        <outlet property="delegate" destination="l2g-wn-s02" id="602-El-HrP"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-1975" y="1285"/>
         </scene>
@@ -709,6 +728,9 @@
             <point key="canvasLocation" x="201" y="-418"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="avatar-heart.png" width="36" height="36"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

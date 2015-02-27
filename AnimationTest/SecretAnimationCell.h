@@ -11,15 +11,24 @@
 typedef void(^StatusChange)(BOOL status);
 
 @interface SecretAnimationCell : UITableViewCell
+
 @property (weak, nonatomic) IBOutlet UIView *bg;
 @property (nonatomic,copy) StatusChange change;
-@property (weak, nonatomic) IBOutlet UILabel *heart;
+
+@property (weak, nonatomic) IBOutlet UIImageView *heart;
 @property (weak, nonatomic) IBOutlet UIView *actionView;
 
-@property  (assign) CGPoint heartStart;
+@property (weak, nonatomic) IBOutlet UIButton *likeBtn;
+
+
+@property (assign) CGPoint heartStart;
 @property (assign) CGPoint actionStart;
-
-
 @property (assign) CGPoint touchStartPoint;
+
+@property (assign) BOOL inUseactionView;
+
+- (void) touchGesture:(UIPanGestureRecognizer *) recognizer;
+
+- (void) resetUI;
 
 @end

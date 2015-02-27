@@ -8,8 +8,25 @@
 
 #import "SecretAnimationTableViewController.h"
 #import "SecretAnimationCell.h"
-@interface SecretAnimationTableViewController ()<UITableViewDataSource,UITableViewDelegate>
 
+
+
+
+@interface SecretAnimationTableView : UITableView
+
+@end
+@implementation SecretAnimationTableView
+
+
+
+@end
+
+
+@interface SecretAnimationTableViewController ()<UITableViewDataSource,UITableViewDelegate,UIGestureRecognizerDelegate>
+@property (strong, nonatomic) IBOutlet UIPanGestureRecognizer *myPanGesture;
+@property (assign) CGPoint saveOld;
+@property (assign) BOOL holdPan;
+@property (assign) BOOL passToSubView;
 @end
 
 
@@ -17,6 +34,59 @@
 @implementation SecretAnimationTableViewController
 -(void)viewDidLoad{
     [super viewDidLoad];
+}
+
+
+- (IBAction)myPanAction:(UIPanGestureRecognizer *)sender {
+    
+    if (sender.state == UIGestureRecognizerStateEnded) {
+        self.holdPan = NO;
+        self.saveOld = CGPointZero;
+
+    }else{
+    }
+    
+    if (self.passToSubView) {
+        
+        SecretAnimationCell * cell =(SecretAnimationCell *)[self.tableView cellForRowAtIndexPath:[self.tableView indexPathForRowAtPoint:[sender locationInView:self.tableView]]];
+        [cell touchGesture:sender];
+   
+    }
+ 
+}
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{
+    if (self.holdPan) {
+        self.passToSubView = YES;
+        return NO;
+    }
+    
+    if (!CGPointEqualToPoint(self.saveOld, CGPointZero)) {
+
+        CGPoint other = [otherGestureRecognizer locationInView:self.tableView];
+        CGFloat a =ABS(self.saveOld.x - other.x);
+        CGFloat b = ABS(self.saveOld.y - other.y) /2;
+        
+        if (a>b) {
+         
+            self.saveOld = CGPointZero;
+            self.holdPan = YES;
+            self.passToSubView = YES;
+
+            return NO;
+            
+        }else {
+        
+            
+        }
+    }
+    
+    
+    self.saveOld = [otherGestureRecognizer locationInView:self.tableView];
+    
+    self.passToSubView = NO;
+
+    return YES;
 }
 
 
@@ -55,6 +125,7 @@
         SecretAnimationCell * temp = (SecretAnimationCell *)cell;
         CGFloat a =  arc4random()%10;
         temp.bg.backgroundColor = [UIColor colorWithRed:a*.1 green:arc4random()%10*.1 blue:arc4random()%10*.1 alpha:.5];
+        [temp resetUI];
     }
 }
 

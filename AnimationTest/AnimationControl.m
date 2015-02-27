@@ -63,10 +63,55 @@
     }];
 
 }
++(void)animationStartShake:(UIView *)animationView onComplete:(void (^)())completion{
+        
+    AnimationControl * control = [[AnimationControl alloc] init];
+    __block typeof (control) weakSelf = control;
+    control.center = control.temp = animationView.center;
+    
+    [UIView animateWithDuration:.1 animations:^{
+        //1
+        weakSelf.temp = CGPointMake( weakSelf.center.x  + 20,  weakSelf.center.y);
+    } completion:^(BOOL finished) {
+        
+        [UIView animateWithDuration:.1 animations:^{
+        //2
+            weakSelf.temp = CGPointMake(weakSelf.center.x  - 15,  weakSelf.center.y);
+            animationView.center = weakSelf.temp;
+        } completion:^(BOOL finished) {
+        
+            [UIView animateWithDuration:.1 animations:^{
+           //3
+                weakSelf.temp = CGPointMake( weakSelf.center.x + 10,  weakSelf.center.y );
+                animationView.center =  weakSelf.temp;
+            } completion:^(BOOL finished) {
+            
+                [UIView animateWithDuration:.1 animations:^{
+              //4
+                    weakSelf.temp = CGPointMake( weakSelf.center.x - 5,  weakSelf.center.y );
+                    animationView.center =  weakSelf.temp;
+                } completion:^(BOOL finished) {
+
+                    [UIView animateWithDuration:.1 animations:^{
+                        weakSelf.temp = CGPointMake( weakSelf.center.x,  weakSelf.center.y);
+                        animationView.center =  weakSelf.temp;
+ 
+                    } completion:^(BOOL finished) {
+                        completion();
+                    }];
+                }];
+                
+            }];
+            
+        }];
+    }];
+    
+}
 
 +(void) animationStartMove:(UIView *)animationView withPoints:(NSArray *)array{
     
     CAKeyframeAnimation  *animation=[CAKeyframeAnimation animationWithKeyPath:@"position"];
+    animation.autoreverses = NO;
     //设置view行动的轨迹
     NSArray *values = nil;
     if (!array || !array.count) {
@@ -88,8 +133,7 @@
     //设置时常
     [animation setDuration:2.0];
     
-    [animationView.layer  addAnimation:animation forKey:@"view-position"];
-
+    [animationView.layer addAnimation:animation forKey:@"view-position"];
     
 }
 

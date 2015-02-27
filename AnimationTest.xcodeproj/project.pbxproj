@@ -13,6 +13,7 @@
 		5E72E0011A8DE09600BCACFE /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E72E0001A8DE09600BCACFE /* MyCell.m */; };
 		5E823B7D1A713A9000665DEC /* CombiationBackGroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E823B7C1A713A9000665DEC /* CombiationBackGroundView.m */; };
 		5EBE64411A788910009A9EAE /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBE64401A788910009A9EAE /* Tool.m */; };
+		5EC4A1871A9F18F500D5FDD9 /* avatar-heart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EC4A1861A9F18F500D5FDD9 /* avatar-heart@2x.png */; };
 		5EC534761A8120CB0082F33E /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC534751A8120CB0082F33E /* HomePageViewController.m */; };
 		5EC534791A8122310082F33E /* HomePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC534781A8122310082F33E /* HomePageView.m */; };
 		5EC5347C1A8209A30082F33E /* SecretAnimationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC5347B1A8209A30082F33E /* SecretAnimationTableViewController.m */; };
@@ -57,6 +58,7 @@
 		5E823B7C1A713A9000665DEC /* CombiationBackGroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombiationBackGroundView.m; sourceTree = "<group>"; };
 		5EBE643F1A788910009A9EAE /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
 		5EBE64401A788910009A9EAE /* Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
+		5EC4A1861A9F18F500D5FDD9 /* avatar-heart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar-heart@2x.png"; sourceTree = "<group>"; };
 		5EC534741A8120CB0082F33E /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
 		5EC534751A8120CB0082F33E /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
 		5EC534771A8122310082F33E /* HomePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageView.h; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		84675F6C1A6FA2D400A51E0F /* AnimationTest */ = {
 			isa = PBXGroup;
 			children = (
+				5EC4A1861A9F18F500D5FDD9 /* avatar-heart@2x.png */,
 				5E1FA11F1A8C41F60005DCB7 /* synxGroup */,
 				84675F961A6FA2ED00A51E0F /* AnimationControl.h */,
 				84675F971A6FA2ED00A51E0F /* AnimationControl.m */,
@@ -296,6 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EC4A1871A9F18F500D5FDD9 /* avatar-heart@2x.png in Resources */,
 				84675F7C1A6FA2D500A51E0F /* Main.storyboard in Resources */,
 				84675F811A6FA2D500A51E0F /* LaunchScreen.xib in Resources */,
 				84675F7E1A6FA2D500A51E0F /* Images.xcassets in Resources */,
