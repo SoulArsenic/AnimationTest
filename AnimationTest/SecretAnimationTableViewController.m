@@ -27,6 +27,9 @@
 @property (assign) CGPoint saveOld;
 @property (assign) BOOL holdPan;
 @property (assign) BOOL passToSubView;
+
+@property (assign) CGPoint actionStart;
+
 @end
 
 
@@ -44,13 +47,32 @@
         self.saveOld = CGPointZero;
 
     }else{
+        
     }
     
     if (self.passToSubView) {
+        CGPoint temp = [sender locationInView:self.tableView];
         
-        SecretAnimationCell * cell =(SecretAnimationCell *)[self.tableView cellForRowAtIndexPath:[self.tableView indexPathForRowAtPoint:[sender locationInView:self.tableView]]];
+        if (sender.state == UIGestureRecognizerStateBegan) {
+            if (!CGPointEqualToPoint(_actionStart, temp)) {
+                
+                SecretAnimationCell * cell =(SecretAnimationCell *)[self.tableView cellForRowAtIndexPath:[self.tableView indexPathForRowAtPoint:_actionStart]];
+                SecretAnimationCell * cellT =(SecretAnimationCell *)[self.tableView cellForRowAtIndexPath:[self.tableView indexPathForRowAtPoint:temp]];
+                if (![cell isEqual:cellT]) {
+                    [cell sendActionViewBack];                      
+                }
+
+            }
+            _actionStart = temp;
+        }
+
+        if (CGPointEqualToPoint(_actionStart, CGPointZero)) {
+            _actionStart  = temp;
+        }
+
+        SecretAnimationCell * cell =(SecretAnimationCell *)[self.tableView cellForRowAtIndexPath:[self.tableView indexPathForRowAtPoint:_actionStart]];
         [cell touchGesture:sender];
-   
+    
     }
  
 }

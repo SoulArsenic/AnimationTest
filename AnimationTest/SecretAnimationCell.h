@@ -24,11 +24,14 @@ typedef void(^StatusChange)(BOOL status);
 @property (assign) CGPoint heartStart;
 @property (assign) CGPoint actionStart;
 @property (assign) CGPoint touchStartPoint;
-
+@property (assign) CGPoint actionTempCenter;
 @property (assign) BOOL inUseactionView;
+
+@property (assign) BOOL panInUseHeart;
 
 - (void) touchGesture:(UIPanGestureRecognizer *) recognizer;
 
 - (void) resetUI;
+- (void) sendActionViewBack;
 
 @end

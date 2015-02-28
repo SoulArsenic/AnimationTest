@@ -11,20 +11,40 @@
 
 @implementation SecretAnimationCell
 
+-(void)sendActionViewBack{
+  
+    _inUseactionView = NO;
+  
+    [UIView animateWithDuration:.2 animations:^{
+        self.actionView.center = self.actionStart;
+    }];
 
+}
 -(void)resetUI{
-    self.heart.center = CGPointMake(-30, self.contentView.frame.size.height/2);
+    
+    self.heart.center = self.heartStart;
+    self.actionView.center = self.actionStart;
+
 }
 -(id)initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
 
     if (self) {
+        [self addObserver:self forKeyPath:@"actionView" options:NSKeyValueObservingOptionNew context:nil];
+        [self addObserver:self forKeyPath:@"heart" options:NSKeyValueObservingOptionNew context:nil];
 
     }
     
     return self;
 }
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
 
+    
+    self.heartStart = self.heart.center;
+
+    self.actionStart  = self.actionView.center;
+
+}
 
 
 - (void) likeAction{
@@ -48,7 +68,8 @@
             self.heart.transform=transform;
             
         } completion:^(BOOL finished) {
-            [self resetUI];
+
+            self.heart.center = CGPointMake(-30, self.contentView.frame.size.height/2);
         }];
     }];
     
@@ -64,30 +85,32 @@
     if (recognizer.state == UIGestureRecognizerStateBegan) {
         
         self.touchStartPoint = [recognizer locationInView:self.bg];
-        self.heartStart = self.heart.center;
-        self.actionStart  = self.actionView.center;
+        if (CGPointEqualToPoint(CGPointZero, self.heartStart)) {
+            self.heartStart = self.heart.center;
+        }
+        if (CGPointEqualToPoint(CGPointZero, self.actionStart)) {
+            self.actionStart  = self.actionView.center;
+        }
+        self.actionTempCenter = self.actionView.center;
         
-        
-    }else if (recognizer.state == UIGestureRecognizerStateChanged){
+    }
+    else if (recognizer.state == UIGestureRecognizerStateChanged){
         
         CGPoint touchIn  = [recognizer locationInView:self.bg];
         CGPoint center = self.heart.center;
         
         CGFloat temp =  (touchIn.x - self.touchStartPoint.x);
 // 方向区分
-        
         BOOL rightDirection = NO;
-        
         if (temp > 0) {
             //heart use
             rightDirection = YES;
         }
         
+        //
+        if (!_panInUseHeart &&  _inUseactionView){
         
-        
-        if (_inUseactionView){
-        
-            center = CGPointMake(self.actionStart.x + temp, center.y);
+            center = CGPointMake(self.actionTempCenter.x + temp, self.actionStart.y);
             
             [UIView animateWithDuration:.1 animations:^{
                 
@@ -96,10 +119,11 @@
 
         }
         else{
-        
-            if (rightDirection) {
+            
+            if (_panInUseHeart || rightDirection) {
                 // 处理的心
-                
+                self.panInUseHeart = YES;
+
                 center = CGPointMake(self.heartStart.x + temp, center.y);
                 
                 if (center.x > self.frame.size.width/2) {
@@ -120,8 +144,11 @@
             }else{
                 
                 
-                center = CGPointMake(self.actionStart.x + temp, center.y);
-                
+                if (_inUseactionView) {
+                    center = CGPointMake(self.contentView.center.x + temp, center.y);
+                }else{
+                    center = CGPointMake(self.actionStart.x + temp, center.y);
+                }
                 
                 [UIView animateWithDuration:.1 animations:^{
                     
@@ -134,39 +161,66 @@
         }
         
     }
-    else{
+    else if (recognizer.state == UIGestureRecognizerStateEnded){
         
-        
-       
-        if (_inUseactionView){
-        
+        if (!_panInUseHeart && _inUseactionView){
+
             CGPoint center = CGPointZero;
+            CGFloat time = .2f;
             
-            if (self.actionView.center.x > self.contentView.frame.size.width * .75) {
-                center = self.actionStart;
-                _inUseactionView = NO;
-            }else{
-                center = CGPointMake(self.contentView.frame.size.width / 2,self.actionView.center.y);
+            CGFloat bounds =self.contentView.frame.size.width;
+            
+            if (self.actionTempCenter.x == self.contentView.center.x) {
+                bounds = self.contentView.frame.size.width * .7;
             }
             
-            [UIView animateWithDuration:.5 animations:^{
+            
+            if (self.actionView.center.x > bounds) {
+                center = self.actionStart;
+                _inUseactionView = NO;
+                
+            }else{
+                _inUseactionView = YES;
+                center = CGPointMake(self.contentView.frame.size.width / 2,_actionStart.y);
+            }
+            
+            [UIView animateWithDuration:time animations:^{
                 self.actionView.center = center;
             }];
 
         }
-        
-        
-        if (self.heart.center.x > self.frame.size.width/4 ) {
-            
-            if (self.heart.center.x <= self.frame.size.width/2) {
+        else
+        {
+            if (self.heart.center.x > self.frame.size.width/4 ) {
                 
-                [UIView animateWithDuration:.2 animations:^{
-                    self.heart.center= CGPointMake(self.frame.size.width/2, self.heart.center.y);
-                    self.heart.transform = CGAffineTransformMakeScale(2, 2);
+                if (self.heart.center.x <= self.frame.size.width/2) {
                     
-                } completion:^(BOOL finished) {
+                    [UIView animateWithDuration:.2 animations:^{
+                        self.heart.center= CGPointMake(self.frame.size.width/2, self.heart.center.y);
+                        self.heart.transform = CGAffineTransformMakeScale(2, 2);
+                        
+                    } completion:^(BOOL finished) {
+                        
+                        [UIView animateWithDuration:.3 animations:nil completion:^(BOOL finished) {
+                            
+                            [UIView animateWithDuration:.3 animations:^{
+                                self.heart.center  = self.likeBtn.center;
+                                self.heart.transform = CGAffineTransformMakeScale(.5, .5);
+                                
+                            } completion:^(BOOL finished) {
+                                self.heart.center = self.heartStart;
+                                self.panInUseHeart = NO;
+                            }];
+                        }];
+                        
+                    }];
                     
-                    [UIView animateWithDuration:.3 animations:nil completion:^(BOOL finished) {
+                }
+                else{
+                    
+                    [UIView animateWithDuration:.3 animations:^{
+                        
+                    } completion:^(BOOL finished) {
                         
                         [UIView animateWithDuration:.3 animations:^{
                             self.heart.center  = self.likeBtn.center;
@@ -174,45 +228,32 @@
                             
                         } completion:^(BOOL finished) {
                             self.heart.center = self.heartStart;
+                            self.panInUseHeart = NO;
                         }];
+                        
                     }];
-                    
-                }];
-                
-            }
-            else{
+                }
+            }else{
                 
                 [UIView animateWithDuration:.3 animations:^{
+                    self.heart.center = self.heartStart;
+                    self.heart.transform = CGAffineTransformMakeScale(1, 1);
                     
                 } completion:^(BOOL finished) {
-                    
-                    [UIView animateWithDuration:.3 animations:^{
-                        self.heart.center  = self.likeBtn.center;
-                        self.heart.transform = CGAffineTransformMakeScale(.5, .5);
-                        
-                    } completion:^(BOOL finished) {
-                        self.heart.center = self.heartStart;
-                    }];
-                    
-                }];
+                    self.panInUseHeart = NO;
+                } ];
             }
-        }else{
             
-            [UIView animateWithDuration:.3 animations:^{
-                self.heart.center = self.heartStart;
-                self.heart.transform = CGAffineTransformMakeScale(1, 1);
-                
-            }];
         }
-        
-        
-        self.actionView.center  = self.actionStart;
     }
     
     
 }
 
 
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{}
+-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{}
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{}
 
 
 @end
