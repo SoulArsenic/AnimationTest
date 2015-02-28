@@ -39,14 +39,20 @@
 }
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
 
-    
-    self.heartStart = self.heart.center;
+    if ([keyPath isEqualToString:@"panInUseHeart"]) {
+        
+    }else{
+        self.heartStart = self.heart.center;
 
-    self.actionStart  = self.actionView.center;
+        self.actionStart  = self.actionView.center;
 
+        if (CGSizeEqualToSize(_heartSize, CGSizeZero))
+            self.heartSize = self.heart.frame.size;
+        
+    }
 }
 
-
+/*
 - (void) likeAction{
     
     CGPoint pasPoint = self.contentView.center;
@@ -77,7 +83,7 @@
 
 
 }
-
+*/
 
 -(void)touchGesture:(UIPanGestureRecognizer *)recognizer{
 
@@ -130,19 +136,23 @@
                     center = CGPointMake(self.heartStart.x + self.frame.size.width/2+ temp/10, center.y);
                 }
                 
+                
                 if (center.x >= self.heart.frame.size.width/2) {
                     CGFloat sc = 1 + (center.x/self.frame.size.width/2)*4;
                     
-                    self.heart.transform = CGAffineTransformMakeScale(sc, sc);
-                }
-                [UIView animateWithDuration:.1 animations:^{
+                    CGFloat width  = _heartSize.width * sc;
+                    CGFloat height = _heartSize.height * sc;
                     
-                    self.heart.center = center;
-                }];
+                    [UIView animateWithDuration:.1 animations:^{
+                        self.heart.frame = CGRectMake(center.x - width/2, center.y - height/2,width ,height);
+                    }];
+
+                }
+                
+                self.heart.center = center;
                 
                 
             }else{
-                
                 
                 if (_inUseactionView) {
                     center = CGPointMake(self.contentView.center.x + temp, center.y);
@@ -180,6 +190,7 @@
                 _inUseactionView = NO;
                 
             }else{
+                
                 _inUseactionView = YES;
                 center = CGPointMake(self.contentView.frame.size.width / 2,_actionStart.y);
             }
@@ -191,58 +202,42 @@
         }
         else
         {
-            if (self.heart.center.x > self.frame.size.width/4 ) {
-                
-                if (self.heart.center.x <= self.frame.size.width/2) {
-                    
-                    [UIView animateWithDuration:.2 animations:^{
-                        self.heart.center= CGPointMake(self.frame.size.width/2, self.heart.center.y);
-                        self.heart.transform = CGAffineTransformMakeScale(2, 2);
-                        
-                    } completion:^(BOOL finished) {
-                        
-                        [UIView animateWithDuration:.3 animations:nil completion:^(BOOL finished) {
-                            
-                            [UIView animateWithDuration:.3 animations:^{
-                                self.heart.center  = self.likeBtn.center;
-                                self.heart.transform = CGAffineTransformMakeScale(.5, .5);
-                                
-                            } completion:^(BOOL finished) {
-                                self.heart.center = self.heartStart;
-                                self.panInUseHeart = NO;
-                            }];
-                        }];
-                        
-                    }];
-                    
-                }
-                else{
-                    
-                    [UIView animateWithDuration:.3 animations:^{
-                        
-                    } completion:^(BOOL finished) {
-                        
-                        [UIView animateWithDuration:.3 animations:^{
-                            self.heart.center  = self.likeBtn.center;
-                            self.heart.transform = CGAffineTransformMakeScale(.5, .5);
-                            
-                        } completion:^(BOOL finished) {
-                            self.heart.center = self.heartStart;
-                            self.panInUseHeart = NO;
-                        }];
-                        
-                    }];
-                }
-            }else{
+            self.panInUseHeart = NO;
+            
+            if (_heart.center.x > self.frame.size.width/5) {
+                //滑到中间
+                CGPoint center = CGPointMake(self.contentView.frame.size.width/2, _heart.center.y);
                 
                 [UIView animateWithDuration:.3 animations:^{
-                    self.heart.center = self.heartStart;
-                    self.heart.transform = CGAffineTransformMakeScale(1, 1);
+                    _heart.frame = CGRectMake(center.x - _heartSize.width, center.y - _heartSize.height, _heartSize.width *2 ,_heartSize.height *2);
                     
                 } completion:^(BOOL finished) {
-                    self.panInUseHeart = NO;
-                } ];
+                    
+                    [UIView animateWithDuration:.2 animations:^{
+                        
+                        CGFloat width = _heartSize.width*.5;
+                        CGFloat height =  _heartSize.height *.5;
+                        _heart.frame = CGRectMake(self.likeBtn.center.x - width,self.likeBtn.center.y - height,width ,height);
+                        
+                    } completion:^(BOOL finished) {
+                        
+                        _heart.frame = CGRectMake(0, 0, _heartSize.width, _heartSize.height);
+                        _heart.center = _heartStart;
+                    }];
+                    
+                }];
             }
+            else{
+                
+                [UIView animateWithDuration:.3 animations:^{
+                   
+                    _heart.frame = CGRectMake(_heartStart.x - _heartSize.width, _heartStart.y - _heartSize.height, _heartSize.width ,_heartSize.height );
+                    
+                }];
+                
+            }
+            
+            
             
         }
     }

@@ -59,7 +59,7 @@
                 SecretAnimationCell * cell =(SecretAnimationCell *)[self.tableView cellForRowAtIndexPath:[self.tableView indexPathForRowAtPoint:_actionStart]];
                 SecretAnimationCell * cellT =(SecretAnimationCell *)[self.tableView cellForRowAtIndexPath:[self.tableView indexPathForRowAtPoint:temp]];
                 if (![cell isEqual:cellT]) {
-                    [cell sendActionViewBack];                      
+                    [cell sendActionViewBack];
                 }
 
             }

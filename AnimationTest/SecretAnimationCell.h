@@ -17,10 +17,11 @@ typedef void(^StatusChange)(BOOL status);
 
 @property (weak, nonatomic) IBOutlet UIImageView *heart;
 @property (weak, nonatomic) IBOutlet UIView *actionView;
-
 @property (weak, nonatomic) IBOutlet UIButton *likeBtn;
 
 
+
+@property (assign) CGSize heartSize;
 @property (assign) CGPoint heartStart;
 @property (assign) CGPoint actionStart;
 @property (assign) CGPoint touchStartPoint;
