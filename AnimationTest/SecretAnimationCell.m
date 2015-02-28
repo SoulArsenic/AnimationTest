@@ -87,7 +87,6 @@
 
 -(void)touchGesture:(UIPanGestureRecognizer *)recognizer{
 
-
     if (recognizer.state == UIGestureRecognizerStateBegan) {
         
         self.touchStartPoint = [recognizer locationInView:self.bg];

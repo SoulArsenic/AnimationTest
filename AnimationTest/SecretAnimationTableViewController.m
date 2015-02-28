@@ -53,7 +53,6 @@
     if (self.passToSubView) {
         CGPoint temp = [sender locationInView:self.tableView];
         
-        if (sender.state == UIGestureRecognizerStateBegan) {
             if (!CGPointEqualToPoint(_actionStart, temp)) {
                 
                 SecretAnimationCell * cell =(SecretAnimationCell *)[self.tableView cellForRowAtIndexPath:[self.tableView indexPathForRowAtPoint:_actionStart]];
@@ -61,15 +60,13 @@
                 if (![cell isEqual:cellT]) {
                     [cell sendActionViewBack];
                 }
-
             }
+            
             _actionStart = temp;
-        }
+        
 
-        if (CGPointEqualToPoint(_actionStart, CGPointZero)) {
-            _actionStart  = temp;
-        }
 
+        
         SecretAnimationCell * cell =(SecretAnimationCell *)[self.tableView cellForRowAtIndexPath:[self.tableView indexPathForRowAtPoint:_actionStart]];
         [cell touchGesture:sender];
     
