@@ -627,6 +627,7 @@
                             <outlet property="dataSource" destination="l2g-wn-s02" id="6OT-1d-ySX"/>
                             <outlet property="delegate" destination="l2g-wn-s02" id="PI1-ua-uYv"/>
                             <outletCollection property="gestureRecognizers" destination="exu-fg-SBP" appends="YES" id="ZQ0-mA-o3X"/>
+                            <outletCollection property="gestureRecognizers" destination="Vdf-mi-u69" appends="YES" id="cvS-2e-5hm"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="仿秘密" id="Nla-bu-vpP"/>
@@ -641,6 +642,11 @@
                         <outlet property="delegate" destination="l2g-wn-s02" id="602-El-HrP"/>
                     </connections>
                 </panGestureRecognizer>
+                <tapGestureRecognizer id="Vdf-mi-u69">
+                    <connections>
+                        <action selector="tap:" destination="l2g-wn-s02" id="fHy-5q-4Wx"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-1975" y="1285"/>
         </scene>

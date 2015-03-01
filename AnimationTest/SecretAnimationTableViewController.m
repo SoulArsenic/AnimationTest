@@ -30,6 +30,8 @@
 
 @property (assign) CGPoint actionStart;
 
+
+
 @end
 
 
@@ -72,6 +74,10 @@
     
     }
  
+}
+- (IBAction)tap:(id)sender {
+    self.saveOld =[sender locationInView:self.tableView];
+
 }
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{
