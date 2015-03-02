@@ -13,6 +13,9 @@
 		5E72E0011A8DE09600BCACFE /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E72E0001A8DE09600BCACFE /* MyCell.m */; };
 		5E823B7D1A713A9000665DEC /* CombiationBackGroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E823B7C1A713A9000665DEC /* CombiationBackGroundView.m */; };
 		5EA381AC1AA3FC55005EC346 /* Fresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA381AB1AA3FC55005EC346 /* Fresh.m */; };
+		5EA381B01AA43416005EC346 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA381AF1AA43416005EC346 /* CFNetwork.framework */; };
+		5EA381B21AA43425005EC346 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA381B11AA43425005EC346 /* QuartzCore.framework */; };
+		5EA381B41AA4342D005EC346 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA381B31AA4342D005EC346 /* CoreGraphics.framework */; };
 		5EBE64411A788910009A9EAE /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBE64401A788910009A9EAE /* Tool.m */; };
 		5EC4A1871A9F18F500D5FDD9 /* avatar-heart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EC4A1861A9F18F500D5FDD9 /* avatar-heart@2x.png */; };
 		5EC534761A8120CB0082F33E /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC534751A8120CB0082F33E /* HomePageViewController.m */; };
@@ -59,6 +62,9 @@
 		5E823B7C1A713A9000665DEC /* CombiationBackGroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombiationBackGroundView.m; sourceTree = "<group>"; };
 		5EA381AA1AA3FC55005EC346 /* Fresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fresh.h; sourceTree = "<group>"; };
 		5EA381AB1AA3FC55005EC346 /* Fresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fresh.m; sourceTree = "<group>"; };
+		5EA381AF1AA43416005EC346 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		5EA381B11AA43425005EC346 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5EA381B31AA4342D005EC346 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		5EBE643F1A788910009A9EAE /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
 		5EBE64401A788910009A9EAE /* Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
 		5EC4A1861A9F18F500D5FDD9 /* avatar-heart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar-heart@2x.png"; sourceTree = "<group>"; };
@@ -105,6 +111,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EA381B41AA4342D005EC346 /* CoreGraphics.framework in Frameworks */,
+				5EA381B21AA43425005EC346 /* QuartzCore.framework in Frameworks */,
+				5EA381B01AA43416005EC346 /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,9 +136,20 @@
 			path = synxGroup;
 			sourceTree = "<group>";
 		};
+		5EA381B51AA43438005EC346 /* FrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				5EA381B31AA4342D005EC346 /* CoreGraphics.framework */,
+				5EA381B11AA43425005EC346 /* QuartzCore.framework */,
+				5EA381AF1AA43416005EC346 /* CFNetwork.framework */,
+			);
+			path = FrameWork;
+			sourceTree = "<group>";
+		};
 		84675F611A6FA2D400A51E0F = {
 			isa = PBXGroup;
 			children = (
+				5EA381B51AA43438005EC346 /* FrameWork */,
 				84675F6C1A6FA2D400A51E0F /* AnimationTest */,
 				84675F891A6FA2D500A51E0F /* AnimationTestTests */,
 				84675F6B1A6FA2D400A51E0F /* Products */,
@@ -471,9 +491,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AnimationTest",
+					"$(PROJECT_DIR)/FrameWork",
+				);
 				INFOPLIST_FILE = "AnimationTest/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -483,9 +509,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AnimationTest",
+					"$(PROJECT_DIR)/FrameWork",
+				);
 				INFOPLIST_FILE = "AnimationTest/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
