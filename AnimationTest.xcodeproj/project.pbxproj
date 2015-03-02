@@ -12,6 +12,7 @@
 		5E72DFFE1A8DA97B00BCACFE /* MyScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E72DFFD1A8DA97B00BCACFE /* MyScrollViewController.m */; };
 		5E72E0011A8DE09600BCACFE /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E72E0001A8DE09600BCACFE /* MyCell.m */; };
 		5E823B7D1A713A9000665DEC /* CombiationBackGroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E823B7C1A713A9000665DEC /* CombiationBackGroundView.m */; };
+		5EA381AC1AA3FC55005EC346 /* Fresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA381AB1AA3FC55005EC346 /* Fresh.m */; };
 		5EBE64411A788910009A9EAE /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBE64401A788910009A9EAE /* Tool.m */; };
 		5EC4A1871A9F18F500D5FDD9 /* avatar-heart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EC4A1861A9F18F500D5FDD9 /* avatar-heart@2x.png */; };
 		5EC534761A8120CB0082F33E /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC534751A8120CB0082F33E /* HomePageViewController.m */; };
@@ -56,6 +57,8 @@
 		5E72E0001A8DE09600BCACFE /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
 		5E823B7B1A713A9000665DEC /* CombiationBackGroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombiationBackGroundView.h; sourceTree = "<group>"; };
 		5E823B7C1A713A9000665DEC /* CombiationBackGroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombiationBackGroundView.m; sourceTree = "<group>"; };
+		5EA381AA1AA3FC55005EC346 /* Fresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fresh.h; sourceTree = "<group>"; };
+		5EA381AB1AA3FC55005EC346 /* Fresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fresh.m; sourceTree = "<group>"; };
 		5EBE643F1A788910009A9EAE /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
 		5EBE64401A788910009A9EAE /* Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
 		5EC4A1861A9F18F500D5FDD9 /* avatar-heart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar-heart@2x.png"; sourceTree = "<group>"; };
@@ -183,6 +186,8 @@
 				5E72DFFD1A8DA97B00BCACFE /* MyScrollViewController.m */,
 				5E72DFFF1A8DE09600BCACFE /* MyCell.h */,
 				5E72E0001A8DE09600BCACFE /* MyCell.m */,
+				5EA381AA1AA3FC55005EC346 /* Fresh.h */,
+				5EA381AB1AA3FC55005EC346 /* Fresh.m */,
 				84675F7A1A6FA2D500A51E0F /* Main.storyboard */,
 				84675F7D1A6FA2D500A51E0F /* Images.xcassets */,
 				84675F7F1A6FA2D500A51E0F /* LaunchScreen.xib */,
@@ -332,6 +337,7 @@
 				84408FF71A71F4E8009A8A1C /* GraphicsView.m in Sources */,
 				84675F9E1A6FA44300A51E0F /* AnimationViewController.m in Sources */,
 				84675F701A6FA2D400A51E0F /* main.m in Sources */,
+				5EA381AC1AA3FC55005EC346 /* Fresh.m in Sources */,
 				84675F9A1A6FA2ED00A51E0F /* AnimationControl.m in Sources */,
 				5EC5347C1A8209A30082F33E /* SecretAnimationTableViewController.m in Sources */,
 				84675F791A6FA2D500A51E0F /* ViewController.m in Sources */,

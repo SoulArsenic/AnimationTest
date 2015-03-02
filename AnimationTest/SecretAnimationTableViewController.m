@@ -8,16 +8,36 @@
 
 #import "SecretAnimationTableViewController.h"
 #import "SecretAnimationCell.h"
-
+#import "Fresh.h"
 
 
 
 @interface SecretAnimationTableView : UITableView
+@property (nonatomic,strong) Fresh * myFreshView;
 
+- (void) startAnimation;
+- (void) endAnimation;
 @end
+
+
 @implementation SecretAnimationTableView
+-(void)startAnimation{
+    [self endAnimation];
+    if (!_myFreshView) {
+        
+        self.myFreshView = [[Fresh alloc] initWithFrame:CGRectMake(0, -120, self.frame.size.width, 120)];
+        _myFreshView.backgroundColor = [UIColor lightGrayColor];
+        [self addSubview:_myFreshView];
 
+    }
+    
+    [_myFreshView start];
+}
+-(void)endAnimation{
+    
+    [_myFreshView end];
 
+}
 
 @end
 
@@ -27,7 +47,7 @@
 @property (assign) CGPoint saveOld;
 @property (assign) BOOL holdPan;
 @property (assign) BOOL passToSubView;
-
+@property (assign) BOOL shouldLoading;
 @property (assign) CGPoint actionStart;
 
 
@@ -39,39 +59,105 @@
 @implementation SecretAnimationTableViewController
 -(void)viewDidLoad{
     [super viewDidLoad];
+    
+    
+    
 }
 
 
+-(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
+
+    CGFloat yPox = scrollView.contentOffset.y;
+    if (_shouldLoading) {
+        return;
+    }
+    if (yPox < -120) {
+        _shouldLoading = YES;
+        
+        scrollView.contentInset =  UIEdgeInsetsMake(120 + 64, 0, 0, 0);
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            scrollView.contentOffset = CGPointMake(0, -( 120 + 64));
+            
+            
+        });
+        if ([self.tableView isKindOfClass:[SecretAnimationTableView class]]) {
+            SecretAnimationTableView * ce = (SecretAnimationTableView *) self.tableView;
+            [ce startAnimation];
+        }
+        
+        [self performSelector:@selector(callBack) withObject:nil afterDelay:4];
+    }
+}
+
+- (void) callBack{
+    if ([self.tableView isKindOfClass:[SecretAnimationTableView class]]) {
+        
+        SecretAnimationTableView * ce = (SecretAnimationTableView *) self.tableView;
+        [ce endAnimation];
+    }
+    self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
+    [UIView animateWithDuration:.5 animations:^{
+        [self.tableView scrollsToTop];        
+    }];
+
+    _shouldLoading = NO;
+}
+
+-(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    
+
+}
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    
+}
+
 - (IBAction)myPanAction:(UIPanGestureRecognizer *)sender {
     
+    CGPoint temp = [sender locationInView:self.tableView];
     if (sender.state == UIGestureRecognizerStateEnded) {
         self.holdPan = NO;
         self.saveOld = CGPointZero;
 
-    }else{
+    }
+    else if (sender.state == UIGestureRecognizerStateBegan){
+        SecretAnimationCell * cell =(SecretAnimationCell *)[self.tableView cellForRowAtIndexPath:[self.tableView indexPathForRowAtPoint:_actionStart]];
+        SecretAnimationCell * cellT =(SecretAnimationCell *)[self.tableView cellForRowAtIndexPath:[self.tableView indexPathForRowAtPoint:temp]];
         
+        if (![cell isEqual:cellT]) {
+            [cell sendActionViewBack];
+            _actionStart = temp;
+        }
+        
+        
+        
+
     }
     
     if (self.passToSubView) {
-        CGPoint temp = [sender locationInView:self.tableView];
+
         
-            if (!CGPointEqualToPoint(_actionStart, temp)) {
-                
-                SecretAnimationCell * cell =(SecretAnimationCell *)[self.tableView cellForRowAtIndexPath:[self.tableView indexPathForRowAtPoint:_actionStart]];
-                SecretAnimationCell * cellT =(SecretAnimationCell *)[self.tableView cellForRowAtIndexPath:[self.tableView indexPathForRowAtPoint:temp]];
-                if (![cell isEqual:cellT]) {
-                    [cell sendActionViewBack];
-                }
+        if (!_holdPan && !CGPointEqualToPoint(_actionStart, temp)) {
+            
+            SecretAnimationCell * cell =(SecretAnimationCell *)[self.tableView cellForRowAtIndexPath:[self.tableView indexPathForRowAtPoint:_actionStart]];
+            SecretAnimationCell * cellT =(SecretAnimationCell *)[self.tableView cellForRowAtIndexPath:[self.tableView indexPathForRowAtPoint:temp]];
+            
+            if (![cell isEqual:cellT]) {
+                [cell sendActionViewBack];
+            }
+            else{
+                [cell touchGesture:sender];
             }
             
             _actionStart = temp;
-        
+            
+            
+        }else
+        {
+            SecretAnimationCell * cell =(SecretAnimationCell *)[self.tableView cellForRowAtIndexPath:[self.tableView indexPathForRowAtPoint:_actionStart]];
+            [cell touchGesture:sender];
+        }
 
-
-        
-        SecretAnimationCell * cell =(SecretAnimationCell *)[self.tableView cellForRowAtIndexPath:[self.tableView indexPathForRowAtPoint:_actionStart]];
-        [cell touchGesture:sender];
-    
     }
  
 }

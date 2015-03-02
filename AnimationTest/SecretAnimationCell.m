@@ -18,6 +18,11 @@
     [UIView animateWithDuration:.2 animations:^{
         self.actionView.center = self.actionStart;
     }];
+    [UIView animateWithDuration:.1 animations:^{
+
+        _heart.frame = CGRectMake(_heartStart.x - _heartSize.width, _heartStart.y - _heartSize.height, _heartSize.width ,_heartSize.height );
+        
+    }];
 
 }
 -(void)resetUI{
@@ -84,6 +89,9 @@
 
 }
 */
+-(BOOL)actionCenter{
+    return !CGPointEqualToPoint(_actionStart, _actionView.center);
+}
 
 -(void)touchGesture:(UIPanGestureRecognizer *)recognizer{
 
@@ -202,8 +210,9 @@
         else
         {
             self.panInUseHeart = NO;
-            
-            if (_heart.center.x > self.frame.size.width/5) {
+            CGFloat heartT= _heart.center.x;
+            CGFloat boundsT= self.frame.size.width/5;
+            if (heartT > boundsT) {
                 //滑到中间
                 CGPoint center = CGPointMake(self.contentView.frame.size.width/2, _heart.center.y);
                 

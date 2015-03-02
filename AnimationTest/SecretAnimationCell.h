@@ -34,5 +34,5 @@ typedef void(^StatusChange)(BOOL status);
 
 - (void) resetUI;
 - (void) sendActionViewBack;
-
+- (BOOL) actionCenter;
 @end
