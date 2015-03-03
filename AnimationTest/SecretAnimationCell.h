@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ALDBlurImageProcessor.h"
 
 typedef void(^StatusChange)(BOOL status);
 
@@ -19,7 +20,8 @@ typedef void(^StatusChange)(BOOL status);
 @property (weak, nonatomic) IBOutlet UIView *actionView;
 @property (weak, nonatomic) IBOutlet UIButton *likeBtn;
 
-
+@property (weak, nonatomic) IBOutlet UIImageView *fuzzyView;
+@property (strong, nonatomic) ALDBlurImageProcessor *processor;
 
 @property (assign) CGSize heartSize;
 @property (assign) CGPoint heartStart;

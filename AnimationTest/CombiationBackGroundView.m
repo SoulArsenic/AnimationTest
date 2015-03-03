@@ -82,7 +82,7 @@
 }
 -(void)startAnimation{
 
-    [NSTimer scheduledTimerWithTimeInterval:.5 target:self selector:@selector(update) userInfo:nil repeats:YES];
+    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(update) userInfo:nil repeats:YES];
 }
 
 -(void)update{

@@ -23,6 +23,8 @@
         _heart.frame = CGRectMake(_heartStart.x - _heartSize.width, _heartStart.y - _heartSize.height, _heartSize.width ,_heartSize.height );
         
     }];
+    _fuzzyView.image = nil;
+    _processor = nil;
 
 }
 -(void)resetUI{
@@ -30,6 +32,7 @@
     self.heart.center = self.heartStart;
     self.actionView.center = self.actionStart;
 
+    
 }
 -(id)initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
@@ -57,38 +60,36 @@
     }
 }
 
-/*
-- (void) likeAction{
+-(UIImage*)captureView:(UIView *)theView{
     
-    CGPoint pasPoint = self.contentView.center;
+    CGRect rect = theView.frame;
     
-    [UIView animateWithDuration:.5 animations:^{
-        self.heart.center = pasPoint;
-        //    transform = CGAffineTransformScale(transform, 2,0.5);//前面的2表示横向放大2倍，后边的0.5表示纵向缩小一半
-        CGAffineTransform transform=self.heart.transform;
-        transform=CGAffineTransformScale(self.heart.transform,3, 3);
-        self.heart.transform=transform;
+    if ([theView isKindOfClass:[UIScrollView class]]) {
+        rect.size = ((UIScrollView *)theView).contentSize;
+    }
     
-    } completion:^(BOOL finished) {
-       
-        [UIView animateWithDuration:.2 animations:^{
-            
-            self.heart.center = self.likeBtn.center;
-            CGAffineTransform transform=self.heart.transform;
-            transform=CGAffineTransformScale(self.heart.transform, .3333, .3333);
-            self.heart.transform=transform;
-            
-        } completion:^(BOOL finished) {
-
-            self.heart.center = CGPointMake(-30, self.contentView.frame.size.height/2);
-        }];
-    }];
-    
-    
-
-
+    UIGraphicsBeginImageContextWithOptions(rect.size, NO, [UIScreen mainScreen].scale);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [theView.layer renderInContext:context];
+    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return img;
 }
-*/
+
+- (void) clip{
+
+    if (CGSizeEqualToSize(self.contentView.frame.size, CGSizeZero)) {
+        return;
+    }
+    
+    if (_fuzzyView.image) {
+        return;
+    }
+    
+    _fuzzyView.image = [self captureView:self.contentView];
+}
+
+
 -(BOOL)actionCenter{
     return !CGPointEqualToPoint(_actionStart, _actionView.center);
 }
@@ -105,6 +106,13 @@
             self.actionStart  = self.actionView.center;
         }
         self.actionTempCenter = self.actionView.center;
+        
+        if (!_processor) {
+            if (!_fuzzyView.image){
+                [self clip];
+            }
+            self.processor = [[ALDBlurImageProcessor alloc] initWithImage:_fuzzyView.image];
+        }
         
     }
     else if (recognizer.state == UIGestureRecognizerStateChanged){
@@ -130,6 +138,8 @@
                 self.actionView.center = center;
             }];
 
+            [self fuzzyAction];
+            
         }
         else{
             
@@ -204,6 +214,8 @@
             
             [UIView animateWithDuration:time animations:^{
                 self.actionView.center = center;
+            } completion:^(BOOL finished) {
+                [self fuzzyAction];
             }];
 
         }
@@ -250,9 +262,24 @@
         }
     }
     
-    
 }
 
+
+- (void) fuzzyAction {
+    
+    CGFloat centerX = self.contentView.frame.size.width/2;
+    
+    CGFloat actionLocation =_actionView.center.x - centerX;
+    
+    CGFloat startLocation =_actionStart.x - centerX;
+    
+    CGFloat temp = ((startLocation - MAX(actionLocation, 0)) / startLocation)*8;
+    
+    if (temp)
+        _fuzzyView.image = [_processor syncBlurWithRadius:temp iterations:temp errorCode:0];
+    else
+        _fuzzyView.image = nil;
+}
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{}
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{}
@@ -260,3 +287,35 @@
 
 
 @end
+/*
+ - (void) likeAction{
+ 
+ CGPoint pasPoint = self.contentView.center;
+ 
+ [UIView animateWithDuration:.5 animations:^{
+ self.heart.center = pasPoint;
+ //    transform = CGAffineTransformScale(transform, 2,0.5);//前面的2表示横向放大2倍，后边的0.5表示纵向缩小一半
+ CGAffineTransform transform=self.heart.transform;
+ transform=CGAffineTransformScale(self.heart.transform,3, 3);
+ self.heart.transform=transform;
+ 
+ } completion:^(BOOL finished) {
+ 
+ [UIView animateWithDuration:.2 animations:^{
+ 
+ self.heart.center = self.likeBtn.center;
+ CGAffineTransform transform=self.heart.transform;
+ transform=CGAffineTransformScale(self.heart.transform, .3333, .3333);
+ self.heart.transform=transform;
+ 
+ } completion:^(BOOL finished) {
+ 
+ self.heart.center = CGPointMake(-30, self.contentView.frame.size.height/2);
+ }];
+ }];
+ 
+ 
+ 
+ 
+ }
+ */

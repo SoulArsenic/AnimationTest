@@ -16,6 +16,7 @@
 		5EA381B01AA43416005EC346 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA381AF1AA43416005EC346 /* CFNetwork.framework */; };
 		5EA381B21AA43425005EC346 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA381B11AA43425005EC346 /* QuartzCore.framework */; };
 		5EA381B41AA4342D005EC346 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA381B31AA4342D005EC346 /* CoreGraphics.framework */; };
+		5EB22B4B1AA55F0200D5DDF4 /* ALDBlurImageProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB22B4A1AA55F0200D5DDF4 /* ALDBlurImageProcessor.m */; };
 		5EBE64411A788910009A9EAE /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBE64401A788910009A9EAE /* Tool.m */; };
 		5EC4A1871A9F18F500D5FDD9 /* avatar-heart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EC4A1861A9F18F500D5FDD9 /* avatar-heart@2x.png */; };
 		5EC534761A8120CB0082F33E /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC534751A8120CB0082F33E /* HomePageViewController.m */; };
@@ -65,6 +66,8 @@
 		5EA381AF1AA43416005EC346 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		5EA381B11AA43425005EC346 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5EA381B31AA4342D005EC346 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5EB22B491AA55F0200D5DDF4 /* ALDBlurImageProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDBlurImageProcessor.h; sourceTree = "<group>"; };
+		5EB22B4A1AA55F0200D5DDF4 /* ALDBlurImageProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDBlurImageProcessor.m; sourceTree = "<group>"; };
 		5EBE643F1A788910009A9EAE /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
 		5EBE64401A788910009A9EAE /* Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
 		5EC4A1861A9F18F500D5FDD9 /* avatar-heart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar-heart@2x.png"; sourceTree = "<group>"; };
@@ -130,6 +133,8 @@
 		5E1FA11F1A8C41F60005DCB7 /* synxGroup */ = {
 			isa = PBXGroup;
 			children = (
+				5EB22B491AA55F0200D5DDF4 /* ALDBlurImageProcessor.h */,
+				5EB22B4A1AA55F0200D5DDF4 /* ALDBlurImageProcessor.m */,
 				5E1FA11C1A8B5A1B0005DCB7 /* NoAnimation.h */,
 				5E1FA11D1A8B5A1B0005DCB7 /* NoAnimation.m */,
 			);
@@ -356,6 +361,7 @@
 				847C163B1A70CE03001C7552 /* CombinationView.m in Sources */,
 				84408FF71A71F4E8009A8A1C /* GraphicsView.m in Sources */,
 				84675F9E1A6FA44300A51E0F /* AnimationViewController.m in Sources */,
+				5EB22B4B1AA55F0200D5DDF4 /* ALDBlurImageProcessor.m in Sources */,
 				84675F701A6FA2D400A51E0F /* main.m in Sources */,
 				5EA381AC1AA3FC55005EC346 /* Fresh.m in Sources */,
 				84675F9A1A6FA2ED00A51E0F /* AnimationControl.m in Sources */,
