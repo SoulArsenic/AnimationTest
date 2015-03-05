@@ -184,9 +184,7 @@
                 
                 _inUseactionView = YES;
             }
-            
         }
-        
     }
     else if (recognizer.state == UIGestureRecognizerStateEnded){
         
@@ -224,44 +222,31 @@
             self.panInUseHeart = NO;
             CGFloat heartT= _heart.center.x;
             CGFloat boundsT= self.frame.size.width/5;
+            
             if (heartT > boundsT) {
                 //滑到中间
                 CGPoint center = CGPointMake(self.contentView.frame.size.width/2, _heart.center.y);
                 
                 [UIView animateWithDuration:.3 animations:^{
                     _heart.frame = CGRectMake(center.x - _heartSize.width, center.y - _heartSize.height, _heartSize.width *2 ,_heartSize.height *2);
-                    
                 } completion:^(BOOL finished) {
-                    
                     [UIView animateWithDuration:.2 animations:^{
-                        
                         CGFloat width = _heartSize.width*.5;
                         CGFloat height =  _heartSize.height *.5;
                         _heart.frame = CGRectMake(self.likeBtn.center.x - width,self.likeBtn.center.y - height,width ,height);
-                        
                     } completion:^(BOOL finished) {
-                        
                         _heart.frame = CGRectMake(0, 0, _heartSize.width, _heartSize.height);
                         _heart.center = _heartStart;
                     }];
-                    
                 }];
             }
             else{
-                
                 [UIView animateWithDuration:.3 animations:^{
-                   
                     _heart.frame = CGRectMake(_heartStart.x - _heartSize.width, _heartStart.y - _heartSize.height, _heartSize.width ,_heartSize.height );
-                    
                 }];
-                
             }
-            
-            
-            
         }
     }
-    
 }
 
 

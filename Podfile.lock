@@ -1,0 +1,10 @@
+PODS:
+  - BlurImageProcessor (1.0.0)
+
+DEPENDENCIES:
+  - BlurImageProcessor
+
+SPEC CHECKSUMS:
+  BlurImageProcessor: 287a860dbf21c75e9d6217ea9676c8112abe5c16
+
+COCOAPODS: 0.36.0.beta.1
