@@ -31,7 +31,8 @@
     
     self.heart.center = self.heartStart;
     self.actionView.center = self.actionStart;
-
+    _fuzzyView.image = nil;
+    _processor = nil;
     
 }
 -(id)initWithCoder:(NSCoder *)aDecoder{
