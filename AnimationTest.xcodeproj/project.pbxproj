@@ -13,6 +13,9 @@
 		5E2D3C2D1AA6D519001F39A7 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E2D3C2B1AA6D519001F39A7 /* test.png */; };
 		5E2D3C2E1AA6D519001F39A7 /* test1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E2D3C2C1AA6D519001F39A7 /* test1.png */; };
 		5E2D3C301AA6D667001F39A7 /* test2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E2D3C2F1AA6D667001F39A7 /* test2.png */; };
+		5E4746401AA995270010DD29 /* SunnyFresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E47463F1AA995270010DD29 /* SunnyFresh.m */; };
+		5E4746451AA997F50010DD29 /* YALSunnyRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4746431AA997F50010DD29 /* YALSunnyRefreshControl.m */; };
+		5E4746461AA997F50010DD29 /* YALSunnyRefreshControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E4746441AA997F50010DD29 /* YALSunnyRefreshControl.xib */; };
 		5E72DFFE1A8DA97B00BCACFE /* MyScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E72DFFD1A8DA97B00BCACFE /* MyScrollViewController.m */; };
 		5E72E0011A8DE09600BCACFE /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E72E0001A8DE09600BCACFE /* MyCell.m */; };
 		5E823B7D1A713A9000665DEC /* CombiationBackGroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E823B7C1A713A9000665DEC /* CombiationBackGroundView.m */; };
@@ -276,6 +279,11 @@
 		5E2D3C2B1AA6D519001F39A7 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		5E2D3C2C1AA6D519001F39A7 /* test1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test1.png; sourceTree = "<group>"; };
 		5E2D3C2F1AA6D667001F39A7 /* test2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test2.png; sourceTree = "<group>"; };
+		5E47463E1AA995270010DD29 /* SunnyFresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SunnyFresh.h; sourceTree = "<group>"; };
+		5E47463F1AA995270010DD29 /* SunnyFresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SunnyFresh.m; sourceTree = "<group>"; };
+		5E4746421AA997F50010DD29 /* YALSunnyRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALSunnyRefreshControl.h; sourceTree = "<group>"; };
+		5E4746431AA997F50010DD29 /* YALSunnyRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALSunnyRefreshControl.m; sourceTree = "<group>"; };
+		5E4746441AA997F50010DD29 /* YALSunnyRefreshControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YALSunnyRefreshControl.xib; sourceTree = "<group>"; };
 		5E72DFFC1A8DA97B00BCACFE /* MyScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScrollViewController.h; sourceTree = "<group>"; };
 		5E72DFFD1A8DA97B00BCACFE /* MyScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScrollViewController.m; sourceTree = "<group>"; };
 		5E72DFFF1A8DE09600BCACFE /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
@@ -588,6 +596,16 @@
 			path = synxGroup;
 			sourceTree = "<group>";
 		};
+		5E4746411AA997F50010DD29 /* YALSunnyRefreshControll */ = {
+			isa = PBXGroup;
+			children = (
+				5E4746421AA997F50010DD29 /* YALSunnyRefreshControl.h */,
+				5E4746431AA997F50010DD29 /* YALSunnyRefreshControl.m */,
+				5E4746441AA997F50010DD29 /* YALSunnyRefreshControl.xib */,
+			);
+			path = YALSunnyRefreshControll;
+			sourceTree = "<group>";
+		};
 		5EA381B51AA43438005EC346 /* FrameWork */ = {
 			isa = PBXGroup;
 			children = (
@@ -860,6 +878,7 @@
 		84675F6C1A6FA2D400A51E0F /* AnimationTest */ = {
 			isa = PBXGroup;
 			children = (
+				5E4746411AA997F50010DD29 /* YALSunnyRefreshControll */,
 				84675F6D1A6FA2D400A51E0F /* Supporting Files */,
 				5EB9BAFC1AA82ECE00AC2CD8 /* FaceText */,
 				5E2D3C2B1AA6D519001F39A7 /* test.png */,
@@ -905,6 +924,8 @@
 				5E72E0001A8DE09600BCACFE /* MyCell.m */,
 				5EA381AA1AA3FC55005EC346 /* Fresh.h */,
 				5EA381AB1AA3FC55005EC346 /* Fresh.m */,
+				5E47463E1AA995270010DD29 /* SunnyFresh.h */,
+				5E47463F1AA995270010DD29 /* SunnyFresh.m */,
 				5E2D3C281AA6D460001F39A7 /* LayerTest.h */,
 				5E2D3C291AA6D460001F39A7 /* LayerTest.m */,
 				5ED6FD4B1AA803A500B16004 /* FaceTextVC.h */,
@@ -1151,6 +1172,7 @@
 				5EE504981AA8431B0050CF69 /* d_ganmao@2x.png in Resources */,
 				84675F7E1A6FA2D500A51E0F /* Images.xcassets in Resources */,
 				5EE504831AA8431B0050CF69 /* d_baibai@3x.png in Resources */,
+				5E4746461AA997F50010DD29 /* YALSunnyRefreshControl.xib in Resources */,
 				5EE504DF1AA8431B0050CF69 /* d_wabishi@2x.png in Resources */,
 				5EE504B41AA8431B0050CF69 /* d_landelini@2x.png in Resources */,
 				5EE504FD1AA8431B0050CF69 /* f_geili@3x.png in Resources */,
@@ -1300,10 +1322,12 @@
 				847C163B1A70CE03001C7552 /* CombinationView.m in Sources */,
 				84408FF71A71F4E8009A8A1C /* GraphicsView.m in Sources */,
 				84675F9E1A6FA44300A51E0F /* AnimationViewController.m in Sources */,
+				5E4746451AA997F50010DD29 /* YALSunnyRefreshControl.m in Sources */,
 				5EB9BDA61AA82ECE00AC2CD8 /* NSString+Weibo.m in Sources */,
 				5ED6FD4D1AA803A500B16004 /* FaceTextVC.m in Sources */,
 				84675F701A6FA2D400A51E0F /* main.m in Sources */,
 				5EA381AC1AA3FC55005EC346 /* Fresh.m in Sources */,
+				5E4746401AA995270010DD29 /* SunnyFresh.m in Sources */,
 				5EB9BC561AA82ECE00AC2CD8 /* CoreTextView.m in Sources */,
 				84675F9A1A6FA2ED00A51E0F /* AnimationControl.m in Sources */,
 				5EC5347C1A8209A30082F33E /* SecretAnimationTableViewController.m in Sources */,
