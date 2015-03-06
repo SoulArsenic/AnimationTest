@@ -18,6 +18,7 @@ typedef enum CustomGlyphAttributeType {
     CustomGlyphAttributeURL = 0,
     CustomGlyphAttributeTopic,
     CustomGlyphAttributeImage,
+    CustomGlyphAttributeAt,
     CustomGlyphAttributeInfoImage,// 预留，给带相应信息的图片（如点击图片获取相关属性）
 }CustomGlyphAttributeType;
 

@@ -7,7 +7,6 @@
 //
 
 #import "CoreTextView.h"
-#import "NSString+Weibo.h"
 
 #define kNoTouchIndex -1
 
@@ -82,49 +81,62 @@ CGRect CGcoreRectFlipped(CGRect rect, CGRect bounds)
                         CGRect runBounds;
                         CGFloat ascent;
                         CGFloat descent;
-                        CGFloat leading; 
+                        CGFloat leading;
+                        
                         runBounds.size.width = CTRunGetTypographicBounds(run, 
                                                                          CFRangeMake(0, 0), 
                                                                          &ascent,
                                                                          &descent,
                                                                          &leading);        
-                        runBounds.size.height = ascent + descent; 
+                        runBounds.size.height = ascent + descent + 3;
                         CGFloat xOffset = CTLineGetOffsetForStringIndex(line, CTRunGetStringIndicesPtr(run)[0], NULL);
                         runBounds.origin.x = origins[i].x + xOffset;
-                        runBounds.origin.y = origins[i].y - descent;
+                        runBounds.origin.y = origins[i].y - 4;//- descent;
                         
                         int type = [num intValue];
-                        if (type == CustomGlyphAttributeTopic) {// 如果是绘制链接
+                        
+                        if (type == CustomGlyphAttributeTopic || type == CustomGlyphAttributeURL|| type == CustomGlyphAttributeAt) {// 如果是绘制链接
                             // 先取出链接的文字范围，后算计算点击区域的时候要用
                             NSValue *value = [attDic valueForKey:kCustomGlyphAttributeRange];
                             NSRange _range = [value rangeValue];
-                          __unused  CFRange linkRange = CFRangeMake(_range.location, _range.length);
+                            __unused  CFRange linkRange = CFRangeMake(_range.location, _range.length);
                             
                             // 我们先绘制背景，不然文字会被背景覆盖
                             if (touchPhase == UITouchPhaseBegan) {// 点击开始
                                 if (isTouchRange(touchIndex, linkRange, range)) {// 如果点击区域落在链接区域内
+                                   
                                     CGColorRef tempColor = CGColorCreateCopyWithAlpha([UIColor lightGrayColor].CGColor, 1);
                                     CGContextSetFillColorWithColor(context, tempColor);
                                     CGColorRelease(tempColor);
                                     CGContextFillRect(context, runBounds);
                                     // 传回我们点击的链接
-                                    NSString * string= [self.attributedString.string substringWithRange:_range];
-                                    if ([_delegate respondsToSelector:@selector(touchedURLWithURLStr:)]) {
-                                        [_delegate touchedURLWithURLStr:string];
-                                    }
-                                }
-                            } else {// 点击结束
-                                if (isTouchRange(touchIndex, linkRange, range)) {// 如果点击区域落在链接区域内
-                                    CGContextSetFillColorWithColor(context, [UIColor clearColor].CGColor);
-                                    CGContextFillRect(context, runBounds);
+                                    self.shouldStartJudge = YES;
+                                    
                                 }
                             }
-                            
-                            
+                            else {// 点击结束
+                                if (isTouchRange(touchIndex, linkRange, range) && _shouldStartJudge) {// 如果点击区域落在链接区域内
+                                    NSString * string= [self.attributedString.string substringWithRange:_range];
+                                    
+                                    if ([_delegate respondsToSelector:@selector(touchedURLWithURLStr:andType:)]) {
+                                        [_delegate touchedURLWithURLStr:string andType:type];
+                                    }
+                                    if (self.callBack) {
+                                        self.callBack(string,type);
+                                    }
+                                    
+                                    CGContextSetFillColorWithColor(context, [UIColor clearColor].CGColor);
+                                    CGContextFillRect(context, runBounds);
+                                    self.shouldStartJudge = NO;
+                                }
+                            }
 
                             CTRunDraw(run, context, CFRangeMake(0, 0));
+                            
                         } else if (type == CustomGlyphAttributeImage) {// 如果是绘制表情
                             // 表情区域是不需要文字的，所以我们只进行图片的绘制
+                            runBounds.size.height = ascent + descent;
+                            runBounds.origin.y = origins[i].y - descent;
                             NSString *imageName = [attDic objectForKey:kCustomGlyphAttributeImageName];
                             UIImage *image = [UIImage imageNamed:imageName];
                             CGContextDrawImage(context, runBounds, image.CGImage);

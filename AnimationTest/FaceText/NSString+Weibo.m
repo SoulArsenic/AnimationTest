@@ -7,7 +7,6 @@
 //
 
 #import "NSString+Weibo.h"
-#import "NSString+NSString_DBC.h"
 #import <UIKit/UIKit.h>
 
 NSString *const kCustomGlyphAttributeType = @"CustomGlyphAttributeType";
@@ -68,20 +67,20 @@ NSDictionary *WeiXinEmojiDictionary()
     [[NSRegularExpression alloc] initWithPattern:regex_emoji
                                           options:NSRegularExpressionCaseInsensitive | NSRegularExpressionDotMatchesLineSeparators
                                             error:nil] ;
-    NSArray *emojis = [exp_emoji matchesInString:[self covertedToHalf]
+    NSArray *emojis = [exp_emoji matchesInString:self 
                                          options:NSRegularExpressionCaseInsensitive | NSRegularExpressionDotMatchesLineSeparators
-                                           range:NSMakeRange(0, [[self covertedToHalf] length])];
+                                           range:NSMakeRange(0, [self  length])];
     
     NSMutableAttributedString *newStr = [[NSMutableAttributedString alloc] init];
     NSUInteger location = 0;
     for (NSTextCheckingResult *result in emojis) {
         NSRange range = result.range;
-        NSString *subStr = [[self covertedToHalf] substringWithRange:NSMakeRange(location, range.location - location)];
+        NSString *subStr = [self  substringWithRange:NSMakeRange(location, range.location - location)];
         NSMutableAttributedString *attSubStr = [[NSMutableAttributedString alloc] initWithString:subStr] ;
         [newStr appendAttributedString:attSubStr];
         
         location = range.location + range.length;
-        NSString *emojiKey = [[self covertedToHalf] substringWithRange:range];
+        NSString *emojiKey = [self  substringWithRange:range];
         NSString *imageName = [WeiXinEmojiDictionary() objectForKey:emojiKey];
         if (imageName) {
             // 这里不用空格，空格有个问题就是连续空格的时候只显示在一行
@@ -116,15 +115,15 @@ NSDictionary *WeiXinEmojiDictionary()
                            value:imageName
                            range:__range];
         } else {
-            NSString *rSubStr = [[self covertedToHalf] substringWithRange:range];
+            NSString *rSubStr = [self  substringWithRange:range];
             NSMutableAttributedString *originalStr = [[NSMutableAttributedString alloc] initWithString:rSubStr];
             [newStr appendAttributedString:originalStr];
         }
     }
     
-    if (location < [[self covertedToHalf] length]) {
-        NSRange range = NSMakeRange(location, [[self covertedToHalf] length] - location);
-        NSString *subStr = [[self covertedToHalf] substringWithRange:range];
+    if (location < [self  length]) {
+        NSRange range = NSMakeRange(location, [self  length] - location);
+        NSString *subStr = [self  substringWithRange:range];
         NSMutableAttributedString *attSubStr = [[NSMutableAttributedString alloc] initWithString:subStr] ;
         [newStr appendAttributedString:attSubStr];
     }
@@ -143,9 +142,9 @@ NSDictionary *WeiXinEmojiDictionary()
     [[NSRegularExpression alloc] initWithPattern:regex_emoji
                                          options:NSRegularExpressionCaseInsensitive | NSRegularExpressionDotMatchesLineSeparators
                                            error:nil] ;
-    NSArray *emojis = [exp_emoji matchesInString:[self covertedToHalf] 
+    NSArray *emojis = [exp_emoji matchesInString:self  
                                          options:NSRegularExpressionCaseInsensitive | NSRegularExpressionDotMatchesLineSeparators
-                                           range:NSMakeRange(0, [[self covertedToHalf] length])];
+                                           range:NSMakeRange(0, [self  length])];
     
     NSMutableAttributedString *newStr = [[NSMutableAttributedString alloc] init] ;
     NSUInteger location = 0;
@@ -153,13 +152,13 @@ NSDictionary *WeiXinEmojiDictionary()
     
     for (NSTextCheckingResult *result in emojis) {
         NSRange range = result.range;
-        NSString *subStr = [[self covertedToHalf] substringWithRange:NSMakeRange(location, range.location - location)];
+        NSString *subStr = [self  substringWithRange:NSMakeRange(location, range.location - location)];
         NSMutableAttributedString *attSubStr = [[NSMutableAttributedString alloc] initWithString:subStr] ;
         [newStr appendAttributedString:attSubStr];
         
         location = range.location + range.length;
         
-        NSString *emojiKey = [[self covertedToHalf] substringWithRange:range];
+        NSString *emojiKey = [self  substringWithRange:range];
         
         NSString *imageName = nil;
         for (NSDictionary * tempD in temp) {
@@ -202,42 +201,32 @@ NSDictionary *WeiXinEmojiDictionary()
                            value:imageName
                            range:__range];
         } else {
-            NSString *rSubStr = [[self covertedToHalf] substringWithRange:range];
+            NSString *rSubStr = [self  substringWithRange:range];
             NSMutableAttributedString *originalStr = [[NSMutableAttributedString alloc] initWithString:rSubStr];
             [newStr appendAttributedString:originalStr];
         }
     }
     
-    if (location < [[self covertedToHalf] length]) {
-        NSRange range = NSMakeRange(location, [[self covertedToHalf] length] - location);
-        NSString *subStr = [[self covertedToHalf] substringWithRange:range];
+    if (location < [self  length]) {
+        NSRange range = NSMakeRange(location, [self  length] - location);
+        NSString *subStr = [self  substringWithRange:range];
         NSMutableAttributedString *attSubStr = [[NSMutableAttributedString alloc] initWithString:subStr] ;
         [newStr appendAttributedString:attSubStr];
     }
     
-    // 匹配短链接
+    // 话题匹配
     NSString *__newStr = [newStr string];
-    NSString *regex_http = @"#([^\\#|.]+)#";// 短链接的算法是固定的，格式比较一直，所以比较好匹配
-    NSRegularExpression *exp_http = 
-    [[NSRegularExpression alloc] initWithPattern:regex_http
+    NSString *regex_Topic = @"#([^\\#|.]+)#";
+    NSRegularExpression *exp_Topic =
+    [[NSRegularExpression alloc] initWithPattern:regex_Topic
                                          options:NSRegularExpressionCaseInsensitive | NSRegularExpressionDotMatchesLineSeparators
                                            error:nil];
-    NSArray *https = [exp_http matchesInString:__newStr
+    NSArray *topics = [exp_Topic matchesInString:__newStr
                                        options:NSRegularExpressionCaseInsensitive | NSRegularExpressionDotMatchesLineSeparators 
                                          range:NSMakeRange(0, [__newStr length])];
     
-    for (NSTextCheckingResult *result in https) {
+    for (NSTextCheckingResult *result in topics) {
         NSRange _range = [result range];
-        
-        // 因为绘制用的是CTRun所以这个属性设置了也没有用
-        /*
-         CTUnderlineStyle style = kCTUnderlineStyleSingle;
-         CFNumberRef underlineStyle = CFNumberCreate(kCFAllocatorDefault, kCFNumberIntType, &style);
-         [newStr addAttribute:(id)kCTUnderlineStyleAttributeName
-         value:(__bridge id)underlineStyle
-         range:_range];
-         CFRelease(underlineStyle);
-         */
         
         // 设置自定义属性，绘制的时候需要用到
         [newStr addAttribute:kCustomGlyphAttributeType
@@ -250,6 +239,62 @@ NSDictionary *WeiXinEmojiDictionary()
                        value:[UIColor blueColor]
                        range:_range];
     }
+    
+    
+
+    // 匹配短链接
+    NSString *___newStr = [newStr string];
+    NSString *regex_http = @"http://t.cn/[a-zA-Z0-9]+";// 短链接的算法是固定的，格式比较一致，所以比较好匹配
+    NSRegularExpression *exp_http =
+    [[NSRegularExpression alloc] initWithPattern:regex_http
+                                         options:NSRegularExpressionCaseInsensitive | NSRegularExpressionDotMatchesLineSeparators
+                                           error:nil];
+    NSArray *https = [exp_http matchesInString:___newStr
+                                       options:NSRegularExpressionCaseInsensitive | NSRegularExpressionDotMatchesLineSeparators
+                                         range:NSMakeRange(0, [__newStr length])];
+    
+    for (NSTextCheckingResult *result in https) {
+        NSRange _range = [result range];
+        
+       
+        [newStr addAttribute:kCustomGlyphAttributeType
+                       value:[NSNumber numberWithInt:CustomGlyphAttributeURL]
+                       range:_range];
+        [newStr addAttribute:kCustomGlyphAttributeRange
+                       value:[NSValue valueWithRange:_range]
+                       range:_range];
+        [newStr addAttribute:NSForegroundColorAttributeName
+                       value:[UIColor blueColor]
+                       range:_range];
+    }
+
+    //匹配@**
+    NSString *____newStr = [newStr string];
+    NSString *regex_At = @"@[a-zA-Z0-9|a-zA-Z0-9\\u4e00-\\u9fa5]+";// 短链接的算法是固定的，格式比较一致，所以比较好匹配
+    NSRegularExpression *exp_At =
+    [[NSRegularExpression alloc] initWithPattern:regex_At
+                                         options:NSRegularExpressionCaseInsensitive | NSRegularExpressionDotMatchesLineSeparators
+                                           error:nil];
+    NSArray *Ats = [exp_At matchesInString:____newStr
+                                       options:NSRegularExpressionCaseInsensitive | NSRegularExpressionDotMatchesLineSeparators
+                                         range:NSMakeRange(0, [__newStr length])];
+    
+    for (NSTextCheckingResult *result in Ats) {
+        NSRange _range = [result range];
+        
+        
+        [newStr addAttribute:kCustomGlyphAttributeType
+                       value:[NSNumber numberWithInt:CustomGlyphAttributeAt]
+                       range:_range];
+        [newStr addAttribute:kCustomGlyphAttributeRange
+                       value:[NSValue valueWithRange:_range]
+                       range:_range];
+        [newStr addAttribute:NSForegroundColorAttributeName
+                       value:[UIColor blueColor]
+                       range:_range];
+    }
+
+    
     
     return newStr;
 }
