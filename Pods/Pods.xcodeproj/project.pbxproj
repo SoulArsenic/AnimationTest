@@ -1,928 +1,433 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>06BB3DAFF2C93EB3D3731C1F</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>RELEASE=1</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>0C7C2084DE75E8D1D873A86A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-AnimationTest-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1118FA9A52EAE69E844A16D9</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>E0F9E69FF560555D33ABE29E</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>140C0474A6A1157C2C332D4A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-AnimationTest-BlurImageProcessor-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1B0808892B05FDBA3E24E132</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6D1F5501DE7D599C9AE145F5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1CCF136814993190247E1FCD</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>A41DC3500FD2CB4CB19E8993</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>86714F3A70428B9B919CCFC4</string>
-			<key>productRefGroup</key>
-			<string>A6D65297A8F7B0D59784C0AC</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>C85473675D8DD1689CF7CFC5</string>
-				<string>42078A7EADAECC2A49158E06</string>
-			</array>
-		</dict>
-		<key>2369ABB637E2503D58DF81A4</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-AnimationTest-BlurImageProcessor.a</string>
-			<key>path</key>
-			<string>libPods-AnimationTest-BlurImageProcessor.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>253A097B7ECEAB4089D82B6B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ALDBlurImageProcessor.m</string>
-			<key>path</key>
-			<string>BlurImageProcessor/ALDBlurImageProcessor/ALDBlurImageProcessor.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>30DAA8B322F31EB13B3F577A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-AnimationTest-BlurImageProcessor-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>30E4529B5B549B15B514DC62</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Accelerate.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Accelerate.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>37425651EF9341049781BEBF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>798EA10180B5779C491F4B63</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3A22FFECC5CEA72DDB3DCD69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B98BAA6508274DAD806A2DC8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3D991E939C67D6909920795E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>64FEC81A364C1E32B9C1EF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>42078A7EADAECC2A49158E06</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>D87635579BB83A1D4EB1D0B9</string>
-			<key>buildPhases</key>
-			<array>
-				<string>77F1530F01306AFE6484CCD7</string>
-				<string>F33F26332FCBB28BCD5E6451</string>
-				<string>DC3B0C4C682B6019BC71687D</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-AnimationTest-BlurImageProcessor</string>
-			<key>productName</key>
-			<string>Pods-AnimationTest-BlurImageProcessor</string>
-			<key>productReference</key>
-			<string>2369ABB637E2503D58DF81A4</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>422875420549DF6C29D35F7C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-AnimationTest-environment.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>424F64ACFF5F15031FA4C99D</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-AnimationTest.a</string>
-			<key>path</key>
-			<string>libPods-AnimationTest.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>4341E7E20AB1D6FA02795B67</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>B2FE2C677096DB8AC5D8FC23</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>543C60F6A3B3F0CAC2477AC4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>253A097B7ECEAB4089D82B6B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5B789C0D2E185017D6DBD2FD</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>1118FA9A52EAE69E844A16D9</string>
-				<string>4341E7E20AB1D6FA02795B67</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>5F086858F188C4D2F8B78B1C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>60261869F09E93B8F3D0E2FE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5F4CBB340A3652BB270993D3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>64FEC81A364C1E32B9C1EF85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>60261869F09E93B8F3D0E2FE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>30E4529B5B549B15B514DC62</string>
-				<string>64FEC81A364C1E32B9C1EF85</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>604AE3C17EF6B78B98BA412E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>ED512A44A067360EB8F643FB</string>
-				<string>E3804DFED04AD7B966C38C7D</string>
-				<string>30DAA8B322F31EB13B3F577A</string>
-				<string>140C0474A6A1157C2C332D4A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/Pods-AnimationTest-BlurImageProcessor</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>64FEC81A364C1E32B9C1EF85</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>6AD4311CAC1279BC26D708FA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3A22FFECC5CEA72DDB3DCD69</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6D1F5501DE7D599C9AE145F5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>798EA10180B5779C491F4B63</string>
-				<string>253A097B7ECEAB4089D82B6B</string>
-				<string>604AE3C17EF6B78B98BA412E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>BlurImageProcessor</string>
-			<key>path</key>
-			<string>BlurImageProcessor</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>77F1530F01306AFE6484CCD7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>543C60F6A3B3F0CAC2477AC4</string>
-				<string>AA894E554B2C0E0EA720BA12</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>798EA10180B5779C491F4B63</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ALDBlurImageProcessor.h</string>
-			<key>path</key>
-			<string>BlurImageProcessor/ALDBlurImageProcessor/ALDBlurImageProcessor.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>86714F3A70428B9B919CCFC4</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8A695237ACE531CE12C4B561</string>
-				<string>5F086858F188C4D2F8B78B1C</string>
-				<string>1B0808892B05FDBA3E24E132</string>
-				<string>A6D65297A8F7B0D59784C0AC</string>
-				<string>E1F7C299A5B4A80DD0D00367</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8A695237ACE531CE12C4B561</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>A41DC3500FD2CB4CB19E8993</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>DB066B45E53594CA4F0C9144</string>
-				<string>06BB3DAFF2C93EB3D3731C1F</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>A50EF80FE702A32216552055</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-AnimationTest-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A6303F788103382A662580D4</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>E3804DFED04AD7B966C38C7D</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-AnimationTest-BlurImageProcessor/Pods-AnimationTest-BlurImageProcessor-prefix.pch</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>A6D65297A8F7B0D59784C0AC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>424F64ACFF5F15031FA4C99D</string>
-				<string>2369ABB637E2503D58DF81A4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AA894E554B2C0E0EA720BA12</key>
-		<dict>
-			<key>fileRef</key>
-			<string>30DAA8B322F31EB13B3F577A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB2E8E0BC207343CB92FE7C5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-AnimationTest-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ABAB8747CD39EE82F6307E26</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0C7C2084DE75E8D1D873A86A</string>
-				<string>AB2E8E0BC207343CB92FE7C5</string>
-				<string>B98BAA6508274DAD806A2DC8</string>
-				<string>422875420549DF6C29D35F7C</string>
-				<string>A50EF80FE702A32216552055</string>
-				<string>E0F9E69FF560555D33ABE29E</string>
-				<string>B2FE2C677096DB8AC5D8FC23</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-AnimationTest</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-AnimationTest</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B1CAAD5344AAB8485A041B5C</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>1CCF136814993190247E1FCD</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>42078A7EADAECC2A49158E06</string>
-			<key>remoteInfo</key>
-			<string>Pods-AnimationTest-BlurImageProcessor</string>
-		</dict>
-		<key>B2FE2C677096DB8AC5D8FC23</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-AnimationTest.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B89723607AB802AF9D497874</key>
-		<dict>
-			<key>fileRef</key>
-			<string>30E4529B5B549B15B514DC62</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B98BAA6508274DAD806A2DC8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-AnimationTest-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BC041806FAF8C7B253940779</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3D991E939C67D6909920795E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C85473675D8DD1689CF7CFC5</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>5B789C0D2E185017D6DBD2FD</string>
-			<key>buildPhases</key>
-			<array>
-				<string>6AD4311CAC1279BC26D708FA</string>
-				<string>BC041806FAF8C7B253940779</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>CF48F7433C9F37B1CEB3374C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-AnimationTest</string>
-			<key>productName</key>
-			<string>Pods-AnimationTest</string>
-			<key>productReference</key>
-			<string>424F64ACFF5F15031FA4C99D</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>CF48F7433C9F37B1CEB3374C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Pods-AnimationTest-BlurImageProcessor</string>
-			<key>target</key>
-			<string>42078A7EADAECC2A49158E06</string>
-			<key>targetProxy</key>
-			<string>B1CAAD5344AAB8485A041B5C</string>
-		</dict>
-		<key>D87635579BB83A1D4EB1D0B9</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>DCAEA5F2E2C8D420F50E98CD</string>
-				<string>A6303F788103382A662580D4</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>DB066B45E53594CA4F0C9144</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>DC3B0C4C682B6019BC71687D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>37425651EF9341049781BEBF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>DCAEA5F2E2C8D420F50E98CD</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>E3804DFED04AD7B966C38C7D</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-AnimationTest-BlurImageProcessor/Pods-AnimationTest-BlurImageProcessor-prefix.pch</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E0F9E69FF560555D33ABE29E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-AnimationTest.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1F7C299A5B4A80DD0D00367</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>ABAB8747CD39EE82F6307E26</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E3804DFED04AD7B966C38C7D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-AnimationTest-BlurImageProcessor-Private.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED512A44A067360EB8F643FB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-AnimationTest-BlurImageProcessor.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F33F26332FCBB28BCD5E6451</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B89723607AB802AF9D497874</string>
-				<string>5F4CBB340A3652BB270993D3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>1CCF136814993190247E1FCD</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		159780EC8AEAD8FB1754AA0B /* Pods-AnimationTest-BlurImageProcessor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F7C940DEDDD0392189F58 /* Pods-AnimationTest-BlurImageProcessor-dummy.m */; };
+		4DC6E092A621F4C0C2331144 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3043CB1632C946835970175 /* Accelerate.framework */; };
+		9830EB195CAD04005E1F51EF /* ALDBlurImageProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EB1418704B1DE6483413089 /* ALDBlurImageProcessor.h */; };
+		B2F0BFBEA98974834BAC34CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3D884EFBAEBD57FC6F6D0E /* Foundation.framework */; };
+		B55F79331215FB0C7F02913C /* Pods-AnimationTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDF9D5C7D69EF7E359E15A5 /* Pods-AnimationTest-dummy.m */; };
+		CA0BA54A6FAD4246CEF72EFC /* ALDBlurImageProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2049B98C568737755BD454AF /* ALDBlurImageProcessor.m */; };
+		E0B4DF1B1C2F90CD4553DF1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3D884EFBAEBD57FC6F6D0E /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		261D55CB37AF854723077AE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C579913E77256026B3FE89C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A5473916190D35E328D4377;
+			remoteInfo = "Pods-AnimationTest-BlurImageProcessor";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03B0328934BB3A870DE39E2E /* Pods-AnimationTest-BlurImageProcessor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AnimationTest-BlurImageProcessor-prefix.pch"; sourceTree = "<group>"; };
+		045F7C940DEDDD0392189F58 /* Pods-AnimationTest-BlurImageProcessor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnimationTest-BlurImageProcessor-dummy.m"; sourceTree = "<group>"; };
+		0CDF9D5C7D69EF7E359E15A5 /* Pods-AnimationTest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnimationTest-dummy.m"; sourceTree = "<group>"; };
+		1376630D641D96C6073C8B2C /* Pods-AnimationTest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnimationTest-acknowledgements.plist"; sourceTree = "<group>"; };
+		2049B98C568737755BD454AF /* ALDBlurImageProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ALDBlurImageProcessor.m; path = BlurImageProcessor/ALDBlurImageProcessor/ALDBlurImageProcessor.m; sourceTree = "<group>"; };
+		209A66D6C9C611AB526E7F1C /* Pods-AnimationTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimationTest.debug.xcconfig"; sourceTree = "<group>"; };
+		3D3D884EFBAEBD57FC6F6D0E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3DEEA6E2FD931854C1DB64BC /* Pods-AnimationTest-BlurImageProcessor-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimationTest-BlurImageProcessor-Private.xcconfig"; sourceTree = "<group>"; };
+		539FB2ADCEE20A02ECA8BE0E /* libPods-AnimationTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimationTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B4E3959864CCDD0CC03BFD1 /* Pods-AnimationTest-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AnimationTest-environment.h"; sourceTree = "<group>"; };
+		98BB245260FD800F7FC1E495 /* libPods-AnimationTest-BlurImageProcessor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimationTest-BlurImageProcessor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EB1418704B1DE6483413089 /* ALDBlurImageProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ALDBlurImageProcessor.h; path = BlurImageProcessor/ALDBlurImageProcessor/ALDBlurImageProcessor.h; sourceTree = "<group>"; };
+		A252CE789EB25FB05569E461 /* Pods-AnimationTest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AnimationTest-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A3043CB1632C946835970175 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		B1C7AD48640433410F397B6F /* Pods-AnimationTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimationTest.release.xcconfig"; sourceTree = "<group>"; };
+		C82E0FD4AB79B84228ECB96F /* Pods-AnimationTest-BlurImageProcessor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimationTest-BlurImageProcessor.xcconfig"; sourceTree = "<group>"; };
+		CB5602C5D25AD8E3608DF6AA /* Pods-AnimationTest-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AnimationTest-resources.sh"; sourceTree = "<group>"; };
+		FA42E1A68700223D53DF4A30 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		186A430FB3AD3818376CB0A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2F0BFBEA98974834BAC34CB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A44A5B75F3CFC232CF1E395 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DC6E092A621F4C0C2331144 /* Accelerate.framework in Frameworks */,
+				E0B4DF1B1C2F90CD4553DF1D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D1F8D12426FC1BED92CA60E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2C11BB942F1C35A43361C0E /* Pods-AnimationTest */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5443D2F8076A48D32D4880B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8F8E970296B73DA9F7C8426 /* BlurImageProcessor */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6C38F80AACDC90A3309CF83E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				539FB2ADCEE20A02ECA8BE0E /* libPods-AnimationTest.a */,
+				98BB245260FD800F7FC1E495 /* libPods-AnimationTest-BlurImageProcessor.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7AECADB81F0840FD4ADF47D0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A3043CB1632C946835970175 /* Accelerate.framework */,
+				3D3D884EFBAEBD57FC6F6D0E /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		80E417F1588680369532C8A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AECADB81F0840FD4ADF47D0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2C11BB942F1C35A43361C0E /* Pods-AnimationTest */ = {
+			isa = PBXGroup;
+			children = (
+				A252CE789EB25FB05569E461 /* Pods-AnimationTest-acknowledgements.markdown */,
+				1376630D641D96C6073C8B2C /* Pods-AnimationTest-acknowledgements.plist */,
+				0CDF9D5C7D69EF7E359E15A5 /* Pods-AnimationTest-dummy.m */,
+				7B4E3959864CCDD0CC03BFD1 /* Pods-AnimationTest-environment.h */,
+				CB5602C5D25AD8E3608DF6AA /* Pods-AnimationTest-resources.sh */,
+				209A66D6C9C611AB526E7F1C /* Pods-AnimationTest.debug.xcconfig */,
+				B1C7AD48640433410F397B6F /* Pods-AnimationTest.release.xcconfig */,
+			);
+			name = "Pods-AnimationTest";
+			path = "Target Support Files/Pods-AnimationTest";
+			sourceTree = "<group>";
+		};
+		A9067E3A7D7FBC3C01A884D8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C82E0FD4AB79B84228ECB96F /* Pods-AnimationTest-BlurImageProcessor.xcconfig */,
+				3DEEA6E2FD931854C1DB64BC /* Pods-AnimationTest-BlurImageProcessor-Private.xcconfig */,
+				045F7C940DEDDD0392189F58 /* Pods-AnimationTest-BlurImageProcessor-dummy.m */,
+				03B0328934BB3A870DE39E2E /* Pods-AnimationTest-BlurImageProcessor-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-AnimationTest-BlurImageProcessor";
+			sourceTree = "<group>";
+		};
+		D8F8E970296B73DA9F7C8426 /* BlurImageProcessor */ = {
+			isa = PBXGroup;
+			children = (
+				9EB1418704B1DE6483413089 /* ALDBlurImageProcessor.h */,
+				2049B98C568737755BD454AF /* ALDBlurImageProcessor.m */,
+				A9067E3A7D7FBC3C01A884D8 /* Support Files */,
+			);
+			path = BlurImageProcessor;
+			sourceTree = "<group>";
+		};
+		DAE87792803FC251902B2949 = {
+			isa = PBXGroup;
+			children = (
+				FA42E1A68700223D53DF4A30 /* Podfile */,
+				80E417F1588680369532C8A3 /* Frameworks */,
+				5443D2F8076A48D32D4880B7 /* Pods */,
+				6C38F80AACDC90A3309CF83E /* Products */,
+				4D1F8D12426FC1BED92CA60E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A3C02EFA404698C175356C83 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9830EB195CAD04005E1F51EF /* ALDBlurImageProcessor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7A5473916190D35E328D4377 /* Pods-AnimationTest-BlurImageProcessor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 483C19D62E9411F0B4776351 /* Build configuration list for PBXNativeTarget "Pods-AnimationTest-BlurImageProcessor" */;
+			buildPhases = (
+				0BB96F6CA1BAA75B7345BED0 /* Sources */,
+				2A44A5B75F3CFC232CF1E395 /* Frameworks */,
+				A3C02EFA404698C175356C83 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AnimationTest-BlurImageProcessor";
+			productName = "Pods-AnimationTest-BlurImageProcessor";
+			productReference = 98BB245260FD800F7FC1E495 /* libPods-AnimationTest-BlurImageProcessor.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FDC3DE787AB5B7F72272F929 /* Pods-AnimationTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D84B067AA1F96F6407C8EFEF /* Build configuration list for PBXNativeTarget "Pods-AnimationTest" */;
+			buildPhases = (
+				AD6E0BF0DB7BDC33FFA59497 /* Sources */,
+				186A430FB3AD3818376CB0A8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B13FCC7C4DBB2D4817E77748 /* PBXTargetDependency */,
+			);
+			name = "Pods-AnimationTest";
+			productName = "Pods-AnimationTest";
+			productReference = 539FB2ADCEE20A02ECA8BE0E /* libPods-AnimationTest.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C579913E77256026B3FE89C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = E0D54A2DA79E8A5AE0494CD8 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DAE87792803FC251902B2949;
+			productRefGroup = 6C38F80AACDC90A3309CF83E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDC3DE787AB5B7F72272F929 /* Pods-AnimationTest */,
+				7A5473916190D35E328D4377 /* Pods-AnimationTest-BlurImageProcessor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BB96F6CA1BAA75B7345BED0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA0BA54A6FAD4246CEF72EFC /* ALDBlurImageProcessor.m in Sources */,
+				159780EC8AEAD8FB1754AA0B /* Pods-AnimationTest-BlurImageProcessor-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD6E0BF0DB7BDC33FFA59497 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B55F79331215FB0C7F02913C /* Pods-AnimationTest-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B13FCC7C4DBB2D4817E77748 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AnimationTest-BlurImageProcessor";
+			target = 7A5473916190D35E328D4377 /* Pods-AnimationTest-BlurImageProcessor */;
+			targetProxy = 261D55CB37AF854723077AE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3275907B0B4B64892D42AF1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1C7AD48640433410F397B6F /* Pods-AnimationTest.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		74BB9AA7B75D72B909C46E13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 209A66D6C9C611AB526E7F1C /* Pods-AnimationTest.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9319CD8535A5671AFB60525E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DEEA6E2FD931854C1DB64BC /* Pods-AnimationTest-BlurImageProcessor-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AnimationTest-BlurImageProcessor/Pods-AnimationTest-BlurImageProcessor-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9EA6713E960B1485D9AA3FD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		BC020FB6E8E2C101C2BDCAB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB9D085931BFF873093C9016 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DEEA6E2FD931854C1DB64BC /* Pods-AnimationTest-BlurImageProcessor-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AnimationTest-BlurImageProcessor/Pods-AnimationTest-BlurImageProcessor-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		483C19D62E9411F0B4776351 /* Build configuration list for PBXNativeTarget "Pods-AnimationTest-BlurImageProcessor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9319CD8535A5671AFB60525E /* Debug */,
+				EB9D085931BFF873093C9016 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D84B067AA1F96F6407C8EFEF /* Build configuration list for PBXNativeTarget "Pods-AnimationTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74BB9AA7B75D72B909C46E13 /* Debug */,
+				3275907B0B4B64892D42AF1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0D54A2DA79E8A5AE0494CD8 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EA6713E960B1485D9AA3FD3 /* Debug */,
+				BC020FB6E8E2C101C2BDCAB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C579913E77256026B3FE89C7 /* Project object */;
+}

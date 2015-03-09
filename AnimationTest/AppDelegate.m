@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "UIViewController+Swizzled.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+//    SWIZZ_IT;
+    UN_SWIZZ_IT;
     
     return YES;
 }

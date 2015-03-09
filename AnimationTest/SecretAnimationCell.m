@@ -86,8 +86,9 @@
     if (_fuzzyView.image) {
         return;
     }
-    
+
     _fuzzyView.image = [self captureView:self.contentView];
+
 }
 
 
@@ -96,7 +97,8 @@
 }
 
 -(void)touchGesture:(UIPanGestureRecognizer *)recognizer{
-
+   
+    
     if (recognizer.state == UIGestureRecognizerStateBegan) {
         
         self.touchStartPoint = [recognizer locationInView:self.bg];
@@ -113,6 +115,8 @@
                 [self clip];
             }
             self.processor = [[ALDBlurImageProcessor alloc] initWithImage:_fuzzyView.image];
+            _fuzzyView.image  = [_processor syncBlurWithRadius:5 iterations:5 errorCode:0];
+
         }
         
     }
@@ -138,7 +142,6 @@
                 
                 self.actionView.center = center;
             }];
-
             [self fuzzyAction];
             
         }
@@ -147,6 +150,7 @@
             if (_panInUseHeart || rightDirection) {
                 // 处理的心
                 self.panInUseHeart = YES;
+                _fuzzyView.alpha = 0;
 
                 center = CGPointMake(self.heartStart.x + temp, center.y);
                 
@@ -220,6 +224,7 @@
         }
         else
         {
+            _fuzzyView.alpha = 0;
             self.panInUseHeart = NO;
             CGFloat heartT= _heart.center.x;
             CGFloat boundsT= self.frame.size.width/5;
@@ -259,12 +264,16 @@
     
     CGFloat startLocation =_actionStart.x - centerX;
     
-    CGFloat temp = ((startLocation - MAX(actionLocation, 0)) / startLocation)*8;
+    CGFloat temp = ((startLocation - MAX(actionLocation, 0)) / startLocation)*1;
     
-    if (temp)
-        _fuzzyView.image = [_processor syncBlurWithRadius:temp iterations:temp errorCode:0];
-    else
-        _fuzzyView.image = nil;
+    if (temp){
+        
+        _fuzzyView.alpha = temp;
+    
+    }
+    else{
+        _fuzzyView.alpha = 0;
+    }
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{}

@@ -19,6 +19,7 @@
 		5E72DFFE1A8DA97B00BCACFE /* MyScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E72DFFD1A8DA97B00BCACFE /* MyScrollViewController.m */; };
 		5E72E0011A8DE09600BCACFE /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E72E0001A8DE09600BCACFE /* MyCell.m */; };
 		5E823B7D1A713A9000665DEC /* CombiationBackGroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E823B7C1A713A9000665DEC /* CombiationBackGroundView.m */; };
+		5E94558E1AAD374100E5E21A /* UIViewController+Swizzled.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E94558D1AAD374100E5E21A /* UIViewController+Swizzled.m */; };
 		5EA381AC1AA3FC55005EC346 /* Fresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA381AB1AA3FC55005EC346 /* Fresh.m */; };
 		5EA381B01AA43416005EC346 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA381AF1AA43416005EC346 /* CFNetwork.framework */; };
 		5EA381B21AA43425005EC346 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA381B11AA43425005EC346 /* QuartzCore.framework */; };
@@ -256,6 +257,7 @@
 		84675F9E1A6FA44300A51E0F /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84675F9D1A6FA44300A51E0F /* AnimationViewController.m */; };
 		847C16381A70CD95001C7552 /* CombinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C16371A70CD95001C7552 /* CombinationViewController.m */; };
 		847C163B1A70CE03001C7552 /* CombinationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C163A1A70CE03001C7552 /* CombinationView.m */; };
+		D920A44C6201511FC929D8BA /* libPods-AnimationTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C388050EB1A14D4D3BEA7BD5 /* libPods-AnimationTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -290,6 +292,9 @@
 		5E72E0001A8DE09600BCACFE /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
 		5E823B7B1A713A9000665DEC /* CombiationBackGroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombiationBackGroundView.h; sourceTree = "<group>"; };
 		5E823B7C1A713A9000665DEC /* CombiationBackGroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombiationBackGroundView.m; sourceTree = "<group>"; };
+		5E94558A1AAD36C100E5E21A /* libobjc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.dylib; path = usr/lib/libobjc.dylib; sourceTree = SDKROOT; };
+		5E94558C1AAD374100E5E21A /* UIViewController+Swizzled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzled.h"; sourceTree = "<group>"; };
+		5E94558D1AAD374100E5E21A /* UIViewController+Swizzled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Swizzled.m"; sourceTree = "<group>"; };
 		5EA381AA1AA3FC55005EC346 /* Fresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fresh.h; sourceTree = "<group>"; };
 		5EA381AB1AA3FC55005EC346 /* Fresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fresh.m; sourceTree = "<group>"; };
 		5EA381AF1AA43416005EC346 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -314,7 +319,7 @@
 		5EC5347E1A8209B70082F33E /* SecretAnimationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecretAnimationCell.m; sourceTree = "<group>"; };
 		5ED6FD4B1AA803A500B16004 /* FaceTextVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceTextVC.h; sourceTree = "<group>"; };
 		5ED6FD4C1AA803A500B16004 /* FaceTextVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceTextVC.m; sourceTree = "<group>"; };
-		5EE503A81AA833830050CF69 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = ../AnimationTest/Reveal.framework; sourceTree = "<group>"; };
+		5EE503A81AA833830050CF69 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		5EE503AA1AA835CC0050CF69 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		5EE503AE1AA83A810050CF69 /* libPods-AnimationTest-BlurImageProcessor.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AnimationTest-BlurImageProcessor.a"; path = "Pods/build/Debug-iphoneos/libPods-AnimationTest-BlurImageProcessor.a"; sourceTree = "<group>"; };
 		5EE503B11AA8431A0050CF69 /* d_aini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "d_aini@2x.png"; sourceTree = "<group>"; };
@@ -565,6 +570,7 @@
 				5EA381B21AA43425005EC346 /* QuartzCore.framework in Frameworks */,
 				5EA381B01AA43416005EC346 /* CFNetwork.framework in Frameworks */,
 				5EE503A91AA833830050CF69 /* Reveal.framework in Frameworks */,
+				D920A44C6201511FC929D8BA /* libPods-AnimationTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -841,13 +847,13 @@
 				5EE5047C1AA8431B0050CF69 /* w_yueliang@2x.png */,
 				5EE5047D1AA8431B0050CF69 /* w_yueliang@3x.png */,
 			);
-			name = default;
-			path = Emoticons/default;
+			path = default;
 			sourceTree = "<group>";
 		};
 		746A150C14B5D2F1BE462495 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5E94558A1AAD36C100E5E21A /* libobjc.dylib */,
 				5EE503AE1AA83A810050CF69 /* libPods-AnimationTest-BlurImageProcessor.a */,
 				C388050EB1A14D4D3BEA7BD5 /* libPods-AnimationTest.a */,
 			);
@@ -878,6 +884,8 @@
 		84675F6C1A6FA2D400A51E0F /* AnimationTest */ = {
 			isa = PBXGroup;
 			children = (
+				84675F711A6FA2D400A51E0F /* AppDelegate.h */,
+				84675F721A6FA2D500A51E0F /* AppDelegate.m */,
 				5E4746411AA997F50010DD29 /* YALSunnyRefreshControll */,
 				84675F6D1A6FA2D400A51E0F /* Supporting Files */,
 				5EB9BAFC1AA82ECE00AC2CD8 /* FaceText */,
@@ -888,14 +896,14 @@
 				5E1FA11F1A8C41F60005DCB7 /* synxGroup */,
 				84675F961A6FA2ED00A51E0F /* AnimationControl.h */,
 				84675F971A6FA2ED00A51E0F /* AnimationControl.m */,
+				5E94558C1AAD374100E5E21A /* UIViewController+Swizzled.h */,
+				5E94558D1AAD374100E5E21A /* UIViewController+Swizzled.m */,
 				5EBE643F1A788910009A9EAE /* Tool.h */,
 				5EBE64401A788910009A9EAE /* Tool.m */,
 				5E823B7B1A713A9000665DEC /* CombiationBackGroundView.h */,
 				5E823B7C1A713A9000665DEC /* CombiationBackGroundView.m */,
 				84675F981A6FA2ED00A51E0F /* TouchHandleView.h */,
 				84675F991A6FA2ED00A51E0F /* TouchHandleView.m */,
-				84675F711A6FA2D400A51E0F /* AppDelegate.h */,
-				84675F721A6FA2D500A51E0F /* AppDelegate.m */,
 				84675F771A6FA2D500A51E0F /* ViewController.h */,
 				84675F781A6FA2D500A51E0F /* ViewController.m */,
 				84675F9C1A6FA44300A51E0F /* AnimationViewController.h */,
@@ -1334,6 +1342,7 @@
 				84675F791A6FA2D500A51E0F /* ViewController.m in Sources */,
 				5E72DFFE1A8DA97B00BCACFE /* MyScrollViewController.m in Sources */,
 				5EC5347F1A8209B70082F33E /* SecretAnimationCell.m in Sources */,
+				5E94558E1AAD374100E5E21A /* UIViewController+Swizzled.m in Sources */,
 				5E1FA11B1A8B369D0005DCB7 /* ScrollControlViewController.m in Sources */,
 				84408FF41A71F4D4009A8A1C /* GraphicsViewController.m in Sources */,
 				84675F761A6FA2D500A51E0F /* AnimationTest.xcdatamodeld in Sources */,
@@ -1472,7 +1481,7 @@
 					"$(PROJECT_DIR)/FrameWork",
 				);
 				INFOPLIST_FILE = "AnimationTest/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1485,6 +1494,7 @@
 					"-lz",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1500,7 +1510,7 @@
 					"$(PROJECT_DIR)/FrameWork",
 				);
 				INFOPLIST_FILE = "AnimationTest/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1513,6 +1523,7 @@
 					"-lz",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
