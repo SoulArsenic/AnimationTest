@@ -6,15 +6,25 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AnimationTest/SecretAnimationCell.h"
-            timestampString = "447232593.740455"
+            continueAfterRunningActions = "Yes"
+            filePath = "AnimationTest/&#x63a7;&#x4ef6;&#x6d4b;&#x8bd5;/ImageLoadingTest.m"
+            timestampString = "448365520.938014"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "10"
-            endingLineNumber = "10">
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "-startLoading"
+            landmarkType = "5">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent
+                     consoleCommand = "po error">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

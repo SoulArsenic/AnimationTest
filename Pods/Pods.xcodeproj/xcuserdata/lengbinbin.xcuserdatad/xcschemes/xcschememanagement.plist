@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-AnimationTest-FaceAwareFill.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-AnimationTest-Haneke.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-AnimationTest.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>7A5473916190D35E328D4377</key>
+		<key>230E745D51D09BCB15EA0A88</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FDC3DE787AB5B7F72272F929</key>
+		<key>C571A026EFCAA79AF9DA6C39</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DEB85375366C1E20C6035EEF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9CB797FA02BBB2D754F27AD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

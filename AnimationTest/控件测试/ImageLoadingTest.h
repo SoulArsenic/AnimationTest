@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface ImageLoadingTest : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *bigView;
+@property (weak, nonatomic) IBOutlet UIImageView *smallView;
 
 @end

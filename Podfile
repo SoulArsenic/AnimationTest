@@ -4,7 +4,14 @@
 target 'AnimationTest' do
 
 pod "BlurImageProcessor"
+#图片加载
+pod 'Haneke', '~> 1.0'
 
+# 图表
+#pod 'PNChart'
+
+#图片处理
+pod "FaceAwareFill"
 end
 
 target 'AnimationTestTests' do
