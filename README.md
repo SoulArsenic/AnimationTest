@@ -15,3 +15,5 @@
 	6、仿秘密的手势操作
 	
 	7 仿 iDaily 的手势操作
+	
+	8 新建了一个LAdaptiveImageView 用来处理图片位置的自定义
