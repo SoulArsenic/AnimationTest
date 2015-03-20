@@ -28,6 +28,11 @@
 
 }
 -(void)resetUI{
+
+    self.heartStart = CGPointMake(-self.heart.bounds.size.width, self.bounds.size.height/2);
+    self.actionStart = CGPointMake(self.frame.size.width  + _actionView.bounds.size.width/2,self.bounds.size.height/2);
+    
+    
     
     self.heart.center = self.heartStart;
     self.actionView.center = self.actionStart;
@@ -35,31 +40,7 @@
     _processor = nil;
     
 }
--(id)initWithCoder:(NSCoder *)aDecoder{
-    self = [super initWithCoder:aDecoder];
 
-    if (self) {
-        [self addObserver:self forKeyPath:@"actionView" options:NSKeyValueObservingOptionNew context:nil];
-        [self addObserver:self forKeyPath:@"heart" options:NSKeyValueObservingOptionNew context:nil];
-
-    }
-    
-    return self;
-}
--(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
-
-    if ([keyPath isEqualToString:@"panInUseHeart"]) {
-        
-    }else{
-        self.heartStart = self.heart.center;
-
-        self.actionStart  = self.actionView.center;
-
-        if (CGSizeEqualToSize(_heartSize, CGSizeZero))
-            self.heartSize = self.heart.frame.size;
-        
-    }
-}
 
 -(UIImage*)captureView:(UIView *)theView{
     
@@ -102,12 +83,7 @@
     if (recognizer.state == UIGestureRecognizerStateBegan) {
         
         self.touchStartPoint = [recognizer locationInView:self.bg];
-        if (CGPointEqualToPoint(CGPointZero, self.heartStart)) {
-            self.heartStart = self.heart.center;
-        }
-        if (CGPointEqualToPoint(CGPointZero, self.actionStart)) {
-            self.actionStart  = self.actionView.center;
-        }
+        
         self.actionTempCenter = self.actionView.center;
         
         if (!_processor) {
@@ -206,7 +182,8 @@
             
             
             if (self.actionView.center.x > bounds) {
-                center = self.actionStart;
+                center = CGPointMake(self.frame.size.width  + _actionView.bounds.size.width/2,_actionStart.y);;
+                self.actionStart = center;
                 _inUseactionView = NO;
                 
             }else{
