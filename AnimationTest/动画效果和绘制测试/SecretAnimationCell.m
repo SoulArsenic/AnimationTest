@@ -20,7 +20,7 @@
     }];
     [UIView animateWithDuration:.1 animations:^{
 
-        _heart.frame = CGRectMake(_heartStart.x - _heartSize.width, _heartStart.y - _heartSize.height, _heartSize.width ,_heartSize.height );
+        _heart.frame = CGRectMake(self.heartStart.x - _heartSize.width, self.heartStart.y - _heartSize.height, _heartSize.width ,_heartSize.height );
         
     }];
     _fuzzyView.image = nil;
@@ -28,17 +28,27 @@
 
 }
 -(void)resetUI{
-
-    self.heartStart = CGPointMake(-self.heart.bounds.size.width, self.bounds.size.height/2);
-    self.actionStart = CGPointMake(self.frame.size.width  + _actionView.bounds.size.width/2,self.bounds.size.height/2);
-    
     
     
     self.heart.center = self.heartStart;
     self.actionView.center = self.actionStart;
+    _heartSize  = self.heart.bounds.size;
     _fuzzyView.image = nil;
     _processor = nil;
     
+}
+
+- (BOOL) actionCenter{
+    return !CGPointEqualToPoint([self selfCenter], _actionView.center);
+}
+- (CGPoint) selfCenter{
+    return CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
+}
+- (CGPoint) heartStart{
+    return CGPointMake(-_heart.bounds.size.width/2 - 10,self.bounds.size.height/2);
+}
+- (CGPoint) actionStart{
+    return CGPointMake(self.bounds.size.width  + _actionView.bounds.size.width/2 + 10,self.bounds.size.height/2);
 }
 
 
@@ -73,9 +83,7 @@
 }
 
 
--(BOOL)actionCenter{
-    return !CGPointEqualToPoint(_actionStart, _actionView.center);
-}
+
 
 -(void)touchGesture:(UIPanGestureRecognizer *)recognizer{
    
@@ -131,7 +139,7 @@
                 center = CGPointMake(self.heartStart.x + temp, center.y);
                 
                 if (center.x > self.frame.size.width/2) {
-                    center = CGPointMake(self.heartStart.x + self.frame.size.width/2+ temp/10, center.y);
+                    center = CGPointMake(self.heartStart.x + self.frame.size.width/2+ temp/10, self.frame.size.height/2);
                 }
                 
                 
@@ -148,7 +156,6 @@
                 }
                 
                 self.heart.center = center;
-                
                 
             }else{
                 
@@ -182,14 +189,13 @@
             
             
             if (self.actionView.center.x > bounds) {
-                center = CGPointMake(self.frame.size.width  + _actionView.bounds.size.width/2,_actionStart.y);;
-                self.actionStart = center;
+                center = CGPointMake(self.frame.size.width  + _actionView.bounds.size.width/2,self.bounds.size.height/2);
                 _inUseactionView = NO;
                 
             }else{
                 
                 _inUseactionView = YES;
-                center = CGPointMake(self.contentView.frame.size.width / 2,_actionStart.y);
+                center = [self selfCenter];
             }
             
             [UIView animateWithDuration:time animations:^{
@@ -219,13 +225,13 @@
                         _heart.frame = CGRectMake(self.likeBtn.center.x - width,self.likeBtn.center.y - height,width ,height);
                     } completion:^(BOOL finished) {
                         _heart.frame = CGRectMake(0, 0, _heartSize.width, _heartSize.height);
-                        _heart.center = _heartStart;
+                        _heart.center = self.heartStart;
                     }];
                 }];
             }
             else{
                 [UIView animateWithDuration:.3 animations:^{
-                    _heart.frame = CGRectMake(_heartStart.x - _heartSize.width, _heartStart.y - _heartSize.height, _heartSize.width ,_heartSize.height );
+                    _heart.frame = CGRectMake(self.heartStart.x - _heartSize.width, self.heartStart.y - _heartSize.height, _heartSize.width ,_heartSize.height );
                 }];
             }
         }
@@ -239,7 +245,7 @@
     
     CGFloat actionLocation =_actionView.center.x - centerX;
     
-    CGFloat startLocation =_actionStart.x - centerX;
+    CGFloat startLocation =self.actionStart.x - centerX;
     
     CGFloat temp = ((startLocation - MAX(actionLocation, 0)) / startLocation)*1;
     

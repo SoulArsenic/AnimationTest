@@ -24,8 +24,6 @@ typedef void(^StatusChange)(BOOL status);
 @property (strong, nonatomic) ALDBlurImageProcessor *processor;
 
 @property (assign) CGSize heartSize;
-@property (assign) CGPoint heartStart;
-@property (assign) CGPoint actionStart;
 @property (assign) CGPoint touchStartPoint;
 @property (assign) CGPoint actionTempCenter;
 @property (assign) BOOL inUseactionView;

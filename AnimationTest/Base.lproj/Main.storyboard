@@ -162,9 +162,23 @@
                                     <segue destination="vXZ-lx-hvc" kind="push" id="yPO-Um-Bkw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSZ-FA-ToC">
+                                <rect key="frame" x="32" y="122" width="59" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="2p3-mG-i5j"/>
+                                    <constraint firstAttribute="height" constant="30" id="CWP-0M-FQ7"/>
+                                </constraints>
+                                <state key="normal" title="sapi授权">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jRO-RF-9wb" kind="push" id="HMQ-Fb-9nT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="YSZ-FA-ToC" firstAttribute="top" secondItem="oL1-iD-Jo6" secondAttribute="bottom" constant="58" id="3B6-yf-Uq6"/>
                             <constraint firstAttribute="centerX" secondItem="KKd-Xx-OUo" secondAttribute="centerX" constant="1" id="8CV-FX-dtD"/>
                             <constraint firstItem="MJz-bA-i1k" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="84" id="AQd-wZ-iMU"/>
                             <constraint firstItem="srJ-QE-gWP" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="228" id="BZW-n0-Nfr"/>
@@ -174,6 +188,7 @@
                             <constraint firstAttribute="centerX" secondItem="1ev-iN-boo" secondAttribute="centerX" constant="1" id="OuE-RR-OWl"/>
                             <constraint firstAttribute="centerX" secondItem="Smp-6c-UQs" secondAttribute="centerX" constant="1" id="WMV-4J-nQK"/>
                             <constraint firstItem="M5d-xN-ZI2" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="160" id="Xvs-Xu-uKH"/>
+                            <constraint firstItem="YSZ-FA-ToC" firstAttribute="leading" secondItem="OId-Sr-G62" secondAttribute="leadingMargin" constant="16" id="all-Cj-B0N"/>
                             <constraint firstItem="KKd-Xx-OUo" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="373" id="cMs-CH-eyq"/>
                             <constraint firstItem="lY8-Y1-9rT" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="342" id="ev1-7c-okT"/>
                             <constraint firstAttribute="centerX" secondItem="srJ-QE-gWP" secondAttribute="centerX" constant="1" id="f6W-Zy-VG6"/>
@@ -267,6 +282,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rmt-Na-Byb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="328" y="330"/>
+        </scene>
+        <!--授权-->
+        <scene sceneID="Cj3-Uo-nCQ">
+            <objects>
+                <viewController title="授权" id="jRO-RF-9wb" customClass="AuthorizationVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zYP-5I-Awf"/>
+                        <viewControllerLayoutGuide type="bottom" id="LrA-Zg-WcG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pZ0-Nh-GgT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUE-b6-cPL">
+                                <rect key="frame" x="30" y="80" width="30" height="30"/>
+                                <state key="normal" title="授权">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="authorization" destination="jRO-RF-9wb" eventType="touchUpInside" id="nuN-E6-nce"/>
+                                </connections>
+                            </button>
+                            <webView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Leg-b4-jNy">
+                                <rect key="frame" x="30" y="118" width="252" height="405"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="jRO-RF-9wb" id="jrL-82-03S"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Leg-b4-jNy" firstAttribute="top" secondItem="zYP-5I-Awf" secondAttribute="bottom" constant="54" id="Amc-nc-QC5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Leg-b4-jNy" secondAttribute="trailing" constant="22" id="GFR-BM-V3m"/>
+                            <constraint firstItem="Leg-b4-jNy" firstAttribute="leading" secondItem="pZ0-Nh-GgT" secondAttribute="leadingMargin" constant="14" id="OrO-VC-4nd"/>
+                            <constraint firstItem="LrA-Zg-WcG" firstAttribute="top" secondItem="Leg-b4-jNy" secondAttribute="bottom" constant="45" id="gKd-PX-kCU"/>
+                            <constraint firstItem="EUE-b6-cPL" firstAttribute="leading" secondItem="pZ0-Nh-GgT" secondAttribute="leadingMargin" constant="14" id="puz-R3-REP"/>
+                            <constraint firstItem="EUE-b6-cPL" firstAttribute="top" secondItem="zYP-5I-Awf" secondAttribute="bottom" constant="16" id="zaD-ql-Jts"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2ZZ-wc-gdK"/>
+                    <connections>
+                        <outlet property="btn" destination="EUE-b6-cPL" id="jBn-L7-pCS"/>
+                        <outlet property="myWebView" destination="Leg-b4-jNy" id="GjL-I9-7fe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bgB-9j-QUu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="296" y="955"/>
         </scene>
         <!--表情匹配测试-->
         <scene sceneID="npW-iT-VgE">
@@ -636,7 +700,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nYY-Bk-oAV">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mQV-6b-lNX">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mQV-6b-lNX">
                                         <color key="backgroundColor" red="0.35053125619999997" green="1" blue="0.34605096010000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="128" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gZ2-ei-ZhP">
@@ -674,7 +738,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="mQV-6b-lNX" secondAttribute="trailing" constant="22" id="F1h-oe-PSI"/>
+                                    <constraint firstAttribute="trailing" secondItem="mQV-6b-lNX" secondAttribute="trailing" constant="320" id="F1h-oe-PSI"/>
                                     <constraint firstAttribute="trailing" secondItem="gZ2-ei-ZhP" secondAttribute="trailing" id="MQW-Ip-nZv"/>
                                     <constraint firstItem="mQV-6b-lNX" firstAttribute="top" secondItem="nYY-Bk-oAV" secondAttribute="top" id="OjJ-CL-qSD"/>
                                     <constraint firstAttribute="bottom" secondItem="mQV-6b-lNX" secondAttribute="bottom" constant="568" id="SrY-IC-lwX"/>
@@ -684,7 +748,7 @@
                                     <constraint firstItem="mQV-6b-lNX" firstAttribute="top" secondItem="nYY-Bk-oAV" secondAttribute="top" id="pH2-Q9-yqo"/>
                                     <constraint firstItem="mQV-6b-lNX" firstAttribute="top" secondItem="nYY-Bk-oAV" secondAttribute="top" id="t9R-aE-1YN"/>
                                     <constraint firstAttribute="bottom" secondItem="gZ2-ei-ZhP" secondAttribute="bottom" id="vi5-gj-Yh8"/>
-                                    <constraint firstItem="mQV-6b-lNX" firstAttribute="leading" secondItem="nYY-Bk-oAV" secondAttribute="leading" constant="22" id="wpJ-1v-BsS"/>
+                                    <constraint firstItem="mQV-6b-lNX" firstAttribute="leading" secondItem="nYY-Bk-oAV" secondAttribute="leading" id="wpJ-1v-BsS"/>
                                 </constraints>
                             </view>
                         </subviews>
