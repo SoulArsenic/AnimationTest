@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C571A026EFCAA79AF9DA6C39"
+               BlueprintIdentifier = "0A7AF51D083E699302293AAA"
                BuildableName = "libPods-AnimationTest-FaceAwareFill.a"
                BlueprintName = "Pods-AnimationTest-FaceAwareFill"
                ReferencedContainer = "container:Pods.xcodeproj">

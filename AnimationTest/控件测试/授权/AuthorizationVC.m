@@ -91,7 +91,7 @@
     animation.fromValue = from;
     animation.toValue = to;
     animation.repeatCount = 1;
-    animation.timingFunction = [CAMediaTimingFunction functionWithName:timing];
+    animation.timingFunction =  [CAMediaTimingFunction functionWithControlPoints:.5 :.5 :.5 :.5 ];// [CAMediaTimingFunction functionWithName:timing];
     animation.removedOnCompletion = NO;
     animation.fillMode = kCAFillModeForwards;
     animation.duration = 0.35f;

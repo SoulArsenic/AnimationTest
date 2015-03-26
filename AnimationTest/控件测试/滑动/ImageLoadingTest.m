@@ -36,7 +36,7 @@
    __unused NSString * url1 = @"http://img2.duitang.com/uploads/item/201209/17/20120917202434_cjvNR.jpeg";
    __unused NSString * url2 = @"http://cdn.duitang.com/uploads/item/201302/06/20130206155416_JCNJC.jpeg";
    __unused NSString * hlw = @"http://pic2.52pk.com/files/130104/1809687_091628_2415.jpg";
-    
+
 //    self.bigView.contentMode = UIViewContentModeScaleAspectFit ;
     
     [self.bigView hnk_setImageFromURL:[NSURL URLWithString:hlw] placeholder:nil success:^(UIImage *image) {
@@ -79,8 +79,8 @@
     [self.view addSubview:rtview];
 }
 - (IBAction)changeModel:(UISegmentedControl *)sender {
-    lfview.position = sender.selectedSegmentIndex;
-    rtview.position = sender.selectedSegmentIndex;
+    lfview.position = (LAdaptiveImageViewPosition) sender.selectedSegmentIndex;
+    rtview.position = (LAdaptiveImageViewPosition) sender.selectedSegmentIndex;
 }
 
 @end
