@@ -71,7 +71,7 @@
     
     
     if ([cell isKindOfClass:[ImageScrollTableViewCell class]]) {
-        ImageScrollTableViewCell* cello = cell;
+        ImageScrollTableViewCell* cello = (ImageScrollTableViewCell*) cell;
         cello.show.image = nil;
         [cello.show setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://ww4.sinaimg.cn/mw1024/%@.jpg",[self.array objectAtIndex:indexPath.row]]]];
     }

@@ -256,7 +256,7 @@
         lineLayer.path = funcLinePath.CGPath;
         CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
         pathAnimation.duration = 1.5;
-        pathAnimation.timingFunction = [CAMediaTimingFunction functionWithControlPoints: 0.328 : 0.397 : 0.000 : 1.000];
+        pathAnimation.timingFunction = [CAMediaTimingFunction functionWithControlPoints: 0.008 : 0.730 : 0.715 : 0.056];
         pathAnimation.fromValue = [NSNumber numberWithFloat:0.0f];
         pathAnimation.toValue = [NSNumber numberWithFloat:1.0f];
         pathAnimation.autoreverses = NO;

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "31E229BDBB9977FF1317FDE6"
+               BlueprintIdentifier = "89CA94A29221A3967D2E322A"
                BuildableName = "libPods-AnimationTest-Haneke.a"
                BlueprintName = "Pods-AnimationTest-Haneke"
                ReferencedContainer = "container:Pods.xcodeproj">
