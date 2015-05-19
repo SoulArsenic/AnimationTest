@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="zJK-83-bxZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="zJK-83-bxZ">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -43,7 +43,6 @@
                                     <constraint firstAttribute="width" constant="30" id="ZOq-2D-vWa"/>
                                 </constraints>
                                 <state key="normal" title="动效">
-                                    <color key="titleColor" red="0.32549019610000002" green="0.32549019610000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -57,7 +56,6 @@
                                     <constraint firstAttribute="height" constant="30" id="czJ-3X-vSQ"/>
                                 </constraints>
                                 <state key="normal" title="组合动画">
-                                    <color key="titleColor" red="0.32549019610000002" green="0.32549019610000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -71,7 +69,6 @@
                                     <constraint firstAttribute="width" constant="60" id="yzN-6e-JSP"/>
                                 </constraints>
                                 <state key="normal" title="图形绘制">
-                                    <color key="titleColor" red="0.32549019610000002" green="0.32549019610000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -85,7 +82,6 @@
                                     <constraint firstAttribute="width" constant="30" id="u1t-Ii-xkJ"/>
                                 </constraints>
                                 <state key="normal" title="圆圈">
-                                    <color key="titleColor" red="0.32549019610000002" green="0.32549019610000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -99,7 +95,6 @@
                                     <constraint firstAttribute="width" constant="75" id="b01-1Z-Ydm"/>
                                 </constraints>
                                 <state key="normal" title="仿秘密手势">
-                                    <color key="titleColor" red="0.32549019610000002" green="0.32549019610000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -113,7 +108,6 @@
                                     <constraint firstAttribute="width" constant="30" id="RdZ-Yn-qHo"/>
                                 </constraints>
                                 <state key="normal" title="弹出">
-                                    <color key="titleColor" red="0.32549019610000002" green="0.32549019610000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -127,7 +121,6 @@
                                     <constraint firstAttribute="width" constant="61" id="i2R-Tu-avi"/>
                                 </constraints>
                                 <state key="normal" title="layerTest">
-                                    <color key="titleColor" red="0.32549019610000002" green="0.32549019610000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -141,7 +134,6 @@
                                     <constraint firstAttribute="height" constant="30" id="HOj-Qj-YMx"/>
                                 </constraints>
                                 <state key="normal" title="表情">
-                                    <color key="titleColor" red="0.32549019610000002" green="0.32549019610000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -151,7 +143,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63F-O8-yqp">
                                 <rect key="frame" x="16" y="84" width="90" height="30"/>
                                 <state key="normal" title="图片加载测试">
-                                    <color key="titleColor" red="0.32549019610000002" green="0.32549019610000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -165,7 +156,6 @@
                                     <constraint firstAttribute="width" constant="30" id="pbi-lw-QIr"/>
                                 </constraints>
                                 <state key="normal" title="卡牌">
-                                    <color key="titleColor" red="0.32549019610000002" green="0.32549019610000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -178,9 +168,7 @@
                                     <constraint firstAttribute="width" constant="59" id="2p3-mG-i5j"/>
                                     <constraint firstAttribute="height" constant="30" id="CWP-0M-FQ7"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="sapi授权">
-                                    <color key="titleColor" red="0.32549019610000002" green="0.32549019610000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -188,77 +176,62 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naY-Eb-zAT">
-                                <rect key="frame" x="46" y="156" width="30" height="30"/>
+                                <rect key="frame" x="274" y="84" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Dj6-c2-mmb"/>
+                                    <constraint firstAttribute="height" constant="30" id="ME6-3P-e6B"/>
+                                </constraints>
                                 <state key="normal" title="图表">
-                                    <color key="titleColor" red="0.32549019610000002" green="0.32549019610000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="9SQ-iA-fom" kind="push" id="gGK-Zk-mwK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52K-Lc-vsj">
-                                <rect key="frame" x="31" y="193" width="60" height="30"/>
-                                <state key="normal" title="加载测试">
-                                    <color key="titleColor" red="0.32549019610000002" green="0.32549019610000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52K-Lc-vsj">
+                                <rect key="frame" x="266" y="122" width="46" height="30"/>
+                                <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="Vxq-dN-moz" kind="push" id="kGH-Ex-1lg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swn-kj-0Lw">
-                                <rect key="frame" x="31" y="226" width="60" height="30"/>
-                                <state key="normal" title="加载测试">
-                                    <color key="titleColor" red="0.32549019610000002" green="0.32549019610000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swn-kj-0Lw">
+                                <rect key="frame" x="266" y="148" width="30" height="30"/>
+                                <state key="normal" title="默认">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="z8v-Tg-UYS" kind="push" id="efl-cY-bnB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEP-9D-oMd">
-                                <rect key="frame" x="35" y="267" width="53" height="30"/>
-                                <state key="normal" title="Flexible">
-                                    <color key="titleColor" red="0.32549019610000002" green="0.32549019610000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="XeK-ev-EoW" kind="push" id="RV3-ol-wrC"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="52K-Lc-vsj" firstAttribute="top" secondItem="naY-Eb-zAT" secondAttribute="bottom" constant="7" id="1as-Kw-jYL"/>
                             <constraint firstItem="YSZ-FA-ToC" firstAttribute="top" secondItem="oL1-iD-Jo6" secondAttribute="bottom" constant="58" id="3B6-yf-Uq6"/>
                             <constraint firstAttribute="centerX" secondItem="KKd-Xx-OUo" secondAttribute="centerX" constant="1" id="8CV-FX-dtD"/>
-                            <constraint firstItem="63F-O8-yqp" firstAttribute="centerX" secondItem="YSZ-FA-ToC" secondAttribute="centerX" constant="-0.5" id="AGo-W6-pfx"/>
                             <constraint firstItem="MJz-bA-i1k" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="84" id="AQd-wZ-iMU"/>
-                            <constraint firstItem="52K-Lc-vsj" firstAttribute="centerX" secondItem="naY-Eb-zAT" secondAttribute="centerX" id="BWr-cN-ulN"/>
                             <constraint firstItem="srJ-QE-gWP" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="228" id="BZW-n0-Nfr"/>
                             <constraint firstItem="Smp-6c-UQs" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="304" id="CzN-PW-wpe"/>
                             <constraint firstItem="1ev-iN-boo" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="198" id="HuC-Vc-VAL"/>
-                            <constraint firstItem="gEP-9D-oMd" firstAttribute="top" secondItem="swn-kj-0Lw" secondAttribute="bottom" constant="11" id="KIM-ZX-csE"/>
                             <constraint firstItem="63F-O8-yqp" firstAttribute="leading" secondItem="OId-Sr-G62" secondAttribute="leadingMargin" id="MEj-6p-hH4"/>
-                            <constraint firstItem="swn-kj-0Lw" firstAttribute="centerX" secondItem="52K-Lc-vsj" secondAttribute="centerX" id="MJg-30-7br"/>
                             <constraint firstAttribute="centerX" secondItem="1ev-iN-boo" secondAttribute="centerX" constant="1" id="OuE-RR-OWl"/>
-                            <constraint firstItem="naY-Eb-zAT" firstAttribute="centerX" secondItem="YSZ-FA-ToC" secondAttribute="centerX" constant="-0.5" id="VLG-J5-agw"/>
                             <constraint firstAttribute="centerX" secondItem="Smp-6c-UQs" secondAttribute="centerX" constant="1" id="WMV-4J-nQK"/>
                             <constraint firstItem="M5d-xN-ZI2" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="160" id="Xvs-Xu-uKH"/>
+                            <constraint firstItem="YSZ-FA-ToC" firstAttribute="leading" secondItem="OId-Sr-G62" secondAttribute="leadingMargin" constant="16" id="all-Cj-B0N"/>
                             <constraint firstItem="KKd-Xx-OUo" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="373" id="cMs-CH-eyq"/>
+                            <constraint firstItem="naY-Eb-zAT" firstAttribute="top" secondItem="oL1-iD-Jo6" secondAttribute="bottom" constant="20" id="dYK-l8-SeQ"/>
                             <constraint firstItem="lY8-Y1-9rT" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="342" id="ev1-7c-okT"/>
                             <constraint firstAttribute="centerX" secondItem="srJ-QE-gWP" secondAttribute="centerX" constant="1" id="f6W-Zy-VG6"/>
                             <constraint firstItem="KbY-A6-ybi" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="266" id="i8p-gW-QeG"/>
                             <constraint firstAttribute="centerX" secondItem="M5d-xN-ZI2" secondAttribute="centerX" constant="1" id="kEt-Yv-zkT"/>
-                            <constraint firstItem="naY-Eb-zAT" firstAttribute="top" secondItem="YSZ-FA-ToC" secondAttribute="bottom" constant="4" id="ldG-Y8-IFt"/>
                             <constraint firstItem="0W1-Zj-oo3" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="122" id="mQi-Ut-YAu"/>
-                            <constraint firstItem="swn-kj-0Lw" firstAttribute="centerX" secondItem="gEP-9D-oMd" secondAttribute="centerX" id="nVp-8K-EXw"/>
                             <constraint firstAttribute="centerX" secondItem="0W1-Zj-oo3" secondAttribute="centerX" id="o9s-JH-WlG"/>
                             <constraint firstAttribute="centerX" secondItem="MJz-bA-i1k" secondAttribute="centerX" constant="1" id="qBR-sk-aSs"/>
                             <constraint firstAttribute="centerX" secondItem="lY8-Y1-9rT" secondAttribute="centerX" id="qvT-qR-rnT"/>
-                            <constraint firstItem="swn-kj-0Lw" firstAttribute="top" secondItem="52K-Lc-vsj" secondAttribute="bottom" constant="3" id="xUq-Pb-oy1"/>
                             <constraint firstAttribute="centerX" secondItem="KbY-A6-ybi" secondAttribute="centerX" id="xYJ-FQ-x2I"/>
+                            <constraint firstItem="naY-Eb-zAT" firstAttribute="trailing" secondItem="OId-Sr-G62" secondAttribute="trailingMargin" id="xwE-kj-jO6"/>
                             <constraint firstItem="63F-O8-yqp" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="84" id="ymn-po-ax0"/>
                         </constraints>
                     </view>
@@ -285,7 +258,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3hT-Sj-Xzg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1118" y="1815"/>
+            <point key="canvasLocation" x="1196" y="2107"/>
         </scene>
         <!--图片测试-->
         <scene sceneID="VV0-Mp-9Lo">
@@ -360,7 +333,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rmt-Na-Byb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2477" y="977"/>
+            <point key="canvasLocation" x="328" y="330"/>
         </scene>
         <!--Image Scroll Table View Controller-->
         <scene sceneID="H9n-Jl-U1j">
@@ -403,7 +376,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MWw-ob-IZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2051" y="145"/>
+            <point key="canvasLocation" x="1261" y="589"/>
         </scene>
         <!--Normal Table View Controller-->
         <scene sceneID="8Og-bW-Ry2">
@@ -446,7 +419,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lPR-Wz-U7S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2477" y="145"/>
+            <point key="canvasLocation" x="1261" y="1241"/>
         </scene>
         <!--授权-->
         <scene sceneID="Cj3-Uo-nCQ">
@@ -495,7 +468,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bgB-9j-QUu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="682" y="1815"/>
+            <point key="canvasLocation" x="760" y="2107"/>
         </scene>
         <!--表情匹配测试-->
         <scene sceneID="npW-iT-VgE">
@@ -523,7 +496,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6EH-aA-VBe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="301" y="1815"/>
+            <point key="canvasLocation" x="379" y="2107"/>
         </scene>
         <!--Home Page View Controller-->
         <scene sceneID="cMu-XA-IjC">
@@ -645,7 +618,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="exH-wu-wdc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1585" y="977"/>
+            <point key="canvasLocation" x="-1479" y="1285"/>
         </scene>
         <!--卡牌-->
         <scene sceneID="ufC-wZ-h7g">
@@ -679,7 +652,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2477" y="1800"/>
+            <point key="canvasLocation" x="-2399" y="2092"/>
         </scene>
         <!--layerTest-->
         <scene sceneID="kLg-Dp-vNL">
@@ -767,7 +740,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XNF-oD-CuU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-173" y="1815"/>
+            <point key="canvasLocation" x="-95" y="2107"/>
         </scene>
         <!--动效-->
         <scene sceneID="QuB-Na-5m6">
@@ -848,7 +821,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RBL-K7-Dow" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-645" y="1795"/>
+            <point key="canvasLocation" x="-567" y="2087"/>
         </scene>
         <!--My Scroll View Controller-->
         <scene sceneID="mWj-iB-xn4">
@@ -879,7 +852,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fUl-6P-nnc">
-                                                            <rect key="frame" x="80" y="0.0" width="226" height="81"/>
+                                                            <rect key="frame" x="80" y="0.0" width="226" height="82"/>
                                                             <color key="backgroundColor" red="0.35053125619999997" green="1" blue="0.34605096010000003" alpha="1" colorSpace="calibratedRGB"/>
                                                         </view>
                                                     </subviews>
@@ -932,26 +905,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rPN-M2-xvz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1548" y="1795"/>
-        </scene>
-        <!--Flexible-->
-        <scene sceneID="4Tj-JH-e2b">
-            <objects>
-                <viewController id="XeK-ev-EoW" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="eIb-r9-8Ub"/>
-                        <viewControllerLayoutGuide type="bottom" id="RNJ-P6-8r5"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3Je-rW-khu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Flexible" id="bMb-Lb-310"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Sme-jD-s7Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2477" y="2520"/>
+            <point key="canvasLocation" x="-1470" y="2087"/>
         </scene>
         <!--组合-->
         <scene sceneID="guQ-i1-11A">
@@ -1056,7 +1010,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vbr-UV-X2F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1093" y="1795"/>
+            <point key="canvasLocation" x="-1015" y="2087"/>
         </scene>
         <!--仿秘密-->
         <scene sceneID="p9i-wu-I91">
@@ -1074,7 +1028,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="laF-Mu-bJh">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="299"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCT-vi-Nle">
                                                     <rect key="frame" x="110" y="246" width="105" height="35"/>
@@ -1087,7 +1041,7 @@
                                                     </state>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="569-Tb-qUT">
-                                                    <rect key="frame" x="215" y="244" width="105" height="35"/>
+                                                    <rect key="frame" x="215" y="246" width="105" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="2lI-kx-qdr"/>
                                                         <constraint firstAttribute="width" constant="105" id="kOu-Wr-0fa"/>
@@ -1098,7 +1052,7 @@
                                                     </state>
                                                 </button>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hR6-pS-S4d">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="299"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QY4-Dn-cMJ">
@@ -1130,7 +1084,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="kCT-vi-Nle" secondAttribute="bottom" constant="18.5" id="dSb-dU-BNW"/>
                                                 <constraint firstAttribute="trailing" secondItem="QY4-Dn-cMJ" secondAttribute="trailing" constant="-220" id="o70-cN-yAR"/>
                                                 <constraint firstAttribute="centerY" secondItem="QY4-Dn-cMJ" secondAttribute="centerY" id="sXC-LS-SGP"/>
-                                                <constraint firstAttribute="bottom" secondItem="569-Tb-qUT" secondAttribute="bottom" constant="20" id="wJ1-iL-tXd"/>
+                                                <constraint firstAttribute="bottom" secondItem="569-Tb-qUT" secondAttribute="bottom" constant="18.5" id="wJ1-iL-tXd"/>
                                                 <constraint firstAttribute="trailing" secondItem="hR6-pS-S4d" secondAttribute="trailing" id="zWE-IM-ZcA"/>
                                             </constraints>
                                         </view>
@@ -1177,7 +1131,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-2051" y="977"/>
+            <point key="canvasLocation" x="-1975" y="1285"/>
         </scene>
         <!--Graphics-->
         <scene sceneID="WEh-o4-W2I">
@@ -1241,7 +1195,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cla-0s-1t2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2003" y="1795"/>
+            <point key="canvasLocation" x="-1925" y="2087"/>
         </scene>
     </scenes>
     <resources>
