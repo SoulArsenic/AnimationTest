@@ -1,0 +1,16 @@
+PODS:
+  - BlurImageProcessor (1.0.0)
+  - FaceAwareFill (1.0)
+  - Haneke (1.0.1)
+
+DEPENDENCIES:
+  - BlurImageProcessor
+  - FaceAwareFill
+  - Haneke (~> 1.0)
+
+SPEC CHECKSUMS:
+  BlurImageProcessor: a4794ad3128748dbff8b40ae43ce9386d3667bba
+  FaceAwareFill: 8a0faf0a0ca488793cd3a1e7fc90c7b6cc11efd3
+  Haneke: d60be8b96b228633b24708dd153169d6849d6f78
+
+COCOAPODS: 0.37.1

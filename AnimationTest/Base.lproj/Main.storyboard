@@ -22,7 +22,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hAE-Il-ALh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1062" y="368"/>
+            <point key="canvasLocation" x="-822" y="-465"/>
         </scene>
         <!--动画-->
         <scene sceneID="65C-Kq-gco">
@@ -37,7 +37,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0W1-Zj-oo3">
-                                <rect key="frame" x="145" y="122" width="30" height="30"/>
+                                <rect key="frame" x="47" y="198" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Ntc-Gi-y8f"/>
                                     <constraint firstAttribute="width" constant="30" id="ZOq-2D-vWa"/>
@@ -50,7 +50,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5d-xN-ZI2">
-                                <rect key="frame" x="129" y="160" width="60" height="30"/>
+                                <rect key="frame" x="32" y="236" width="60" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="bvG-Vg-vkl"/>
                                     <constraint firstAttribute="height" constant="30" id="czJ-3X-vSQ"/>
@@ -63,7 +63,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ev-iN-boo">
-                                <rect key="frame" x="129" y="198" width="60" height="30"/>
+                                <rect key="frame" x="32" y="274" width="60" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="fqy-jq-LfJ"/>
                                     <constraint firstAttribute="width" constant="60" id="yzN-6e-JSP"/>
@@ -76,7 +76,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srJ-QE-gWP">
-                                <rect key="frame" x="144" y="228" width="30" height="30"/>
+                                <rect key="frame" x="46" y="312" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="KOB-My-mRE"/>
                                     <constraint firstAttribute="width" constant="30" id="u1t-Ii-xkJ"/>
@@ -89,7 +89,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbY-A6-ybi">
-                                <rect key="frame" x="122" y="266" width="75" height="30"/>
+                                <rect key="frame" x="24" y="350" width="75" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="0UA-qI-qFD"/>
                                     <constraint firstAttribute="width" constant="75" id="b01-1Z-Ydm"/>
@@ -102,7 +102,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smp-6c-UQs">
-                                <rect key="frame" x="144" y="304" width="30" height="30"/>
+                                <rect key="frame" x="46" y="388" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="6bP-tQ-fq5"/>
                                     <constraint firstAttribute="width" constant="30" id="RdZ-Yn-qHo"/>
@@ -115,7 +115,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lY8-Y1-9rT">
-                                <rect key="frame" x="129" y="342" width="61" height="30"/>
+                                <rect key="frame" x="31" y="426" width="61" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Og9-Av-14X"/>
                                     <constraint firstAttribute="width" constant="61" id="i2R-Tu-avi"/>
@@ -128,7 +128,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKd-Xx-OUo">
-                                <rect key="frame" x="144" y="373" width="30" height="30"/>
+                                <rect key="frame" x="46" y="464" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="3yl-wB-WRq"/>
                                     <constraint firstAttribute="height" constant="30" id="HOj-Qj-YMx"/>
@@ -150,7 +150,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJz-bA-i1k">
-                                <rect key="frame" x="144" y="84" width="30" height="30"/>
+                                <rect key="frame" x="46" y="160" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="LXC-Hq-Zga"/>
                                     <constraint firstAttribute="width" constant="30" id="pbi-lw-QIr"/>
@@ -176,7 +176,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naY-Eb-zAT">
-                                <rect key="frame" x="274" y="84" width="30" height="30"/>
+                                <rect key="frame" x="47" y="502" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="Dj6-c2-mmb"/>
                                     <constraint firstAttribute="height" constant="30" id="ME6-3P-e6B"/>
@@ -191,37 +191,37 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="KKd-Xx-OUo" secondAttribute="centerX" constant="99" id="0p2-bV-TDi"/>
                             <constraint firstItem="YSZ-FA-ToC" firstAttribute="top" secondItem="oL1-iD-Jo6" secondAttribute="bottom" constant="58" id="3B6-yf-Uq6"/>
-                            <constraint firstAttribute="centerX" secondItem="KKd-Xx-OUo" secondAttribute="centerX" constant="1" id="8CV-FX-dtD"/>
-                            <constraint firstItem="MJz-bA-i1k" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="84" id="AQd-wZ-iMU"/>
-                            <constraint firstItem="srJ-QE-gWP" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="228" id="BZW-n0-Nfr"/>
-                            <constraint firstItem="Smp-6c-UQs" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="304" id="CzN-PW-wpe"/>
-                            <constraint firstItem="1ev-iN-boo" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="198" id="HuC-Vc-VAL"/>
-                            <constraint firstItem="63F-O8-yqp" firstAttribute="leading" secondItem="OId-Sr-G62" secondAttribute="leadingMargin" id="MEj-6p-hH4"/>
-                            <constraint firstAttribute="centerX" secondItem="1ev-iN-boo" secondAttribute="centerX" constant="1" id="OuE-RR-OWl"/>
-                            <constraint firstAttribute="centerX" secondItem="Smp-6c-UQs" secondAttribute="centerX" constant="1" id="WMV-4J-nQK"/>
-                            <constraint firstItem="M5d-xN-ZI2" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="160" id="Xvs-Xu-uKH"/>
-                            <constraint firstItem="YSZ-FA-ToC" firstAttribute="leading" secondItem="OId-Sr-G62" secondAttribute="leadingMargin" constant="16" id="all-Cj-B0N"/>
-                            <constraint firstItem="KKd-Xx-OUo" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="373" id="cMs-CH-eyq"/>
-                            <constraint firstItem="naY-Eb-zAT" firstAttribute="top" secondItem="oL1-iD-Jo6" secondAttribute="bottom" constant="20" id="dYK-l8-SeQ"/>
-                            <constraint firstItem="lY8-Y1-9rT" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="342" id="ev1-7c-okT"/>
-                            <constraint firstAttribute="centerX" secondItem="srJ-QE-gWP" secondAttribute="centerX" constant="1" id="f6W-Zy-VG6"/>
-                            <constraint firstItem="KbY-A6-ybi" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="266" id="i8p-gW-QeG"/>
-                            <constraint firstAttribute="centerX" secondItem="M5d-xN-ZI2" secondAttribute="centerX" constant="1" id="kEt-Yv-zkT"/>
-                            <constraint firstItem="0W1-Zj-oo3" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="122" id="mQi-Ut-YAu"/>
-                            <constraint firstAttribute="centerX" secondItem="0W1-Zj-oo3" secondAttribute="centerX" id="o9s-JH-WlG"/>
-                            <constraint firstAttribute="centerX" secondItem="MJz-bA-i1k" secondAttribute="centerX" constant="1" id="qBR-sk-aSs"/>
-                            <constraint firstAttribute="centerX" secondItem="lY8-Y1-9rT" secondAttribute="centerX" id="qvT-qR-rnT"/>
-                            <constraint firstAttribute="centerX" secondItem="KbY-A6-ybi" secondAttribute="centerX" id="xYJ-FQ-x2I"/>
-                            <constraint firstItem="naY-Eb-zAT" firstAttribute="trailing" secondItem="OId-Sr-G62" secondAttribute="trailingMargin" id="xwE-kj-jO6"/>
+                            <constraint firstItem="MJz-bA-i1k" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="160" id="AQd-wZ-iMU"/>
+                            <constraint firstItem="srJ-QE-gWP" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="312" id="BZW-n0-Nfr"/>
+                            <constraint firstItem="Smp-6c-UQs" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="388" id="CzN-PW-wpe"/>
+                            <constraint firstItem="1ev-iN-boo" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="274" id="HuC-Vc-VAL"/>
+                            <constraint firstAttribute="centerX" secondItem="1ev-iN-boo" secondAttribute="centerX" constant="98" id="OuE-RR-OWl"/>
+                            <constraint firstAttribute="centerX" secondItem="naY-Eb-zAT" secondAttribute="centerX" constant="98" id="Qfh-7U-6gI"/>
+                            <constraint firstAttribute="centerX" secondItem="Smp-6c-UQs" secondAttribute="centerX" constant="99" id="WMV-4J-nQK"/>
+                            <constraint firstItem="M5d-xN-ZI2" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="236" id="Xvs-Xu-uKH"/>
+                            <constraint firstItem="KKd-Xx-OUo" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="464" id="cMs-CH-eyq"/>
+                            <constraint firstItem="naY-Eb-zAT" firstAttribute="top" secondItem="oL1-iD-Jo6" secondAttribute="bottom" constant="438" id="dYK-l8-SeQ"/>
+                            <constraint firstAttribute="centerX" secondItem="63F-O8-yqp" secondAttribute="centerX" constant="99" id="e3D-Xp-Uvz"/>
+                            <constraint firstItem="lY8-Y1-9rT" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="426" id="ev1-7c-okT"/>
+                            <constraint firstAttribute="centerX" secondItem="srJ-QE-gWP" secondAttribute="centerX" constant="99" id="f6W-Zy-VG6"/>
+                            <constraint firstItem="KbY-A6-ybi" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="350" id="i8p-gW-QeG"/>
+                            <constraint firstAttribute="centerX" secondItem="M5d-xN-ZI2" secondAttribute="centerX" constant="98" id="kEt-Yv-zkT"/>
+                            <constraint firstItem="0W1-Zj-oo3" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="198" id="mQi-Ut-YAu"/>
+                            <constraint firstAttribute="centerX" secondItem="0W1-Zj-oo3" secondAttribute="centerX" constant="98" id="o9s-JH-WlG"/>
+                            <constraint firstAttribute="centerX" secondItem="MJz-bA-i1k" secondAttribute="centerX" constant="99" id="qBR-sk-aSs"/>
+                            <constraint firstAttribute="centerX" secondItem="lY8-Y1-9rT" secondAttribute="centerX" constant="98.5" id="qvT-qR-rnT"/>
+                            <constraint firstAttribute="centerX" secondItem="KbY-A6-ybi" secondAttribute="centerX" constant="98.5" id="xYJ-FQ-x2I"/>
                             <constraint firstItem="63F-O8-yqp" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="84" id="ymn-po-ax0"/>
+                            <constraint firstAttribute="centerX" secondItem="YSZ-FA-ToC" secondAttribute="centerX" constant="98.5" id="zCq-dP-4AS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="动画" id="UNh-8D-xQF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUE-cL-vIg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-543" y="368"/>
+            <point key="canvasLocation" x="-403" y="-465"/>
         </scene>
         <!--图表测试-->
         <scene sceneID="tcQ-ak-XIw">
@@ -240,7 +240,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3hT-Sj-Xzg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1196" y="2107"/>
+            <point key="canvasLocation" x="-2443" y="2349"/>
         </scene>
         <!--图片测试-->
         <scene sceneID="VV0-Mp-9Lo">
@@ -315,7 +315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rmt-Na-Byb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="328" y="330"/>
+            <point key="canvasLocation" x="-3733" y="494"/>
         </scene>
         <!--授权-->
         <scene sceneID="Cj3-Uo-nCQ">
@@ -364,7 +364,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bgB-9j-QUu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="760" y="2107"/>
+            <point key="canvasLocation" x="-3290" y="494"/>
         </scene>
         <!--表情匹配测试-->
         <scene sceneID="npW-iT-VgE">
@@ -392,7 +392,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6EH-aA-VBe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="379" y="2107"/>
+            <point key="canvasLocation" x="-2855" y="2349"/>
         </scene>
         <!--Home Page View Controller-->
         <scene sceneID="cMu-XA-IjC">
@@ -514,7 +514,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="exH-wu-wdc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1479" y="1285"/>
+            <point key="canvasLocation" x="-2855" y="1407"/>
         </scene>
         <!--卡牌-->
         <scene sceneID="ufC-wZ-h7g">
@@ -548,7 +548,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2399" y="2092"/>
+            <point key="canvasLocation" x="-2855" y="494"/>
         </scene>
         <!--layerTest-->
         <scene sceneID="kLg-Dp-vNL">
@@ -636,7 +636,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XNF-oD-CuU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-95" y="2107"/>
+            <point key="canvasLocation" x="-3290" y="2349"/>
         </scene>
         <!--动效-->
         <scene sceneID="QuB-Na-5m6">
@@ -717,7 +717,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RBL-K7-Dow" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-567" y="2087"/>
+            <point key="canvasLocation" x="-2443" y="494"/>
         </scene>
         <!--My Scroll View Controller-->
         <scene sceneID="mWj-iB-xn4">
@@ -801,7 +801,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rPN-M2-xvz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1470" y="2087"/>
+            <point key="canvasLocation" x="-3733" y="2349"/>
         </scene>
         <!--组合-->
         <scene sceneID="guQ-i1-11A">
@@ -906,7 +906,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vbr-UV-X2F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1015" y="2087"/>
+            <point key="canvasLocation" x="-3733" y="1407"/>
         </scene>
         <!--仿秘密-->
         <scene sceneID="p9i-wu-I91">
@@ -1027,7 +1027,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1975" y="1285"/>
+            <point key="canvasLocation" x="-2443" y="1407"/>
         </scene>
         <!--Graphics-->
         <scene sceneID="WEh-o4-W2I">
@@ -1091,7 +1091,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cla-0s-1t2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1925" y="2087"/>
+            <point key="canvasLocation" x="-3290" y="1407"/>
         </scene>
     </scenes>
     <resources>

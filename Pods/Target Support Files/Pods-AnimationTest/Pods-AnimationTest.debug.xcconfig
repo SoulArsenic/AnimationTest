@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/BlurImageProcessor" "${PODS_ROOT}/Headers/Public/FaceAwareFill" "${PODS_ROOT}/Headers/Public/Haneke"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/BlurImageProcessor" -isystem "${PODS_ROOT}/Headers/Public/FaceAwareFill" -isystem "${PODS_ROOT}/Headers/Public/Haneke"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-AnimationTest-BlurImageProcessor" -l"Pods-AnimationTest-FaceAwareFill" -l"Pods-AnimationTest-Haneke" -framework "Accelerate" -framework "CoreImage" -framework "ImageIO"
+OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+PODS_ROOT = ${SRCROOT}/Pods
