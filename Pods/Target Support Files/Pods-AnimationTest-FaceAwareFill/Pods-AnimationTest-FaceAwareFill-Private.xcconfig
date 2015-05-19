@@ -1,5 +1,0 @@
-#include "Pods-AnimationTest-FaceAwareFill.xcconfig"
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/FaceAwareFill" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/BlurImageProcessor" "${PODS_ROOT}/Headers/Public/FaceAwareFill" "${PODS_ROOT}/Headers/Public/Haneke"
-OTHER_LDFLAGS = ${PODS_ANIMATIONTEST_FACEAWAREFILL_OTHER_LDFLAGS} -ObjC
-PODS_ROOT = ${SRCROOT}

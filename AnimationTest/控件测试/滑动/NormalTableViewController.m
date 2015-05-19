@@ -9,8 +9,6 @@
 #import "NormalTableViewController.h"
 #import "ImageScrollTableViewCell.h"
 
-#import "UIImageView+WebCache.h"
-
 
 @interface NormalTableViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) NSMutableArray * array;
@@ -73,7 +71,6 @@
     if ([cell isKindOfClass:[ImageScrollTableViewCell class]]) {
         ImageScrollTableViewCell* cello = (ImageScrollTableViewCell*) cell;
         cello.show.image = nil;
-        [cello.show setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://ww4.sinaimg.cn/mw1024/%@.jpg",[self.array objectAtIndex:indexPath.row]]]];
     }
 }
 

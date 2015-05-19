@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0510"
+   LastUpgradeVersion = "0640"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "89CA94A29221A3967D2E322A"
+               BlueprintIdentifier = "7EDD696EBB218F980CFD5EAC"
                BuildableName = "libPods-AnimationTest-Haneke.a"
                BlueprintName = "Pods-AnimationTest-Haneke"
                ReferencedContainer = "container:Pods.xcodeproj">

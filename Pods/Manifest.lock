@@ -9,8 +9,8 @@ DEPENDENCIES:
   - Haneke (~> 1.0)
 
 SPEC CHECKSUMS:
-  BlurImageProcessor: 287a860dbf21c75e9d6217ea9676c8112abe5c16
-  FaceAwareFill: ea87c5a2c50b29b6836442d88af851d1eb1f13b4
-  Haneke: 943f7121b50d31a31a0942afdacb7e6a26ea6181
+  BlurImageProcessor: a4794ad3128748dbff8b40ae43ce9386d3667bba
+  FaceAwareFill: 8a0faf0a0ca488793cd3a1e7fc90c7b6cc11efd3
+  Haneke: d60be8b96b228633b24708dd153169d6849d6f78
 
-COCOAPODS: 0.36.0.beta.1
+COCOAPODS: 0.37.1
