@@ -50,6 +50,9 @@
         
         self.coverView = [[LTabbarCoverView alloc] initWithFrame:self.bounds];
         _coverView.backgroundColor = [UIColor clearColor];
+        if (self.defaultForgroundColor) {
+            _coverView.wantForgroundColor = _defaultForgroundColor;
+        }
         _coverView.coverView =_aView;
         _coverView.userInteractionEnabled = NO;
         [_coverView addSubview:_aView];
@@ -61,7 +64,8 @@
         for (NSInteger i=0; i<count; i++) {
             
             UILabel * title = [[UILabel alloc] init];
-            title.text = ((UIViewController *) [aTabbar.viewControllers objectAtIndex:i]).tabBarItem.title;
+            UITabBarItem *aitem = ((UIViewController *) [aTabbar.viewControllers objectAtIndex:i]).tabBarItem;
+            title.text = aitem.title;
             title.frame = CGRectMake(i * aFrame.size.width/count, 0, aFrame.size.width/count, aFrame.size.height);
             title.textAlignment = NSTextAlignmentCenter;
             title.backgroundColor = [UIColor clearColor];
@@ -70,6 +74,13 @@
         
     }
     return self;
+}
+-(void)setDefaultForgroundColor:(UIColor *)defaultForgroundColor{
+    if (defaultForgroundColor) {
+        _defaultForgroundColor = defaultForgroundColor;
+        _coverView.wantForgroundColor = _defaultForgroundColor;
+    }
+
 }
 - (void) click:(UIButton *)btn {
     

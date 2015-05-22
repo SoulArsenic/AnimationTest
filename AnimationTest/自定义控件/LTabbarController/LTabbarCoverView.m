@@ -23,6 +23,13 @@ typedef struct {
     CGRect targetFrame;
     CGRect orgRect;
 }
+
+/**
+ *  动画过渡效果
+ *
+ *  @param aimRect  目标位置
+ *  @param duration 持续时间
+ */
 -(void)animationMoveCoverTo:(CGRect)aimRect withDuration:(NSTimeInterval)duration{
 
     CGFloat step = 0.01;
@@ -88,9 +95,12 @@ static int i = 0;
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
     // Drawing code
-    
-    [[UIColor whiteColor] setFill];
-    
+    if (self.wantForgroundColor) {
+        [self.wantForgroundColor setFill];
+    }else
+    {
+        [[UIColor whiteColor] setFill];
+    }
 //    CGRectDivide
     SeparateRect rectBg =[self sepRect:self.frame WithInner:self.coverView.frame];
     UIRectFill(rectBg.leftRect);

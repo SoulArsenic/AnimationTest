@@ -34,18 +34,16 @@
      替换系统自带tabbar
      */
     __unused    LTabbarView * a =  [[LTabbarView alloc] initWithTabbar:self];
+    a.defaultForgroundColor = [UIColor purpleColor];
     [self.view addSubview:a];
 }
 
 
 -(id<UIViewControllerAnimatedTransitioning>)tabBarController:(UITabBarController *)tabBarController animationControllerForTransitionFromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC{
-    
+    //    一个视图左右切换的动画
     return    [[LTabbarControllerMoveAnimation alloc] initWithDrict:_type];
 }
 -(BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{
-
-
-    
     return YES;
 }
 -(void)setSelectedIndex:(NSUInteger)selectedIndex{
