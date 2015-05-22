@@ -17,3 +17,6 @@
 	7 仿 iDaily 的手势操作
 	
 	8 新建了一个LAdaptiveImageView 用来处理图片位置的自定义
+	
+	9 加入一个自定义的tabbar
+		https://dribbble.com/shots/2071319-GIF-of-the-Tapbar-Interactions
