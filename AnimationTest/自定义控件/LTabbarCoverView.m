@@ -18,6 +18,7 @@ typedef struct {
 @implementation LTabbarCoverView{
     NSInteger count;
     NSTimer *timer ;
+    CGFloat totalMove;
     CGFloat move;
     CGRect targetFrame;
     CGRect orgRect;
@@ -28,19 +29,46 @@ typedef struct {
     count = duration/step;
     targetFrame = aimRect;
     orgRect = self.coverView.frame;
-    move = (aimRect.origin.x - self.coverView.frame.origin.x)/count;
+    totalMove = (aimRect.origin.x - self.coverView.frame.origin.x);
+    move = totalMove/count;
+
+    
+    
+    
     if (timer) {
         [timer invalidate];
     }
     timer = [NSTimer scheduledTimerWithTimeInterval:step target:self selector:@selector(updateCoverViewFrame) userInfo:nil repeats:YES];
 }
+
 static int i = 0;
 - (void) updateCoverViewFrame{
+    CGFloat maxExtWidth = 0;
+    CGFloat widthp = 0;
+    maxExtWidth = totalMove/2;
+    widthp = i * move;
     
-    self.coverView.frame = CGRectMake( orgRect.origin.x +  i * move , self.coverView.frame.origin.y, self.coverView.frame.size.width, self.coverView.frame.size.height);
+    if (ABS(widthp) > ABS(maxExtWidth)) {
+        widthp = maxExtWidth  + ((count/2  - i)* move) ;
+    }
+    //  <-
+    CGFloat temp  = 0;
+    if (move < 0) {
+        temp =  i * move;
+        widthp = 0;
+        if (ABS(temp) > ABS(maxExtWidth)) {
+            temp =  maxExtWidth  + ((count/2  - i)* move) ;
+        }
+    }
+    
+    self.coverView.frame = CGRectMake(
+                                      orgRect.origin.x +  i * move  - widthp ,
+                                      orgRect.origin.y,
+                                      orgRect.size.width + widthp - temp,
+                                      orgRect.size.height);
     [self setNeedsDisplay];
     i++;
-    if (i==count) {
+    if (i>count) {
         i=0;
         self.coverView.frame = targetFrame;
         [timer invalidate];
