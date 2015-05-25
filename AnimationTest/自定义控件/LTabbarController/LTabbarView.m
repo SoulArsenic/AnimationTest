@@ -25,6 +25,7 @@
         self.tabbarController = aTabbar;
         if (_delegate)
             aTabbar.tabBar.delegate = self.delegate;
+        
         NSArray * temp = aTabbar.viewControllers;
         CGRect aFrame   = aTabbar.tabBar.frame;
         aTabbar.tabBar.hidden = YES;
@@ -85,8 +86,16 @@
 }
 - (void) click:(UIButton *)btn {
     
-    self.tabbarController.selectedIndex = btn.tag;
-    [self.coverView animationMoveCoverTo:btn.frame withDuration:0.5];
+    if ([self.tabbarController.delegate tabBarController:self.tabbarController shouldSelectViewController:[self.tabbarController.viewControllers objectAtIndex:btn.tag]]) {
+        
+        self.tabbarController.selectedIndex = btn.tag;
+        [self.coverView animationMoveCoverTo:btn.frame withDuration:0.5];
+    }
+    else{
+        if ([self.delegate respondsToSelector:@selector(fobiddinSelectOtherVC)]) {
+            [self.delegate fobiddinSelectOtherVC];
+        }
+    }
 }
 - (NSArray *) getColors{
     return [NSArray arrayWithObjects:

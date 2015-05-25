@@ -9,9 +9,10 @@
 #import "LTabbarController.h"
 #import "LTabbarControllerMoveAnimation.h"
 #import "LTabbarView.h"
+#import "LogInViewController.h"
 
 
-@interface LTabbarController ()<UITabBarControllerDelegate>
+@interface LTabbarController ()<UITabBarControllerDelegate,LTabBarControllerDelegate>
 @property (nonatomic, assign) NSInteger lastLocation;
 @property (nonatomic, assign) Dirct type;
 @property (nonatomic, assign) CGFloat xPox;
@@ -35,6 +36,7 @@
      */
     __unused    LTabbarView * a =  [[LTabbarView alloc] initWithTabbar:self];
     a.defaultForgroundColor = [UIColor purpleColor];
+    a.delegate = self;
     [self.view addSubview:a];
 }
 
@@ -44,7 +46,7 @@
     return    [[LTabbarControllerMoveAnimation alloc] initWithDrict:_type];
 }
 -(BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{
-    return YES;
+    return NO;
 }
 -(void)setSelectedIndex:(NSUInteger)selectedIndex{
     self.type = Dirct_toleft;
@@ -55,5 +57,13 @@
     self.lastLocation = self.selectedIndex;
 }
 
+-(void)fobiddinSelectOtherVC{
+
+        NSLog(@"fobiddn");
+
+    [self presentViewController: [self.storyboard instantiateViewControllerWithIdentifier:@"LogInViewController"] animated:YES completion:^{
+        
+    }];
+}
 
 @end

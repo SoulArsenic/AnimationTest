@@ -18,9 +18,18 @@
 
 // TODO 
 
+@protocol LTabBarControllerDelegate <NSObject>
+@optional
+
+- (void) fobiddinSelectOtherVC;
+
+@end
+
+
+
 @interface LTabbarView : UIView
 
-@property(nonatomic, assign) id< UITabBarDelegate > delegate;
+@property(nonatomic, assign) id< UITabBarDelegate ,LTabBarControllerDelegate> delegate;
 
 @property (nonatomic, strong) UIColor * defaultForgroundColor;
 

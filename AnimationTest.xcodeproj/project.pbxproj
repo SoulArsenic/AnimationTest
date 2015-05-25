@@ -29,6 +29,7 @@
 		5E51A7871AC44C080013EC6F /* libPods-AnimationTest-Haneke.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E51A7841AC44C080013EC6F /* libPods-AnimationTest-Haneke.a */; };
 		5E523DF71AB13E0C00E74274 /* 6694d955jw1eq2s4bjipej20fa0fo41w (1).jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5E523DF51AB13E0C00E74274 /* 6694d955jw1eq2s4bjipej20fa0fo41w (1).jpg */; };
 		5E523DF81AB13E0C00E74274 /* 6694d955jw1eq2s4bjipej20fa0fo41w.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5E523DF61AB13E0C00E74274 /* 6694d955jw1eq2s4bjipej20fa0fo41w.jpg */; };
+		5E615B5A1B13301600B224DF /* VCTranstionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E615B591B13301600B224DF /* VCTranstionObject.m */; };
 		5E72DFFE1A8DA97B00BCACFE /* MyScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E72DFFD1A8DA97B00BCACFE /* MyScrollViewController.m */; };
 		5E72E0011A8DE09600BCACFE /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E72E0001A8DE09600BCACFE /* MyCell.m */; };
 		5E823B7D1A713A9000665DEC /* CombiationBackGroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E823B7C1A713A9000665DEC /* CombiationBackGroundView.m */; };
@@ -44,6 +45,7 @@
 		5EB9BDA51AA82ECE00AC2CD8 /* NSString+NSString_DBC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB9BC531AA82ECE00AC2CD8 /* NSString+NSString_DBC.m */; };
 		5EB9BDA61AA82ECE00AC2CD8 /* NSString+Weibo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB9BC551AA82ECE00AC2CD8 /* NSString+Weibo.m */; };
 		5EBE64411A788910009A9EAE /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBE64401A788910009A9EAE /* Tool.m */; };
+		5EC2F5A11B13143900DE5912 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2F5A01B13143900DE5912 /* LogInViewController.m */; };
 		5EC4A1871A9F18F500D5FDD9 /* avatar-heart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EC4A1861A9F18F500D5FDD9 /* avatar-heart@2x.png */; };
 		5EC534761A8120CB0082F33E /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC534751A8120CB0082F33E /* HomePageViewController.m */; };
 		5EC534791A8122310082F33E /* HomePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC534781A8122310082F33E /* HomePageView.m */; };
@@ -322,6 +324,8 @@
 		5E523DF31AB133AF00E74274 /* libPods-AnimationTest-Haneke.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AnimationTest-Haneke.a"; path = "Pods/build/Debug-iphoneos/libPods-AnimationTest-Haneke.a"; sourceTree = "<group>"; };
 		5E523DF51AB13E0C00E74274 /* 6694d955jw1eq2s4bjipej20fa0fo41w (1).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "6694d955jw1eq2s4bjipej20fa0fo41w (1).jpg"; sourceTree = "<group>"; };
 		5E523DF61AB13E0C00E74274 /* 6694d955jw1eq2s4bjipej20fa0fo41w.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6694d955jw1eq2s4bjipej20fa0fo41w.jpg; sourceTree = "<group>"; };
+		5E615B581B13301600B224DF /* VCTranstionObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCTranstionObject.h; sourceTree = "<group>"; };
+		5E615B591B13301600B224DF /* VCTranstionObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCTranstionObject.m; sourceTree = "<group>"; };
 		5E72DFFC1A8DA97B00BCACFE /* MyScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScrollViewController.h; sourceTree = "<group>"; };
 		5E72DFFD1A8DA97B00BCACFE /* MyScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScrollViewController.m; sourceTree = "<group>"; };
 		5E72DFFF1A8DE09600BCACFE /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
@@ -351,6 +355,8 @@
 		5EB9BC551AA82ECE00AC2CD8 /* NSString+Weibo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Weibo.m"; sourceTree = "<group>"; };
 		5EBE643F1A788910009A9EAE /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
 		5EBE64401A788910009A9EAE /* Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
+		5EC2F59F1B13143900DE5912 /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
+		5EC2F5A01B13143900DE5912 /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
 		5EC4A1861A9F18F500D5FDD9 /* avatar-heart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar-heart@2x.png"; sourceTree = "<group>"; };
 		5EC534741A8120CB0082F33E /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
 		5EC534751A8120CB0082F33E /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
@@ -726,6 +732,10 @@
 				5E2D3C291AA6D460001F39A7 /* LayerTest.m */,
 				5ED6FD4B1AA803A500B16004 /* FaceTextVC.h */,
 				5ED6FD4C1AA803A500B16004 /* FaceTextVC.m */,
+				5EC2F59F1B13143900DE5912 /* LogInViewController.h */,
+				5EC2F5A01B13143900DE5912 /* LogInViewController.m */,
+				5E615B581B13301600B224DF /* VCTranstionObject.h */,
+				5E615B591B13301600B224DF /* VCTranstionObject.m */,
 			);
 			path = "动画效果和绘制测试";
 			sourceTree = "<group>";
@@ -1504,6 +1514,7 @@
 				5EB9BDA61AA82ECE00AC2CD8 /* NSString+Weibo.m in Sources */,
 				5ED6FD4D1AA803A500B16004 /* FaceTextVC.m in Sources */,
 				84675F701A6FA2D400A51E0F /* main.m in Sources */,
+				5E615B5A1B13301600B224DF /* VCTranstionObject.m in Sources */,
 				5EA381AC1AA3FC55005EC346 /* Fresh.m in Sources */,
 				5E4746401AA995270010DD29 /* SunnyFresh.m in Sources */,
 				5EB9BC561AA82ECE00AC2CD8 /* CoreTextView.m in Sources */,
@@ -1515,6 +1526,7 @@
 				5E72DFFE1A8DA97B00BCACFE /* MyScrollViewController.m in Sources */,
 				5EAF04151B0DD87C0052A2C2 /* LTabbarView.m in Sources */,
 				5EC5347F1A8209B70082F33E /* SecretAnimationCell.m in Sources */,
+				5EC2F5A11B13143900DE5912 /* LogInViewController.m in Sources */,
 				5E94558E1AAD374100E5E21A /* UIViewController+Swizzled.m in Sources */,
 				5E1FA11B1A8B369D0005DCB7 /* ScrollControlViewController.m in Sources */,
 				84408FF41A71F4D4009A8A1C /* GraphicsViewController.m in Sources */,

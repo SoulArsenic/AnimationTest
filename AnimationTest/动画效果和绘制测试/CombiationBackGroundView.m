@@ -14,6 +14,7 @@
     _cellColor = cellColor;
     self.cellView.backgroundColor = cellColor;
     //联动
+
 }
 -(void)setCellSize:(CGFloat)cellSize{
     self.cellView.frame = CGRectMake(0, 0, cellSize, cellSize);
