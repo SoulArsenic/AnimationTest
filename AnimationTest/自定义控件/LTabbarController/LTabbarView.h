@@ -8,7 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ *  TODO
+ 
+ *  UITabBar 的拓展
+ 
+ *  badgeValue
+ */
+
+// TODO 
+
 @interface LTabbarView : UIView
+
+@property(nonatomic, assign) id< UITabBarDelegate > delegate;
 
 @property (nonatomic, strong) UIColor * defaultForgroundColor;
 

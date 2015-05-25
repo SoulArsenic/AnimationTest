@@ -287,8 +287,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63F-O8-yqp">
-                                <rect key="frame" x="16" y="84" width="90" height="30"/>
-                                <state key="normal" title="图片加载测试">
+                                <rect key="frame" x="-2" y="84" width="126" height="30"/>
+                                <state key="normal" title="图片放置＋loading">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -309,12 +309,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSZ-FA-ToC">
-                                <rect key="frame" x="32" y="122" width="59" height="30"/>
+                                <rect key="frame" x="39" y="122" width="45" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="59" id="2p3-mG-i5j"/>
                                     <constraint firstAttribute="height" constant="30" id="CWP-0M-FQ7"/>
                                 </constraints>
-                                <state key="normal" title="sapi授权">
+                                <state key="normal" title="心跳圆">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>

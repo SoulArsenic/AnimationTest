@@ -39,15 +39,20 @@
 //        return [NSArray arrayWithObjects:@"0",@"200", nil];
 //    };
     
+
+//    self.chartView = chartView;
+    [self performSelector:@selector(afterMethod) withObject:nil afterDelay:2];
+}
+
+
+- (void) afterMethod{
     chartView = [[CBChartView alloc] initWithFrame:CGRectMake(30, 64, [UIScreen mainScreen].bounds.size.width - 60, ([UIScreen mainScreen].bounds.size.width - 60) * .4)];
     [self.view addSubview:chartView];
     chartView.chartColor = [UIColor greenColor];
-
+    
     chartView.xValues = @[@"2",@"3", @"4", @"5", @"6", @"7"];
     chartView.yValues = [self getSource];
     chartView.other = @[@"3",@"4",@"6",@"1",@"7",@"101",];
-//    self.chartView = chartView;
-    
 }
 
 - (NSArray *) getSource{

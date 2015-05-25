@@ -7,14 +7,13 @@
 //
 
 #import "LTabbarView.h"
-#import "LTabbarControllerClearView.h"
 #import "LTabbarCoverView.h"
 
-@interface LTabbarView ()
+@interface LTabbarView ()<UITabBarDelegate>
 @property (nonatomic, weak) UITabBarController * tabbarController;
 @property (nonatomic, strong) LTabbarCoverView * coverView;
 @property (nonatomic, weak) UIButton *selectedBtn;
-@property (nonatomic, strong) LTabbarControllerClearView* aView;
+@property (nonatomic, strong) UIView* aView;
 @end
 
 @implementation LTabbarView
@@ -24,6 +23,8 @@
     if (self) {
 
         self.tabbarController = aTabbar;
+        if (_delegate)
+            aTabbar.tabBar.delegate = self.delegate;
         NSArray * temp = aTabbar.viewControllers;
         CGRect aFrame   = aTabbar.tabBar.frame;
         aTabbar.tabBar.hidden = YES;
@@ -45,7 +46,7 @@
          *  添加一个透视的阴影
          */
         
-        self.aView = [[LTabbarControllerClearView alloc] initWithFrame:CGRectMake(0, 0, aFrame.size.width/count, aFrame.size.height)];
+        self.aView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, aFrame.size.width/count, aFrame.size.height)];
         _aView.backgroundColor = [UIColor clearColor];
         
         self.coverView = [[LTabbarCoverView alloc] initWithFrame:self.bounds];
@@ -109,6 +110,5 @@
     }
     return color;
 }
-
 
 @end

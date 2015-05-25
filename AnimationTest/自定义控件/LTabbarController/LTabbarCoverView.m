@@ -32,6 +32,9 @@ typedef struct {
  */
 -(void)animationMoveCoverTo:(CGRect)aimRect withDuration:(NSTimeInterval)duration{
 
+    /**
+     *  use timer
+     */
     CGFloat step = 0.01;
     count = duration/step;
     targetFrame = aimRect;
@@ -39,9 +42,6 @@ typedef struct {
     totalMove = (aimRect.origin.x - self.coverView.frame.origin.x);
     move = totalMove/count;
 
-    
-    
-    
     if (timer) {
         [timer invalidate];
     }
@@ -58,7 +58,8 @@ static int i = 0;
     if (ABS(widthp) > ABS(maxExtWidth)) {
         widthp = maxExtWidth  + ((count/2  - i)* move) ;
     }
-    //  <-
+    
+    //  <- 向左
     CGFloat temp  = 0;
     if (move < 0) {
         temp =  i * move;
