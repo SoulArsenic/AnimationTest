@@ -15,7 +15,7 @@
 
 @interface LogInViewController ()<UINavigationControllerDelegate>
 
-@property (weak, nonatomic) UIButton *MyButton;
+@property (strong, nonatomic) UIButton *MyButton;
 
 @property (nonatomic, strong) UIView * shape;
 
@@ -63,6 +63,9 @@
      ＊ 按钮
      */
     self.MyButton = [UIButton buttonWithType:UIButtonTypeCustom];
+
+    UIButton * btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        UIButton * btn1 = [UIButton buttonWithType:UIButtonTypeSystem];
     _MyButton.frame = CGRectMake(([UIScreen  mainScreen].bounds.size.width - btnWidth)/2,
                                  [UIScreen mainScreen].bounds.size.height*4/5,
 //                                 ([UIScreen  mainScreen].bounds.size.height - btnHeight)/2  ,
@@ -71,7 +74,6 @@
     [_MyButton setTitle:@"登录" forState:UIControlStateNormal];
     [_MyButton setBackgroundColor:[UIColor redColor]];
     _MyButton.layer.cornerRadius = btnHeight/2;
-    _MyButton.layer.shouldRasterize = YES;
     _MyButton.alpha = 0.7;
     [_MyButton addTarget:self action:@selector(clicked:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_MyButton];
@@ -138,6 +140,14 @@
     }
 }
 
+
+-(void)methodLoginSucess{
+    [self onEnd];
+}
+-(void)methodLoginFaild{
+
+}
+
 - (void) onEnd{
     _shape.hidden = NO;
     _MyButton.hidden = YES;
@@ -149,6 +159,9 @@
     [self.shape.layer addAnimation:scaleAnimation forKey:@"bgchange"];
     [self performSelector:@selector(removeFromTheStack) withObject:self afterDelay:0.8];
 }
+
+
+
 
 
 - (void) removeFromTheStack{

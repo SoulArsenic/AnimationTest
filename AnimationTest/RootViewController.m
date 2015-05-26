@@ -8,6 +8,8 @@
 
 #import "RootViewController.h"
 #import "LogInViewController.h"
+#import "NetControl.h"
+
 
 @interface RootViewController ()
 
@@ -19,10 +21,17 @@
     
     LogInViewController <UINavigationControllerDelegate> * vc = [self.storyboard instantiateViewControllerWithIdentifier:@"LogInViewController"];
 
-//    vc.callDoSomeThing  = ^void(LogInViewController * aLogin, NSString * name ,NSString *pwd) {
-////        [self doLoginWithName:name andPwd:pwd];
-//        
-//    };
+    vc.callDoSomeThing  = ^void(LogInViewController * aLogin, NSString * name ,NSString *pwd) {
+        
+        [[NetControl defaultControl] requestUrl:@"url" WithParameters:[NSDictionary dictionaryWithObjectsAndKeys:@"keke",@"hehe", nil] onSucessComplete:^(NSDictionary *result) {
+            
+            [aLogin methodLoginSucess];
+            
+        } andFail:^(NSDictionary *failResult) {
+            
+            [aLogin methodLoginFaild];
+        }];
+    };
     
     [self.navigationController pushViewController:vc animated:YES];
 }
