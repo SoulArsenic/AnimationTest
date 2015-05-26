@@ -1,5 +1,5 @@
 //
-//  LogInViewController.h
+//  RootViewController.h
 //  AnimationTest
 //
 //  Created by lengbinbin on 15/5/25.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LogInViewController : UIViewController
-@property (nonatomic, weak) UIViewController * callBack;
+@interface RootViewController : UIViewController
+
 @end

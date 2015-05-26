@@ -46,7 +46,7 @@
     return    [[LTabbarControllerMoveAnimation alloc] initWithDrict:_type];
 }
 -(BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{
-    return NO;
+    return YES;
 }
 -(void)setSelectedIndex:(NSUInteger)selectedIndex{
     self.type = Dirct_toleft;

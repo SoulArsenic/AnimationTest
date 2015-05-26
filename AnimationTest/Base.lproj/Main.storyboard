@@ -158,7 +158,18 @@
                     <view key="view" contentMode="scaleToFill" id="E9O-Ws-brF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginBg" translatesAutoresizingMaskIntoConstraints="NO" id="cXn-T1-Mfg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="cXn-T1-Mfg" secondAttribute="trailing" constant="-16" id="8xo-li-Cp6"/>
+                            <constraint firstItem="E3p-39-BqJ" firstAttribute="top" secondItem="cXn-T1-Mfg" secondAttribute="bottom" id="M63-eS-m7U"/>
+                            <constraint firstItem="cXn-T1-Mfg" firstAttribute="top" secondItem="V4D-ub-MFJ" secondAttribute="bottom" constant="-20" id="Psb-IO-pyM"/>
+                            <constraint firstItem="cXn-T1-Mfg" firstAttribute="leading" secondItem="E9O-Ws-brF" secondAttribute="leadingMargin" constant="-16" id="qx5-4b-fTR"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Rg-W5-WlI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -191,7 +202,7 @@
         <!--动画-->
         <scene sceneID="65C-Kq-gco">
             <objects>
-                <viewController modalPresentationStyle="currentContext" id="sc7-9i-W1t" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="currentContext" id="sc7-9i-W1t" customClass="RootViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oL1-iD-Jo6"/>
                         <viewControllerLayoutGuide type="bottom" id="VZj-3t-El7"/>
@@ -360,29 +371,40 @@
                                     <segue destination="4zz-k3-vX9" kind="push" id="Tf3-0X-PVg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAy-jb-6xJ">
+                                <rect key="frame" x="144" y="122" width="30" height="30"/>
+                                <state key="normal" title="登录">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="click:" destination="sc7-9i-W1t" eventType="touchUpInside" id="MAa-u7-eud"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="KKd-Xx-OUo" secondAttribute="centerX" constant="99" id="0p2-bV-TDi"/>
-                            <constraint firstItem="YSZ-FA-ToC" firstAttribute="top" secondItem="oL1-iD-Jo6" secondAttribute="bottom" constant="58" id="3B6-yf-Uq6"/>
+                            <constraint firstItem="YSZ-FA-ToC" firstAttribute="top" secondItem="63F-O8-yqp" secondAttribute="bottom" constant="8" id="709-Iz-9ah"/>
                             <constraint firstItem="MJz-bA-i1k" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="160" id="AQd-wZ-iMU"/>
                             <constraint firstItem="srJ-QE-gWP" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="312" id="BZW-n0-Nfr"/>
                             <constraint firstItem="Smp-6c-UQs" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="388" id="CzN-PW-wpe"/>
-                            <constraint firstItem="uBP-aP-O8N" firstAttribute="top" secondItem="oL1-iD-Jo6" secondAttribute="bottom" constant="20" id="EDE-21-t9v"/>
+                            <constraint firstItem="HAy-jb-6xJ" firstAttribute="top" secondItem="uBP-aP-O8N" secondAttribute="bottom" constant="8" symbolic="YES" id="HI2-yH-fWH"/>
                             <constraint firstItem="1ev-iN-boo" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="274" id="HuC-Vc-VAL"/>
                             <constraint firstAttribute="centerX" secondItem="1ev-iN-boo" secondAttribute="centerX" constant="98" id="OuE-RR-OWl"/>
                             <constraint firstAttribute="centerX" secondItem="naY-Eb-zAT" secondAttribute="centerX" constant="98" id="Qfh-7U-6gI"/>
                             <constraint firstAttribute="centerX" secondItem="Smp-6c-UQs" secondAttribute="centerX" constant="99" id="WMV-4J-nQK"/>
+                            <constraint firstItem="HAy-jb-6xJ" firstAttribute="baseline" secondItem="YSZ-FA-ToC" secondAttribute="baseline" id="XAv-zL-0z1"/>
                             <constraint firstItem="M5d-xN-ZI2" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="236" id="Xvs-Xu-uKH"/>
                             <constraint firstItem="KKd-Xx-OUo" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="464" id="cMs-CH-eyq"/>
-                            <constraint firstItem="naY-Eb-zAT" firstAttribute="top" secondItem="oL1-iD-Jo6" secondAttribute="bottom" constant="438" id="dYK-l8-SeQ"/>
                             <constraint firstAttribute="centerX" secondItem="63F-O8-yqp" secondAttribute="centerX" constant="99" id="e3D-Xp-Uvz"/>
                             <constraint firstItem="lY8-Y1-9rT" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="426" id="ev1-7c-okT"/>
                             <constraint firstAttribute="centerX" secondItem="srJ-QE-gWP" secondAttribute="centerX" constant="99" id="f6W-Zy-VG6"/>
+                            <constraint firstAttribute="centerX" secondItem="HAy-jb-6xJ" secondAttribute="centerX" constant="1" id="h7i-y6-BMq"/>
                             <constraint firstItem="KbY-A6-ybi" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="350" id="i8p-gW-QeG"/>
                             <constraint firstAttribute="centerX" secondItem="M5d-xN-ZI2" secondAttribute="centerX" constant="98" id="kEt-Yv-zkT"/>
                             <constraint firstItem="0W1-Zj-oo3" firstAttribute="top" secondItem="OId-Sr-G62" secondAttribute="top" constant="198" id="mQi-Ut-YAu"/>
                             <constraint firstAttribute="centerX" secondItem="0W1-Zj-oo3" secondAttribute="centerX" constant="98" id="o9s-JH-WlG"/>
+                            <constraint firstItem="naY-Eb-zAT" firstAttribute="top" secondItem="KKd-Xx-OUo" secondAttribute="bottom" constant="8" id="p1u-Vx-rtQ"/>
                             <constraint firstAttribute="centerX" secondItem="MJz-bA-i1k" secondAttribute="centerX" constant="99" id="qBR-sk-aSs"/>
                             <constraint firstAttribute="centerX" secondItem="lY8-Y1-9rT" secondAttribute="centerX" constant="98.5" id="qvT-qR-rnT"/>
                             <constraint firstAttribute="centerX" secondItem="uBP-aP-O8N" secondAttribute="centerX" id="w4U-Wu-635"/>
@@ -1295,6 +1317,7 @@
     </scenes>
     <resources>
         <image name="6694d955jw1eq2s4bjipej20fa0fo41w (1).jpg" width="440" height="451"/>
+        <image name="LoginBg" width="227" height="317"/>
         <image name="avatar-heart.png" width="36" height="36"/>
         <image name="test1.png" width="30" height="30"/>
     </resources>

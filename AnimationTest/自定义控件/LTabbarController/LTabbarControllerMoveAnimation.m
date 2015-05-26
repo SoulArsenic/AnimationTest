@@ -32,6 +32,8 @@
     UIViewController *srcController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     
     [[transitionContext containerView] addSubview:desController.view];
+    
+    
     desController.view.alpha = 0.0;
     CGRect rect;
     CGRect frame ;
