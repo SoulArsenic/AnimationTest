@@ -19,10 +19,10 @@
     
     LogInViewController <UINavigationControllerDelegate> * vc = [self.storyboard instantiateViewControllerWithIdentifier:@"LogInViewController"];
 
-    vc.callDoSomeThing  = ^void(LogInViewController * aLogin, NSString * name ,NSString *pwd) {
-//        [self doLoginWithName:name andPwd:pwd];
-        
-    };
+//    vc.callDoSomeThing  = ^void(LogInViewController * aLogin, NSString * name ,NSString *pwd) {
+////        [self doLoginWithName:name andPwd:pwd];
+//        
+//    };
     
     [self.navigationController pushViewController:vc animated:YES];
 }
