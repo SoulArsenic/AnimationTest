@@ -14,6 +14,7 @@
 #define btnHeight 40
 
 @interface LogInViewController ()<UINavigationControllerDelegate>
+@property (weak, nonatomic) IBOutlet UIView *accountArea;
 
 @property (strong, nonatomic) UIButton *MyButton;
 
@@ -58,19 +59,22 @@
 
 
 - (void) addLoginBtnAndScaleLayer{
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      *  添加界面元素
      ＊ 按钮
      */
     self.MyButton = [UIButton buttonWithType:UIButtonTypeCustom];
 
-    UIButton * btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        UIButton * btn1 = [UIButton buttonWithType:UIButtonTypeSystem];
-    _MyButton.frame = CGRectMake(([UIScreen  mainScreen].bounds.size.width - btnWidth)/2,
-                                 [UIScreen mainScreen].bounds.size.height*4/5,
-//                                 ([UIScreen  mainScreen].bounds.size.height - btnHeight)/2  ,
-                                 btnWidth,
-                                 btnHeight);
+    _MyButton.frame = [self getBtnFrame];
+    
     [_MyButton setTitle:@"登录" forState:UIControlStateNormal];
     [_MyButton setBackgroundColor:[UIColor redColor]];
     _MyButton.layer.cornerRadius = btnHeight/2;
@@ -92,7 +96,7 @@
     CGFloat height = self.view.bounds.size.height + ( _MyButton.center.y);
     CGFloat radius  = sqrt(width * width + height * height);
     CGFloat scale = self.MyButton.frame.size.height/radius;
-    
+
     self.shape = [[UIView alloc] initWithFrame:CGRectMake(0, 0,
                                                           radius,
                                                           radius)];
@@ -105,10 +109,20 @@
     
     [self.view insertSubview:_shape belowSubview:_MyButton];
 }
-
+- (CGRect ) getBtnFrame {
+    return  CGRectMake(([UIScreen  mainScreen].bounds.size.width - btnWidth)/2,
+                       [UIScreen mainScreen].bounds.size.height*4/5,
+                       //                                 ([UIScreen  mainScreen].bounds.size.height - btnHeight)/2  ,
+                       btnWidth,
+                       btnHeight);
+}
 - (void)clicked:(UIButton *)sender {
     
     [self doSomeThing];
+    
+//    [self.accountArea removeConstraints:self.accountArea.constraints];
+    
+
     
     [_MyButton setTitle:@"" forState:UIControlStateNormal];
     CGPoint center = sender.center;
@@ -121,9 +135,12 @@
     active.alpha = 0;
     
     [UIView animateWithDuration:0.5 animations:^{
+
+//        self.accountArea.alpha  = 0;
         active.alpha = 1;
         _MyButton.frame = CGRectMake(0, 0, sender.frame.size.height, sender.frame.size.height);
         _MyButton.center = center;
+        self.accountArea.transform = CGAffineTransformMakeScale(0.001, 0.001);
      } completion:^(BOOL finished) {
          [active removeFromSuperview];
          active.frame = CGRectMake(0, 0, btnHeight, btnHeight);
@@ -145,7 +162,20 @@
     [self onEnd];
 }
 -(void)methodLoginFaild{
-
+    
+    for (UIView * temp in _MyButton.subviews ) {
+        if ([temp isKindOfClass:[UIActivityIndicatorView class]]) {
+            [temp removeFromSuperview];
+        }
+    }
+    
+    [UIView animateWithDuration:0.6 animations:^{
+        self.accountArea.transform = CGAffineTransformMakeScale(1, 1);
+        _MyButton.frame = [self getBtnFrame];
+        
+    } completion:^(BOOL finished) {
+        [_MyButton setTitle:@"登录" forState:UIControlStateNormal];
+    }];
 }
 
 - (void) onEnd{

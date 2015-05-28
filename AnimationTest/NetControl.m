@@ -46,6 +46,10 @@ typedef void(^InnerCallBack)(NSInteger current);
 - (void) oncomplete{
     
     self.call(self.index);
+
+//    if (self.fail) {
+//        self.fail([NSDictionary dictionary]);
+//    }
     
     if (self.sucess) {
         self.sucess([NSDictionary dictionary]);

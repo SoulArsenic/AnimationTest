@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5E00A9171AC1548D002CEA46 /* MyChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E00A9161AC1548D002CEA46 /* MyChartView.m */; };
 		5E00A91A1AC1660D002CEA46 /* ChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E00A9191AC1660D002CEA46 /* ChartViewController.m */; };
+		5E16CD1C1B15A760002A189D /* ScrollBrowShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E16CD1B1B15A760002A189D /* ScrollBrowShowViewController.m */; };
+		5E16CD201B15A799002A189D /* LScrollBrowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E16CD1F1B15A799002A189D /* LScrollBrowView.m */; };
 		5E1FA11B1A8B369D0005DCB7 /* ScrollControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FA11A1A8B369D0005DCB7 /* ScrollControlViewController.m */; };
 		5E2D3C2A1AA6D460001F39A7 /* LayerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D3C291AA6D460001F39A7 /* LayerTest.m */; };
 		5E2D3C2D1AA6D519001F39A7 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E2D3C2B1AA6D519001F39A7 /* test.png */; };
@@ -23,6 +25,7 @@
 		5E4746401AA995270010DD29 /* SunnyFresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E47463F1AA995270010DD29 /* SunnyFresh.m */; };
 		5E4746451AA997F50010DD29 /* YALSunnyRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4746431AA997F50010DD29 /* YALSunnyRefreshControl.m */; };
 		5E4746461AA997F50010DD29 /* YALSunnyRefreshControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E4746441AA997F50010DD29 /* YALSunnyRefreshControl.xib */; };
+		5E49C8D61B16F8DE00FF1070 /* LScrollBrowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E49C8D51B16F8DE00FF1070 /* LScrollBrowCell.m */; };
 		5E51A7851AC44C080013EC6F /* libPods-AnimationTest-BlurImageProcessor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E51A7821AC44C080013EC6F /* libPods-AnimationTest-BlurImageProcessor.a */; };
 		5E51A7861AC44C080013EC6F /* libPods-AnimationTest-FaceAwareFill.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E51A7831AC44C080013EC6F /* libPods-AnimationTest-FaceAwareFill.a */; };
 		5E51A7871AC44C080013EC6F /* libPods-AnimationTest-Haneke.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E51A7841AC44C080013EC6F /* libPods-AnimationTest-Haneke.a */; };
@@ -294,6 +297,10 @@
 		5E00A9161AC1548D002CEA46 /* MyChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyChartView.m; sourceTree = "<group>"; };
 		5E00A9181AC1660D002CEA46 /* ChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartViewController.h; sourceTree = "<group>"; };
 		5E00A9191AC1660D002CEA46 /* ChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartViewController.m; sourceTree = "<group>"; };
+		5E16CD1A1B15A760002A189D /* ScrollBrowShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollBrowShowViewController.h; sourceTree = "<group>"; };
+		5E16CD1B1B15A760002A189D /* ScrollBrowShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollBrowShowViewController.m; sourceTree = "<group>"; };
+		5E16CD1E1B15A799002A189D /* LScrollBrowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LScrollBrowView.h; sourceTree = "<group>"; };
+		5E16CD1F1B15A799002A189D /* LScrollBrowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LScrollBrowView.m; sourceTree = "<group>"; };
 		5E1FA1191A8B369D0005DCB7 /* ScrollControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollControlViewController.h; sourceTree = "<group>"; };
 		5E1FA11A1A8B369D0005DCB7 /* ScrollControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollControlViewController.m; sourceTree = "<group>"; };
 		5E2D3C281AA6D460001F39A7 /* LayerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerTest.h; sourceTree = "<group>"; };
@@ -316,6 +323,8 @@
 		5E4746421AA997F50010DD29 /* YALSunnyRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALSunnyRefreshControl.h; sourceTree = "<group>"; };
 		5E4746431AA997F50010DD29 /* YALSunnyRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALSunnyRefreshControl.m; sourceTree = "<group>"; };
 		5E4746441AA997F50010DD29 /* YALSunnyRefreshControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YALSunnyRefreshControl.xib; sourceTree = "<group>"; };
+		5E49C8D41B16F8DE00FF1070 /* LScrollBrowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LScrollBrowCell.h; sourceTree = "<group>"; };
+		5E49C8D51B16F8DE00FF1070 /* LScrollBrowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LScrollBrowCell.m; sourceTree = "<group>"; };
 		5E51A7821AC44C080013EC6F /* libPods-AnimationTest-BlurImageProcessor.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AnimationTest-BlurImageProcessor.a"; path = "Pods/build/Debug-iphoneos/libPods-AnimationTest-BlurImageProcessor.a"; sourceTree = "<group>"; };
 		5E51A7831AC44C080013EC6F /* libPods-AnimationTest-FaceAwareFill.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AnimationTest-FaceAwareFill.a"; path = "Pods/build/Debug-iphoneos/libPods-AnimationTest-FaceAwareFill.a"; sourceTree = "<group>"; };
 		5E51A7841AC44C080013EC6F /* libPods-AnimationTest-Haneke.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AnimationTest-Haneke.a"; path = "Pods/build/Debug-iphoneos/libPods-AnimationTest-Haneke.a"; sourceTree = "<group>"; };
@@ -656,6 +665,7 @@
 		5E00A9131AC1545C002CEA46 /* 自定义控件 */ = {
 			isa = PBXGroup;
 			children = (
+				5E16CD1D1B15A768002A189D /* 侧滑显示内容 */,
 				5E40FED91AC3CFCC0026D799 /* 滑动 */,
 				5E3A5C721ABC03E2009A7AF3 /* 授权 */,
 				5E46A63E1AB974F50009DD76 /* LImageView */,
@@ -673,6 +683,17 @@
 				5E00A9161AC1548D002CEA46 /* MyChartView.m */,
 			);
 			path = chart;
+			sourceTree = "<group>";
+		};
+		5E16CD1D1B15A768002A189D /* 侧滑显示内容 */ = {
+			isa = PBXGroup;
+			children = (
+				5E16CD1E1B15A799002A189D /* LScrollBrowView.h */,
+				5E16CD1F1B15A799002A189D /* LScrollBrowView.m */,
+				5E49C8D41B16F8DE00FF1070 /* LScrollBrowCell.h */,
+				5E49C8D51B16F8DE00FF1070 /* LScrollBrowCell.m */,
+			);
+			name = "侧滑显示内容";
 			sourceTree = "<group>";
 		};
 		5E3A5C721ABC03E2009A7AF3 /* 授权 */ = {
@@ -741,6 +762,8 @@
 				5EC2F5A01B13143900DE5912 /* LogInViewController.m */,
 				5E615B581B13301600B224DF /* VCTranstionObject.h */,
 				5E615B591B13301600B224DF /* VCTranstionObject.m */,
+				5E16CD1A1B15A760002A189D /* ScrollBrowShowViewController.h */,
+				5E16CD1B1B15A760002A189D /* ScrollBrowShowViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1491,6 +1514,7 @@
 				84675F9B1A6FA2ED00A51E0F /* TouchHandleView.m in Sources */,
 				84675F731A6FA2D500A51E0F /* AppDelegate.m in Sources */,
 				5E46A6411AB9767A0009DD76 /* LAdaptiveImageView.m in Sources */,
+				5E16CD201B15A799002A189D /* LScrollBrowView.m in Sources */,
 				5EC534761A8120CB0082F33E /* HomePageViewController.m in Sources */,
 				5E823B7D1A713A9000665DEC /* CombiationBackGroundView.m in Sources */,
 				5EAF040F1B0DB81A0052A2C2 /* LTabbarController.m in Sources */,
@@ -1509,6 +1533,7 @@
 				5EA381AC1AA3FC55005EC346 /* Fresh.m in Sources */,
 				5E4746401AA995270010DD29 /* SunnyFresh.m in Sources */,
 				5EB9BC561AA82ECE00AC2CD8 /* CoreTextView.m in Sources */,
+				5E16CD1C1B15A760002A189D /* ScrollBrowShowViewController.m in Sources */,
 				84675F9A1A6FA2ED00A51E0F /* AnimationControl.m in Sources */,
 				5EC5347C1A8209A30082F33E /* SecretAnimationTableViewController.m in Sources */,
 				84675F791A6FA2D500A51E0F /* ViewController.m in Sources */,
@@ -1516,6 +1541,7 @@
 				5E403F7C1AB12D0F00C34B49 /* ImageLoadingTest.m in Sources */,
 				5E72DFFE1A8DA97B00BCACFE /* MyScrollViewController.m in Sources */,
 				5EAF04151B0DD87C0052A2C2 /* LTabbarView.m in Sources */,
+				5E49C8D61B16F8DE00FF1070 /* LScrollBrowCell.m in Sources */,
 				5EC5347F1A8209B70082F33E /* SecretAnimationCell.m in Sources */,
 				5EC2F5A11B13143900DE5912 /* LogInViewController.m in Sources */,
 				5E94558E1AAD374100E5E21A /* UIViewController+Swizzled.m in Sources */,
