@@ -19,6 +19,7 @@
 	8 新建了一个LAdaptiveImageView 用来处理图片位置的自定义
 	
 	9 加入一个自定义的tabbar的动画效果<LTabbarView>
+	  ![Alt text](./other/tabbar.gif)
 		https://dribbble.com/shots/2071319-GIF-of-the-Tapbar-Interactions
 		
 		//子类tabbarcontroller 中
