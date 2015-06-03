@@ -20,14 +20,16 @@
 	
 	9 加入一个自定义的tabbar的动画效果<LTabbarView>
 		图－01	  
-		https://dribbble.com/shots/2071319-GIF-of-the-Tapbar-Interactions
 		
-		//子类tabbarcontroller 中
-		-(void)viewDidLayoutSubviews{
-		   [super viewDidLayoutSubviews];
-		   LTabbarView * a =  [[LTabbarView alloc] initWithTabbar:self];
-		   [self.view addSubview:a];
-		}
+		
+```
+//子类tabbarcontroller 中
+-(void)viewDidLayoutSubviews{		 
+ [super viewDidLayoutSubviews];
+ LTabbarView * a =  [[LTabbarView alloc] initWithTabbar:self];
+ [self.view addSubview:a];
+}
+```
 		
 
 	10 加入一个滑动控件， 
@@ -36,3 +38,11 @@
 图－01
 
 ![Alt text](./other/tabbar.gif)
+
+![Alt text](https://d13yacurqjgara.cloudfront.net/users/22691/screenshots/2071319/open-uri20150520-11-1ei8vfy)
+
+
+
+
+
+MIT
