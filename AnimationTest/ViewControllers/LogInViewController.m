@@ -13,6 +13,19 @@
 #define btnWidth 120
 #define btnHeight 40
 
+@interface myButton : UIButton
+
+@property (nonatomic, assign) IBInspectable CGFloat radios;
+
+@end
+@implementation myButton
+
+
+
+@end
+
+
+
 @interface LogInViewController ()<UINavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIView *accountArea;
 
