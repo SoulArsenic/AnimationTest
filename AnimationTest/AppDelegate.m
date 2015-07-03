@@ -8,12 +8,20 @@
 
 #import "AppDelegate.h"
 #import "UIViewController+Swizzled.h"
+#import "SVGgh.h"
+
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
++(void) initialize
+{
+    [super initialize];
+    MakeSureSVGghLinks(); // classes only used in Storyboards might not link otherwise
+    [GHControlFactory setDefaultScheme:kColorSchemeClear];
+    [GHControlFactory setDefaultTextColor:UIColorFromSVGColorString(@"#FFCC66")]; // this will make the recyle button have a mustartd fill
+}
 /**
  *  <#Description#>
  *

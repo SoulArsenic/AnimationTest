@@ -7,355 +7,374 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03D4D4E47B7C05C7A60EC339 /* UIImageView+Haneke.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D244D96F714C2F9600D0FB /* UIImageView+Haneke.m */; };
-		0A30156172EFA5C64A106C51 /* HNKDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB34577FE94D72E4FA96EF3 /* HNKDiskCache.h */; };
-		0B92AA404335B5ACF659128A /* ALDBlurImageProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = B987FC837D8F7E051540921E /* ALDBlurImageProcessor.m */; };
-		0BBDB127855B4FADD7BE422E /* UIView+Haneke.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D64D39C089C856A441D0B57 /* UIView+Haneke.m */; };
-		0FEBDDE8683591184BB03A4A /* HNKDiskFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 02680BFD111016A0DC85B613 /* HNKDiskFetcher.h */; };
-		14473EE83D5ADD2CA40099A5 /* HNKNetworkFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 94432B184432A73105192A1A /* HNKNetworkFetcher.m */; };
-		1C315167DCE9849C4E5257CB /* UIView+Haneke.h in Headers */ = {isa = PBXBuildFile; fileRef = EABB76B90D626A2E663ECE91 /* UIView+Haneke.h */; };
-		23A386ABFD8365C34E012B3D /* ALDBlurImageProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9595269A2BB40D5130D3F0DA /* ALDBlurImageProcessor.h */; };
-		25EEF03EC447E3F59095CE6C /* HNKDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EEE2B761E65856A7839F52 /* HNKDiskCache.m */; };
-		37C2494E4766590DBC05F9DE /* Haneke.h in Headers */ = {isa = PBXBuildFile; fileRef = 9105B8D78BEC4F6B4E7F10F7 /* Haneke.h */; };
-		39DA90B14B5C392FCD4A9A12 /* HNKDiskFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F241EEF42E7C1597EE20BFDC /* HNKDiskFetcher.m */; };
-		43959E18E67D619FC63543FC /* Pods-AnimationTest-BlurImageProcessor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D29E9C2C90FB6B226B2C0BD /* Pods-AnimationTest-BlurImageProcessor-dummy.m */; };
-		4A6D19B816374AC5A5E58F4C /* HNKSimpleFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = EEA1A40BDA72E0E205740DD6 /* HNKSimpleFetcher.h */; };
-		4B0C2C524628C1CDA701447A /* Pods-AnimationTest-Haneke-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2716A5FE5B414ACC58DF70E /* Pods-AnimationTest-Haneke-dummy.m */; };
-		614FEEA50FB95056B9471895 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F11AD2105D634B3853648B /* Foundation.framework */; };
-		65A343CF172F39B79B509A5D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629CE552C56CF4FE54782307 /* CoreImage.framework */; };
-		8804DF74381BFB2AE00622F8 /* UIImageView+Haneke.h in Headers */ = {isa = PBXBuildFile; fileRef = FE13521E6F44ADC5C7452A33 /* UIImageView+Haneke.h */; };
-		8FED530992451414905A80BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F11AD2105D634B3853648B /* Foundation.framework */; };
-		97E6BE344A4AA8F5E633030A /* Pods-AnimationTest-FaceAwareFill-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1F1F423578B89B90EE096F /* Pods-AnimationTest-FaceAwareFill-dummy.m */; };
-		9B5E5D020A0C150E032ECC76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F11AD2105D634B3853648B /* Foundation.framework */; };
-		9D1FFCF6CA9F6012DFE7A067 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F11AD2105D634B3853648B /* Foundation.framework */; };
-		9D884595AC62F7943B7DD892 /* UIImageView+UIImageView_FaceAwareFill.h in Headers */ = {isa = PBXBuildFile; fileRef = 64C3E6C61427AADE2D7DCB49 /* UIImageView+UIImageView_FaceAwareFill.h */; };
-		A4C6FDC939FA1B9B2392BF14 /* UIButton+Haneke.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F2B951D11D6911EF128440 /* UIButton+Haneke.m */; };
-		AE40B7AF874607EB44C2FC79 /* UIButton+Haneke.h in Headers */ = {isa = PBXBuildFile; fileRef = D3E4E1D8E54F0DBB5494D4C5 /* UIButton+Haneke.h */; };
-		CB7F36E9D74AE47FECD47C5D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07534E06D75095D569D72A8 /* ImageIO.framework */; };
-		CF1F638D29212EC1241880FA /* UIImageView+UIImageView_FaceAwareFill.m in Sources */ = {isa = PBXBuildFile; fileRef = 9480A4D20545823CD9B1DB81 /* UIImageView+UIImageView_FaceAwareFill.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		D57A95B5459DA61D142ED639 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA267B19324C88797D5CCB58 /* Accelerate.framework */; };
-		D76DEA1ABD72E93F49487167 /* HNKCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E534F9D3A4E970EF2A48B7 /* HNKCache.m */; };
-		DDD3222D31DEC5C5C2348BF1 /* HNKNetworkFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DFAACB5FC8CEA35F0F72E58 /* HNKNetworkFetcher.h */; };
-		EC6A0DAAB1F0F9E2EEF6D928 /* HNKSimpleFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFE406A6E8CE7F2A3A96B0D /* HNKSimpleFetcher.m */; };
-		F7CE4474DD1E399FE6C743CB /* Pods-AnimationTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EE8DCB9D8C4A8C9B51B9E9 /* Pods-AnimationTest-dummy.m */; };
-		FCC7E67D3F6080ADD1576D16 /* HNKCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DDCA44FA94CE57498E59EC4 /* HNKCache.h */; };
+		0C1967A0EAE38EF564F241E6 /* ALDBlurImageProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = C1865C594136DB0D42378E69 /* ALDBlurImageProcessor.m */; };
+		12918B7E2720E3AA64CBCC78 /* UIImageView+Haneke.h in Headers */ = {isa = PBXBuildFile; fileRef = 0019D09784CB665E82FDF60C /* UIImageView+Haneke.h */; };
+		1381E196819A9629B850473E /* UIImageView+UIImageView_FaceAwareFill.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBB12707DA783066A5762B5 /* UIImageView+UIImageView_FaceAwareFill.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1F8E99FF2BB55000A8E339BE /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254BEC80A2D2B1C51B568CEC /* ImageIO.framework */; };
+		377D6D56BD0CB86539424F7C /* UIButton+Haneke.h in Headers */ = {isa = PBXBuildFile; fileRef = 9396050C7BA5B4634520C23E /* UIButton+Haneke.h */; };
+		3C60E740FB4330E459217104 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F39EBE3B8FF6591DFA7652 /* Accelerate.framework */; };
+		3E3C6454D2E9EBAF926B51B0 /* HNKDiskFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B51961FA0417C819AD2B9310 /* HNKDiskFetcher.m */; };
+		4847165D72BDCB6A87BB83F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5829C203E31AA2985E7C8B6 /* Foundation.framework */; };
+		4CAFF4C8F4F2D3D0025D83E3 /* UIButton+Haneke.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC42AB84E86C59E55E55762 /* UIButton+Haneke.m */; };
+		5310B960F7D5BEB3D7AA8AF8 /* Pods-AnimationTest-Haneke-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 500E8346AE03B17FFD78D716 /* Pods-AnimationTest-Haneke-dummy.m */; };
+		6625F4C0E7D25A6E79F79F03 /* HNKDiskFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 964952D02E13E8590059B142 /* HNKDiskFetcher.h */; };
+		707DF2267E718E5D3549A00D /* HNKSimpleFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A388637B543555241D11909 /* HNKSimpleFetcher.h */; };
+		807428420762BFB9A76B4FAC /* UIImageView+UIImageView_FaceAwareFill.h in Headers */ = {isa = PBXBuildFile; fileRef = D48464504FA7370411FB25F5 /* UIImageView+UIImageView_FaceAwareFill.h */; };
+		8721C513B4B4DB6B8EE145A5 /* UIImageView+Haneke.m in Sources */ = {isa = PBXBuildFile; fileRef = DC791007E2788790BD93CB9E /* UIImageView+Haneke.m */; };
+		8930114299AF312C865AE0E4 /* HNKSimpleFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 06578F5836A14263BCDC2F07 /* HNKSimpleFetcher.m */; };
+		89915832ED76C7C1D59B01F2 /* HNKCache.h in Headers */ = {isa = PBXBuildFile; fileRef = CBD5083128DF02B9A8AE09D8 /* HNKCache.h */; };
+		8DBB178AE6C9E4194903FB3E /* HNKNetworkFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A38777DC94C560FA53005 /* HNKNetworkFetcher.m */; };
+		926A469732C86AF4D798621E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5829C203E31AA2985E7C8B6 /* Foundation.framework */; };
+		95A0A697EC90C998BB624AE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5829C203E31AA2985E7C8B6 /* Foundation.framework */; };
+		A2262C861F4BB9BD59A5815B /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB36A2301EA22E4C42EB72B /* CoreImage.framework */; };
+		A395028694D31F81BD1005BC /* Pods-AnimationTest-BlurImageProcessor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F850A3BE84ABF082F1FFBEF4 /* Pods-AnimationTest-BlurImageProcessor-dummy.m */; };
+		A4F8D54CD6DC56E3F5509FF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5829C203E31AA2985E7C8B6 /* Foundation.framework */; };
+		A5FC4025FE220ED5DDBE8EF8 /* Pods-AnimationTest-FaceAwareFill-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E5043B6649FDBD7EABB3E2 /* Pods-AnimationTest-FaceAwareFill-dummy.m */; };
+		A8426EF464BC21200A6B6544 /* Haneke.h in Headers */ = {isa = PBXBuildFile; fileRef = 27FBBA602D5765D7F241D40D /* Haneke.h */; };
+		AAF66F894E0C49FA9771AB3B /* HNKNetworkFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 96047197800EC35C50C25A28 /* HNKNetworkFetcher.h */; };
+		C78ACBB4F7CF6A1B0C696884 /* HNKDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C4C8C8A1EFEA58318EA8D /* HNKDiskCache.m */; };
+		D0FD5CA11D295D16954DE2D8 /* ALDBlurImageProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AE1FD2C8161236A8A35CEE2 /* ALDBlurImageProcessor.h */; };
+		D820FECEF6A8010F4652E4F8 /* Pods-AnimationTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E58AD5DB6F4FF925EBABE1AC /* Pods-AnimationTest-dummy.m */; };
+		DAAA341FFBEF73154822136C /* HNKDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 17EA54C895816613D07C7575 /* HNKDiskCache.h */; };
+		E71E3331FCDFD74BD0627D99 /* UIView+Haneke.m in Sources */ = {isa = PBXBuildFile; fileRef = 07784855EE67F8D628DBE043 /* UIView+Haneke.m */; };
+		EDEC8AF107022BF4524DECE4 /* UIView+Haneke.h in Headers */ = {isa = PBXBuildFile; fileRef = 9408A19D275ACACA7C2B0E92 /* UIView+Haneke.h */; };
+		F78DEFEE34F53CA285CA58BD /* HNKCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 14560725A628416897797139 /* HNKCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		102EF59EE4892B9290D6DB87 /* PBXContainerItemProxy */ = {
+		0E445FEC1F0504E3C9711DE0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = AD94BE0A7AFF0413BE913C18 /* Project object */;
+			containerPortal = EC29610875894C503FD61537 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2A82EF99C583D732E1AD7FC8;
-			remoteInfo = "Pods-AnimationTest-BlurImageProcessor";
-		};
-		5DC49291153E8BCF508B56C5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD94BE0A7AFF0413BE913C18 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 546622D051FA540D935C820C;
+			remoteGlobalIDString = 193BB5A7DB2F15C8AFE3A15E;
 			remoteInfo = "Pods-AnimationTest-FaceAwareFill";
 		};
-		B32204F45E9869883A5E536F /* PBXContainerItemProxy */ = {
+		59DC0CE53EBD0208453B7C7F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = AD94BE0A7AFF0413BE913C18 /* Project object */;
+			containerPortal = EC29610875894C503FD61537 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7EDD696EBB218F980CFD5EAC;
+			remoteGlobalIDString = 1506FBFF61310CCD705D69BA;
+			remoteInfo = "Pods-AnimationTest-BlurImageProcessor";
+		};
+		98CCAC5FBFEA2EA403C9D76E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC29610875894C503FD61537 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 696F73F59FD1BF6A0ED9765F;
 			remoteInfo = "Pods-AnimationTest-Haneke";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02680BFD111016A0DC85B613 /* HNKDiskFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HNKDiskFetcher.h; path = Haneke/HNKDiskFetcher.h; sourceTree = "<group>"; };
-		08569D8FF99F5AB2F3FF6E80 /* Pods-AnimationTest-Haneke-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AnimationTest-Haneke-prefix.pch"; sourceTree = "<group>"; };
-		0DFAACB5FC8CEA35F0F72E58 /* HNKNetworkFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HNKNetworkFetcher.h; path = Haneke/HNKNetworkFetcher.h; sourceTree = "<group>"; };
-		14E534F9D3A4E970EF2A48B7 /* HNKCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HNKCache.m; path = Haneke/HNKCache.m; sourceTree = "<group>"; };
-		29EE8DCB9D8C4A8C9B51B9E9 /* Pods-AnimationTest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnimationTest-dummy.m"; sourceTree = "<group>"; };
-		2CCE3480BE47AD1C1053D6F3 /* Pods-AnimationTest-FaceAwareFill-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimationTest-FaceAwareFill-Private.xcconfig"; sourceTree = "<group>"; };
-		3A2BE0A4104835C22E9F7EDD /* Pods-AnimationTest-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AnimationTest-environment.h"; sourceTree = "<group>"; };
-		4BB34577FE94D72E4FA96EF3 /* HNKDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HNKDiskCache.h; path = Haneke/HNKDiskCache.h; sourceTree = "<group>"; };
-		4DDCA44FA94CE57498E59EC4 /* HNKCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HNKCache.h; path = Haneke/HNKCache.h; sourceTree = "<group>"; };
-		4E9AE2A48665EC5F7282BF75 /* Pods-AnimationTest-BlurImageProcessor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AnimationTest-BlurImageProcessor-prefix.pch"; sourceTree = "<group>"; };
-		50D244D96F714C2F9600D0FB /* UIImageView+Haneke.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+Haneke.m"; path = "Haneke/UIImageView+Haneke.m"; sourceTree = "<group>"; };
-		519A3D24F60E0173C287F3C7 /* Pods-AnimationTest-Haneke.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimationTest-Haneke.xcconfig"; sourceTree = "<group>"; };
-		5BDAC3CF0943273CF8A83165 /* libPods-AnimationTest-Haneke.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimationTest-Haneke.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D29E9C2C90FB6B226B2C0BD /* Pods-AnimationTest-BlurImageProcessor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnimationTest-BlurImageProcessor-dummy.m"; sourceTree = "<group>"; };
-		629CE552C56CF4FE54782307 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
-		64C3E6C61427AADE2D7DCB49 /* UIImageView+UIImageView_FaceAwareFill.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+UIImageView_FaceAwareFill.h"; path = "UIImageView+FaceAwareFill/UIImageView+UIImageView_FaceAwareFill.h"; sourceTree = "<group>"; };
-		69AE29EC150CCE632B348BEF /* Pods-AnimationTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimationTest.release.xcconfig"; sourceTree = "<group>"; };
-		6BA5C1DD9472877C4352CB26 /* Pods-AnimationTest-Haneke-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimationTest-Haneke-Private.xcconfig"; sourceTree = "<group>"; };
-		75406A1A6EAF595F51C4FFD1 /* Pods-AnimationTest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnimationTest-acknowledgements.plist"; sourceTree = "<group>"; };
-		7958ABEAA29DA9479ACDC3CF /* libPods-AnimationTest-BlurImageProcessor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimationTest-BlurImageProcessor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B72A51EB1FB70A0E50B5E3A /* Pods-AnimationTest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AnimationTest-acknowledgements.markdown"; sourceTree = "<group>"; };
-		863E8DDAF9EA17F718EEDB52 /* Pods-AnimationTest-BlurImageProcessor-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimationTest-BlurImageProcessor-Private.xcconfig"; sourceTree = "<group>"; };
-		86920ADD52715E8BD5CE2894 /* Pods-AnimationTest-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AnimationTest-resources.sh"; sourceTree = "<group>"; };
-		9105B8D78BEC4F6B4E7F10F7 /* Haneke.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Haneke.h; path = Haneke/Haneke.h; sourceTree = "<group>"; };
-		94432B184432A73105192A1A /* HNKNetworkFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HNKNetworkFetcher.m; path = Haneke/HNKNetworkFetcher.m; sourceTree = "<group>"; };
-		9480A4D20545823CD9B1DB81 /* UIImageView+UIImageView_FaceAwareFill.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+UIImageView_FaceAwareFill.m"; path = "UIImageView+FaceAwareFill/UIImageView+UIImageView_FaceAwareFill.m"; sourceTree = "<group>"; };
-		9595269A2BB40D5130D3F0DA /* ALDBlurImageProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ALDBlurImageProcessor.h; path = BlurImageProcessor/ALDBlurImageProcessor/ALDBlurImageProcessor.h; sourceTree = "<group>"; };
-		99F2B951D11D6911EF128440 /* UIButton+Haneke.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Haneke.m"; path = "Haneke/UIButton+Haneke.m"; sourceTree = "<group>"; };
-		9AFE406A6E8CE7F2A3A96B0D /* HNKSimpleFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HNKSimpleFetcher.m; path = Haneke/HNKSimpleFetcher.m; sourceTree = "<group>"; };
-		9D64D39C089C856A441D0B57 /* UIView+Haneke.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Haneke.m"; path = "Haneke/UIView+Haneke.m"; sourceTree = "<group>"; };
-		A4F11AD2105D634B3853648B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		AB1F1F423578B89B90EE096F /* Pods-AnimationTest-FaceAwareFill-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnimationTest-FaceAwareFill-dummy.m"; sourceTree = "<group>"; };
-		AFFC675BCE6CFB53064E0874 /* Pods-AnimationTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimationTest.debug.xcconfig"; sourceTree = "<group>"; };
-		B5F5F8391064B3D5354ECBF0 /* Pods-AnimationTest-BlurImageProcessor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimationTest-BlurImageProcessor.xcconfig"; sourceTree = "<group>"; };
-		B6B56DB0801B93075437AD0A /* Pods-AnimationTest-FaceAwareFill.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimationTest-FaceAwareFill.xcconfig"; sourceTree = "<group>"; };
-		B987FC837D8F7E051540921E /* ALDBlurImageProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ALDBlurImageProcessor.m; path = BlurImageProcessor/ALDBlurImageProcessor/ALDBlurImageProcessor.m; sourceTree = "<group>"; };
-		BF758D9BDAAB5138C2ED81E9 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C2716A5FE5B414ACC58DF70E /* Pods-AnimationTest-Haneke-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnimationTest-Haneke-dummy.m"; sourceTree = "<group>"; };
-		C5BD365212A811231E6FC7D6 /* libPods-AnimationTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimationTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC0CA1D9B97C6AB817A9CBEF /* Pods-AnimationTest-FaceAwareFill-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AnimationTest-FaceAwareFill-prefix.pch"; sourceTree = "<group>"; };
-		D3E4E1D8E54F0DBB5494D4C5 /* UIButton+Haneke.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Haneke.h"; path = "Haneke/UIButton+Haneke.h"; sourceTree = "<group>"; };
-		E6EEE2B761E65856A7839F52 /* HNKDiskCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HNKDiskCache.m; path = Haneke/HNKDiskCache.m; sourceTree = "<group>"; };
-		E7D33FE0559C0400CC3DCBAE /* libPods-AnimationTest-FaceAwareFill.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimationTest-FaceAwareFill.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EABB76B90D626A2E663ECE91 /* UIView+Haneke.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Haneke.h"; path = "Haneke/UIView+Haneke.h"; sourceTree = "<group>"; };
-		EEA1A40BDA72E0E205740DD6 /* HNKSimpleFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HNKSimpleFetcher.h; path = Haneke/HNKSimpleFetcher.h; sourceTree = "<group>"; };
-		F07534E06D75095D569D72A8 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
-		F241EEF42E7C1597EE20BFDC /* HNKDiskFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HNKDiskFetcher.m; path = Haneke/HNKDiskFetcher.m; sourceTree = "<group>"; };
-		FA267B19324C88797D5CCB58 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
-		FE13521E6F44ADC5C7452A33 /* UIImageView+Haneke.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+Haneke.h"; path = "Haneke/UIImageView+Haneke.h"; sourceTree = "<group>"; };
+		0019D09784CB665E82FDF60C /* UIImageView+Haneke.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+Haneke.h"; path = "Haneke/UIImageView+Haneke.h"; sourceTree = "<group>"; };
+		03F39EBE3B8FF6591DFA7652 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		05941251BA9FA9CCF07E74AC /* libPods-AnimationTest-Haneke.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimationTest-Haneke.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06578F5836A14263BCDC2F07 /* HNKSimpleFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HNKSimpleFetcher.m; path = Haneke/HNKSimpleFetcher.m; sourceTree = "<group>"; };
+		07784855EE67F8D628DBE043 /* UIView+Haneke.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Haneke.m"; path = "Haneke/UIView+Haneke.m"; sourceTree = "<group>"; };
+		14560725A628416897797139 /* HNKCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HNKCache.m; path = Haneke/HNKCache.m; sourceTree = "<group>"; };
+		17EA54C895816613D07C7575 /* HNKDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HNKDiskCache.h; path = Haneke/HNKDiskCache.h; sourceTree = "<group>"; };
+		1A388637B543555241D11909 /* HNKSimpleFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HNKSimpleFetcher.h; path = Haneke/HNKSimpleFetcher.h; sourceTree = "<group>"; };
+		1B8BFCCFE4AD073273478CD7 /* Pods-AnimationTest-FaceAwareFill.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimationTest-FaceAwareFill.xcconfig"; sourceTree = "<group>"; };
+		1D72AA964FAB84BF49D7A791 /* Pods-AnimationTest-FaceAwareFill-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimationTest-FaceAwareFill-Private.xcconfig"; sourceTree = "<group>"; };
+		254BEC80A2D2B1C51B568CEC /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		27FBBA602D5765D7F241D40D /* Haneke.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Haneke.h; path = Haneke/Haneke.h; sourceTree = "<group>"; };
+		2AE1FD2C8161236A8A35CEE2 /* ALDBlurImageProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ALDBlurImageProcessor.h; path = BlurImageProcessor/ALDBlurImageProcessor/ALDBlurImageProcessor.h; sourceTree = "<group>"; };
+		35BE8125714362F659904CDB /* Pods-AnimationTest-BlurImageProcessor-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimationTest-BlurImageProcessor-Private.xcconfig"; sourceTree = "<group>"; };
+		3B7C4C8C8A1EFEA58318EA8D /* HNKDiskCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HNKDiskCache.m; path = Haneke/HNKDiskCache.m; sourceTree = "<group>"; };
+		451C59091B5E8835AAD5460D /* Pods-AnimationTest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AnimationTest-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4F9A38777DC94C560FA53005 /* HNKNetworkFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HNKNetworkFetcher.m; path = Haneke/HNKNetworkFetcher.m; sourceTree = "<group>"; };
+		500E8346AE03B17FFD78D716 /* Pods-AnimationTest-Haneke-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnimationTest-Haneke-dummy.m"; sourceTree = "<group>"; };
+		50DB38F62E288E3D20CF9602 /* Pods-AnimationTest-Haneke-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimationTest-Haneke-Private.xcconfig"; sourceTree = "<group>"; };
+		63C15355C4F0F97E90F77309 /* Pods-AnimationTest-Haneke.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimationTest-Haneke.xcconfig"; sourceTree = "<group>"; };
+		6570E7441AE9CA3B7249A725 /* libPods-AnimationTest-BlurImageProcessor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimationTest-BlurImageProcessor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A19292C9ADD3C8DDFB6B873 /* Pods-AnimationTest-BlurImageProcessor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimationTest-BlurImageProcessor.xcconfig"; sourceTree = "<group>"; };
+		6E52743E100B28FEB716BA5B /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		78DA8E1AA57AAF0ACA77C9AB /* Pods-AnimationTest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnimationTest-acknowledgements.plist"; sourceTree = "<group>"; };
+		7AB36A2301EA22E4C42EB72B /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
+		7C7F09BF5E6288A16A17158F /* libPods-AnimationTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimationTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		841CF012352913674C57091F /* Pods-AnimationTest-Haneke-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AnimationTest-Haneke-prefix.pch"; sourceTree = "<group>"; };
+		9396050C7BA5B4634520C23E /* UIButton+Haneke.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Haneke.h"; path = "Haneke/UIButton+Haneke.h"; sourceTree = "<group>"; };
+		9408A19D275ACACA7C2B0E92 /* UIView+Haneke.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Haneke.h"; path = "Haneke/UIView+Haneke.h"; sourceTree = "<group>"; };
+		94628B15B2C2D895B5B31BBA /* libPods-AnimationTest-FaceAwareFill.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimationTest-FaceAwareFill.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96047197800EC35C50C25A28 /* HNKNetworkFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HNKNetworkFetcher.h; path = Haneke/HNKNetworkFetcher.h; sourceTree = "<group>"; };
+		964952D02E13E8590059B142 /* HNKDiskFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HNKDiskFetcher.h; path = Haneke/HNKDiskFetcher.h; sourceTree = "<group>"; };
+		A5E5043B6649FDBD7EABB3E2 /* Pods-AnimationTest-FaceAwareFill-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnimationTest-FaceAwareFill-dummy.m"; sourceTree = "<group>"; };
+		ABC42AB84E86C59E55E55762 /* UIButton+Haneke.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Haneke.m"; path = "Haneke/UIButton+Haneke.m"; sourceTree = "<group>"; };
+		B51961FA0417C819AD2B9310 /* HNKDiskFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HNKDiskFetcher.m; path = Haneke/HNKDiskFetcher.m; sourceTree = "<group>"; };
+		B5A2EFB2564541283268E7E4 /* Pods-AnimationTest-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AnimationTest-resources.sh"; sourceTree = "<group>"; };
+		C1865C594136DB0D42378E69 /* ALDBlurImageProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ALDBlurImageProcessor.m; path = BlurImageProcessor/ALDBlurImageProcessor/ALDBlurImageProcessor.m; sourceTree = "<group>"; };
+		CBD5083128DF02B9A8AE09D8 /* HNKCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HNKCache.h; path = Haneke/HNKCache.h; sourceTree = "<group>"; };
+		CEE627BCACD1EBF301EA21BF /* Pods-AnimationTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimationTest.debug.xcconfig"; sourceTree = "<group>"; };
+		CEF147E80266152710A99F3D /* Pods-AnimationTest-BlurImageProcessor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AnimationTest-BlurImageProcessor-prefix.pch"; sourceTree = "<group>"; };
+		D48464504FA7370411FB25F5 /* UIImageView+UIImageView_FaceAwareFill.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+UIImageView_FaceAwareFill.h"; path = "UIImageView+FaceAwareFill/UIImageView+UIImageView_FaceAwareFill.h"; sourceTree = "<group>"; };
+		D5829C203E31AA2985E7C8B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DC791007E2788790BD93CB9E /* UIImageView+Haneke.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+Haneke.m"; path = "Haneke/UIImageView+Haneke.m"; sourceTree = "<group>"; };
+		DE335EF254A59E7A58EFFC66 /* Pods-AnimationTest-FaceAwareFill-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AnimationTest-FaceAwareFill-prefix.pch"; sourceTree = "<group>"; };
+		DFBB12707DA783066A5762B5 /* UIImageView+UIImageView_FaceAwareFill.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+UIImageView_FaceAwareFill.m"; path = "UIImageView+FaceAwareFill/UIImageView+UIImageView_FaceAwareFill.m"; sourceTree = "<group>"; };
+		E58AD5DB6F4FF925EBABE1AC /* Pods-AnimationTest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnimationTest-dummy.m"; sourceTree = "<group>"; };
+		E9F008700CA07AEEEA35F36A /* Pods-AnimationTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimationTest.release.xcconfig"; sourceTree = "<group>"; };
+		F45CC28386BAA3DECDD381A1 /* Pods-AnimationTest-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AnimationTest-environment.h"; sourceTree = "<group>"; };
+		F850A3BE84ABF082F1FFBEF4 /* Pods-AnimationTest-BlurImageProcessor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnimationTest-BlurImageProcessor-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		38B6B0F27159615A77DCCF6F /* Frameworks */ = {
+		8A60E92727D673A606925504 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D57A95B5459DA61D142ED639 /* Accelerate.framework in Frameworks */,
-				9B5E5D020A0C150E032ECC76 /* Foundation.framework in Frameworks */,
+				A4F8D54CD6DC56E3F5509FF9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		648824C83AA3012A1C0A905C /* Frameworks */ = {
+		95C1B70584D84227F68315BD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FED530992451414905A80BB /* Foundation.framework in Frameworks */,
-				CB7F36E9D74AE47FECD47C5D /* ImageIO.framework in Frameworks */,
+				4847165D72BDCB6A87BB83F9 /* Foundation.framework in Frameworks */,
+				1F8E99FF2BB55000A8E339BE /* ImageIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83662652AEC4290E1F831A1F /* Frameworks */ = {
+		AFFD80478A6137E7A281442D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				614FEEA50FB95056B9471895 /* Foundation.framework in Frameworks */,
+				A2262C861F4BB9BD59A5815B /* CoreImage.framework in Frameworks */,
+				95A0A697EC90C998BB624AE2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BB7ACDBF53F70A9D502D68D0 /* Frameworks */ = {
+		F9126DE2882F07933DF1BC16 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65A343CF172F39B79B509A5D /* CoreImage.framework in Frameworks */,
-				9D1FFCF6CA9F6012DFE7A067 /* Foundation.framework in Frameworks */,
+				3C60E740FB4330E459217104 /* Accelerate.framework in Frameworks */,
+				926A469732C86AF4D798621E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B630A9D429DC01B8815E993 /* Pods */ = {
+		0283E3CEE750D89544BC2B5C /* Haneke */ = {
 			isa = PBXGroup;
 			children = (
-				49BC92AA765ED043C7F73632 /* BlurImageProcessor */,
-				CC61499A2B7291AD30E7041D /* FaceAwareFill */,
-				8F5546E5CAB02F5419C8DA71 /* Haneke */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		1F746B1C28B203EEEB6C502B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C5BD365212A811231E6FC7D6 /* libPods-AnimationTest.a */,
-				7958ABEAA29DA9479ACDC3CF /* libPods-AnimationTest-BlurImageProcessor.a */,
-				E7D33FE0559C0400CC3DCBAE /* libPods-AnimationTest-FaceAwareFill.a */,
-				5BDAC3CF0943273CF8A83165 /* libPods-AnimationTest-Haneke.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		33B0CA548EC2F98E19261A0B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				519A3D24F60E0173C287F3C7 /* Pods-AnimationTest-Haneke.xcconfig */,
-				6BA5C1DD9472877C4352CB26 /* Pods-AnimationTest-Haneke-Private.xcconfig */,
-				C2716A5FE5B414ACC58DF70E /* Pods-AnimationTest-Haneke-dummy.m */,
-				08569D8FF99F5AB2F3FF6E80 /* Pods-AnimationTest-Haneke-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-AnimationTest-Haneke";
-			sourceTree = "<group>";
-		};
-		459F7D48C1BFCA9947C34000 = {
-			isa = PBXGroup;
-			children = (
-				BF758D9BDAAB5138C2ED81E9 /* Podfile */,
-				602F5CD5362E151CF6895E59 /* Frameworks */,
-				1B630A9D429DC01B8815E993 /* Pods */,
-				1F746B1C28B203EEEB6C502B /* Products */,
-				DFCC5C4654A19A17756F9005 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		49BC92AA765ED043C7F73632 /* BlurImageProcessor */ = {
-			isa = PBXGroup;
-			children = (
-				9595269A2BB40D5130D3F0DA /* ALDBlurImageProcessor.h */,
-				B987FC837D8F7E051540921E /* ALDBlurImageProcessor.m */,
-				CCF1C341F9FD8D990251362D /* Support Files */,
-			);
-			path = BlurImageProcessor;
-			sourceTree = "<group>";
-		};
-		602F5CD5362E151CF6895E59 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B53323CDF5D9072CFF62AEA2 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		78922A161D682F8DD0AA8FF9 /* Pods-AnimationTest */ = {
-			isa = PBXGroup;
-			children = (
-				7B72A51EB1FB70A0E50B5E3A /* Pods-AnimationTest-acknowledgements.markdown */,
-				75406A1A6EAF595F51C4FFD1 /* Pods-AnimationTest-acknowledgements.plist */,
-				29EE8DCB9D8C4A8C9B51B9E9 /* Pods-AnimationTest-dummy.m */,
-				3A2BE0A4104835C22E9F7EDD /* Pods-AnimationTest-environment.h */,
-				86920ADD52715E8BD5CE2894 /* Pods-AnimationTest-resources.sh */,
-				AFFC675BCE6CFB53064E0874 /* Pods-AnimationTest.debug.xcconfig */,
-				69AE29EC150CCE632B348BEF /* Pods-AnimationTest.release.xcconfig */,
-			);
-			name = "Pods-AnimationTest";
-			path = "Target Support Files/Pods-AnimationTest";
-			sourceTree = "<group>";
-		};
-		87AB20C05CCD69208663A86A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B6B56DB0801B93075437AD0A /* Pods-AnimationTest-FaceAwareFill.xcconfig */,
-				2CCE3480BE47AD1C1053D6F3 /* Pods-AnimationTest-FaceAwareFill-Private.xcconfig */,
-				AB1F1F423578B89B90EE096F /* Pods-AnimationTest-FaceAwareFill-dummy.m */,
-				CC0CA1D9B97C6AB817A9CBEF /* Pods-AnimationTest-FaceAwareFill-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-AnimationTest-FaceAwareFill";
-			sourceTree = "<group>";
-		};
-		8F5546E5CAB02F5419C8DA71 /* Haneke */ = {
-			isa = PBXGroup;
-			children = (
-				4DDCA44FA94CE57498E59EC4 /* HNKCache.h */,
-				14E534F9D3A4E970EF2A48B7 /* HNKCache.m */,
-				4BB34577FE94D72E4FA96EF3 /* HNKDiskCache.h */,
-				E6EEE2B761E65856A7839F52 /* HNKDiskCache.m */,
-				02680BFD111016A0DC85B613 /* HNKDiskFetcher.h */,
-				F241EEF42E7C1597EE20BFDC /* HNKDiskFetcher.m */,
-				0DFAACB5FC8CEA35F0F72E58 /* HNKNetworkFetcher.h */,
-				94432B184432A73105192A1A /* HNKNetworkFetcher.m */,
-				EEA1A40BDA72E0E205740DD6 /* HNKSimpleFetcher.h */,
-				9AFE406A6E8CE7F2A3A96B0D /* HNKSimpleFetcher.m */,
-				9105B8D78BEC4F6B4E7F10F7 /* Haneke.h */,
-				D3E4E1D8E54F0DBB5494D4C5 /* UIButton+Haneke.h */,
-				99F2B951D11D6911EF128440 /* UIButton+Haneke.m */,
-				FE13521E6F44ADC5C7452A33 /* UIImageView+Haneke.h */,
-				50D244D96F714C2F9600D0FB /* UIImageView+Haneke.m */,
-				EABB76B90D626A2E663ECE91 /* UIView+Haneke.h */,
-				9D64D39C089C856A441D0B57 /* UIView+Haneke.m */,
-				33B0CA548EC2F98E19261A0B /* Support Files */,
+				CBD5083128DF02B9A8AE09D8 /* HNKCache.h */,
+				14560725A628416897797139 /* HNKCache.m */,
+				17EA54C895816613D07C7575 /* HNKDiskCache.h */,
+				3B7C4C8C8A1EFEA58318EA8D /* HNKDiskCache.m */,
+				964952D02E13E8590059B142 /* HNKDiskFetcher.h */,
+				B51961FA0417C819AD2B9310 /* HNKDiskFetcher.m */,
+				96047197800EC35C50C25A28 /* HNKNetworkFetcher.h */,
+				4F9A38777DC94C560FA53005 /* HNKNetworkFetcher.m */,
+				1A388637B543555241D11909 /* HNKSimpleFetcher.h */,
+				06578F5836A14263BCDC2F07 /* HNKSimpleFetcher.m */,
+				27FBBA602D5765D7F241D40D /* Haneke.h */,
+				9396050C7BA5B4634520C23E /* UIButton+Haneke.h */,
+				ABC42AB84E86C59E55E55762 /* UIButton+Haneke.m */,
+				0019D09784CB665E82FDF60C /* UIImageView+Haneke.h */,
+				DC791007E2788790BD93CB9E /* UIImageView+Haneke.m */,
+				9408A19D275ACACA7C2B0E92 /* UIView+Haneke.h */,
+				07784855EE67F8D628DBE043 /* UIView+Haneke.m */,
+				9F25FEA21714224DF57807EA /* Support Files */,
 			);
 			path = Haneke;
 			sourceTree = "<group>";
 		};
-		B53323CDF5D9072CFF62AEA2 /* iOS */ = {
+		0922D034598039A1B59D1D61 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FA267B19324C88797D5CCB58 /* Accelerate.framework */,
-				629CE552C56CF4FE54782307 /* CoreImage.framework */,
-				A4F11AD2105D634B3853648B /* Foundation.framework */,
-				F07534E06D75095D569D72A8 /* ImageIO.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		CC61499A2B7291AD30E7041D /* FaceAwareFill */ = {
-			isa = PBXGroup;
-			children = (
-				64C3E6C61427AADE2D7DCB49 /* UIImageView+UIImageView_FaceAwareFill.h */,
-				9480A4D20545823CD9B1DB81 /* UIImageView+UIImageView_FaceAwareFill.m */,
-				87AB20C05CCD69208663A86A /* Support Files */,
-			);
-			path = FaceAwareFill;
-			sourceTree = "<group>";
-		};
-		CCF1C341F9FD8D990251362D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B5F5F8391064B3D5354ECBF0 /* Pods-AnimationTest-BlurImageProcessor.xcconfig */,
-				863E8DDAF9EA17F718EEDB52 /* Pods-AnimationTest-BlurImageProcessor-Private.xcconfig */,
-				5D29E9C2C90FB6B226B2C0BD /* Pods-AnimationTest-BlurImageProcessor-dummy.m */,
-				4E9AE2A48665EC5F7282BF75 /* Pods-AnimationTest-BlurImageProcessor-prefix.pch */,
+				6A19292C9ADD3C8DDFB6B873 /* Pods-AnimationTest-BlurImageProcessor.xcconfig */,
+				35BE8125714362F659904CDB /* Pods-AnimationTest-BlurImageProcessor-Private.xcconfig */,
+				F850A3BE84ABF082F1FFBEF4 /* Pods-AnimationTest-BlurImageProcessor-dummy.m */,
+				CEF147E80266152710A99F3D /* Pods-AnimationTest-BlurImageProcessor-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-AnimationTest-BlurImageProcessor";
 			sourceTree = "<group>";
 		};
-		DFCC5C4654A19A17756F9005 /* Targets Support Files */ = {
+		0E2E57873D8C9268ACEA08EE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				78922A161D682F8DD0AA8FF9 /* Pods-AnimationTest */,
+				7C7F09BF5E6288A16A17158F /* libPods-AnimationTest.a */,
+				6570E7441AE9CA3B7249A725 /* libPods-AnimationTest-BlurImageProcessor.a */,
+				94628B15B2C2D895B5B31BBA /* libPods-AnimationTest-FaceAwareFill.a */,
+				05941251BA9FA9CCF07E74AC /* libPods-AnimationTest-Haneke.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FD93841FD1458A37E5673D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EAADB7D7A0FD1AE6BB9C232F /* BlurImageProcessor */,
+				4B262CE875B1E8AF38CB0B64 /* FaceAwareFill */,
+				0283E3CEE750D89544BC2B5C /* Haneke */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2FF8E99873331F9D7FB5BC59 = {
+			isa = PBXGroup;
+			children = (
+				6E52743E100B28FEB716BA5B /* Podfile */,
+				B74142E587668B3122BB0A65 /* Frameworks */,
+				0FD93841FD1458A37E5673D8 /* Pods */,
+				0E2E57873D8C9268ACEA08EE /* Products */,
+				84D6BB026FAC0390BC3EF0A6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		4B262CE875B1E8AF38CB0B64 /* FaceAwareFill */ = {
+			isa = PBXGroup;
+			children = (
+				D48464504FA7370411FB25F5 /* UIImageView+UIImageView_FaceAwareFill.h */,
+				DFBB12707DA783066A5762B5 /* UIImageView+UIImageView_FaceAwareFill.m */,
+				D0A54FFE7AC484F863C3FCD6 /* Support Files */,
+			);
+			path = FaceAwareFill;
+			sourceTree = "<group>";
+		};
+		84D6BB026FAC0390BC3EF0A6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB2DEE39D0CC77BB72EBB375 /* Pods-AnimationTest */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9F25FEA21714224DF57807EA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				63C15355C4F0F97E90F77309 /* Pods-AnimationTest-Haneke.xcconfig */,
+				50DB38F62E288E3D20CF9602 /* Pods-AnimationTest-Haneke-Private.xcconfig */,
+				500E8346AE03B17FFD78D716 /* Pods-AnimationTest-Haneke-dummy.m */,
+				841CF012352913674C57091F /* Pods-AnimationTest-Haneke-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-AnimationTest-Haneke";
+			sourceTree = "<group>";
+		};
+		B74142E587668B3122BB0A65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C026B140625334139D88569D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C026B140625334139D88569D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				03F39EBE3B8FF6591DFA7652 /* Accelerate.framework */,
+				7AB36A2301EA22E4C42EB72B /* CoreImage.framework */,
+				D5829C203E31AA2985E7C8B6 /* Foundation.framework */,
+				254BEC80A2D2B1C51B568CEC /* ImageIO.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CB2DEE39D0CC77BB72EBB375 /* Pods-AnimationTest */ = {
+			isa = PBXGroup;
+			children = (
+				451C59091B5E8835AAD5460D /* Pods-AnimationTest-acknowledgements.markdown */,
+				78DA8E1AA57AAF0ACA77C9AB /* Pods-AnimationTest-acknowledgements.plist */,
+				E58AD5DB6F4FF925EBABE1AC /* Pods-AnimationTest-dummy.m */,
+				F45CC28386BAA3DECDD381A1 /* Pods-AnimationTest-environment.h */,
+				B5A2EFB2564541283268E7E4 /* Pods-AnimationTest-resources.sh */,
+				CEE627BCACD1EBF301EA21BF /* Pods-AnimationTest.debug.xcconfig */,
+				E9F008700CA07AEEEA35F36A /* Pods-AnimationTest.release.xcconfig */,
+			);
+			name = "Pods-AnimationTest";
+			path = "Target Support Files/Pods-AnimationTest";
+			sourceTree = "<group>";
+		};
+		D0A54FFE7AC484F863C3FCD6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B8BFCCFE4AD073273478CD7 /* Pods-AnimationTest-FaceAwareFill.xcconfig */,
+				1D72AA964FAB84BF49D7A791 /* Pods-AnimationTest-FaceAwareFill-Private.xcconfig */,
+				A5E5043B6649FDBD7EABB3E2 /* Pods-AnimationTest-FaceAwareFill-dummy.m */,
+				DE335EF254A59E7A58EFFC66 /* Pods-AnimationTest-FaceAwareFill-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-AnimationTest-FaceAwareFill";
+			sourceTree = "<group>";
+		};
+		EAADB7D7A0FD1AE6BB9C232F /* BlurImageProcessor */ = {
+			isa = PBXGroup;
+			children = (
+				2AE1FD2C8161236A8A35CEE2 /* ALDBlurImageProcessor.h */,
+				C1865C594136DB0D42378E69 /* ALDBlurImageProcessor.m */,
+				0922D034598039A1B59D1D61 /* Support Files */,
+			);
+			path = BlurImageProcessor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		6E2561903E9BB382496E46F1 /* Headers */ = {
+		27E822650374D4FB132B1BDB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A386ABFD8365C34E012B3D /* ALDBlurImageProcessor.h in Headers */,
+				807428420762BFB9A76B4FAC /* UIImageView+UIImageView_FaceAwareFill.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8593C27F382793B2263A91C /* Headers */ = {
+		2AD775A8CF2E996BBB1AC96D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCC7E67D3F6080ADD1576D16 /* HNKCache.h in Headers */,
-				0A30156172EFA5C64A106C51 /* HNKDiskCache.h in Headers */,
-				0FEBDDE8683591184BB03A4A /* HNKDiskFetcher.h in Headers */,
-				DDD3222D31DEC5C5C2348BF1 /* HNKNetworkFetcher.h in Headers */,
-				4A6D19B816374AC5A5E58F4C /* HNKSimpleFetcher.h in Headers */,
-				37C2494E4766590DBC05F9DE /* Haneke.h in Headers */,
-				AE40B7AF874607EB44C2FC79 /* UIButton+Haneke.h in Headers */,
-				8804DF74381BFB2AE00622F8 /* UIImageView+Haneke.h in Headers */,
-				1C315167DCE9849C4E5257CB /* UIView+Haneke.h in Headers */,
+				89915832ED76C7C1D59B01F2 /* HNKCache.h in Headers */,
+				DAAA341FFBEF73154822136C /* HNKDiskCache.h in Headers */,
+				6625F4C0E7D25A6E79F79F03 /* HNKDiskFetcher.h in Headers */,
+				AAF66F894E0C49FA9771AB3B /* HNKNetworkFetcher.h in Headers */,
+				707DF2267E718E5D3549A00D /* HNKSimpleFetcher.h in Headers */,
+				A8426EF464BC21200A6B6544 /* Haneke.h in Headers */,
+				377D6D56BD0CB86539424F7C /* UIButton+Haneke.h in Headers */,
+				12918B7E2720E3AA64CBCC78 /* UIImageView+Haneke.h in Headers */,
+				EDEC8AF107022BF4524DECE4 /* UIView+Haneke.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E7CDE154FA4FE52430EABA6A /* Headers */ = {
+		AC6702B247FD4B89A215A056 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D884595AC62F7943B7DD892 /* UIImageView+UIImageView_FaceAwareFill.h in Headers */,
+				D0FD5CA11D295D16954DE2D8 /* ALDBlurImageProcessor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2A82EF99C583D732E1AD7FC8 /* Pods-AnimationTest-BlurImageProcessor */ = {
+		008D26902CF2129B194F9BFA /* Pods-AnimationTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4FC5A7A8D14BC74A92E60901 /* Build configuration list for PBXNativeTarget "Pods-AnimationTest-BlurImageProcessor" */;
+			buildConfigurationList = A267DE1CB0ED6EB040AE7B1E /* Build configuration list for PBXNativeTarget "Pods-AnimationTest" */;
 			buildPhases = (
-				CF612D610B80379CCA57E61A /* Sources */,
-				38B6B0F27159615A77DCCF6F /* Frameworks */,
-				6E2561903E9BB382496E46F1 /* Headers */,
+				F987F9D7CA11151D385D15D9 /* Sources */,
+				8A60E92727D673A606925504 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				550B17345D5201F5445BA8BC /* PBXTargetDependency */,
+				3D9CB09BC3853670BCC31FA6 /* PBXTargetDependency */,
+				D1B69387B944C3BA05430F70 /* PBXTargetDependency */,
+			);
+			name = "Pods-AnimationTest";
+			productName = "Pods-AnimationTest";
+			productReference = 7C7F09BF5E6288A16A17158F /* libPods-AnimationTest.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1506FBFF61310CCD705D69BA /* Pods-AnimationTest-BlurImageProcessor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F90A4A0D81C603E76BA5BEE8 /* Build configuration list for PBXNativeTarget "Pods-AnimationTest-BlurImageProcessor" */;
+			buildPhases = (
+				A608355B89DFA4BB9C19455B /* Sources */,
+				F9126DE2882F07933DF1BC16 /* Frameworks */,
+				AC6702B247FD4B89A215A056 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -363,16 +382,16 @@
 			);
 			name = "Pods-AnimationTest-BlurImageProcessor";
 			productName = "Pods-AnimationTest-BlurImageProcessor";
-			productReference = 7958ABEAA29DA9479ACDC3CF /* libPods-AnimationTest-BlurImageProcessor.a */;
+			productReference = 6570E7441AE9CA3B7249A725 /* libPods-AnimationTest-BlurImageProcessor.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		546622D051FA540D935C820C /* Pods-AnimationTest-FaceAwareFill */ = {
+		193BB5A7DB2F15C8AFE3A15E /* Pods-AnimationTest-FaceAwareFill */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 17DC920A034565E57209E19E /* Build configuration list for PBXNativeTarget "Pods-AnimationTest-FaceAwareFill" */;
+			buildConfigurationList = 2F8B6DCBC5E99D9E5FDA7623 /* Build configuration list for PBXNativeTarget "Pods-AnimationTest-FaceAwareFill" */;
 			buildPhases = (
-				C843E6BD7F73761FDB3AF575 /* Sources */,
-				BB7ACDBF53F70A9D502D68D0 /* Frameworks */,
-				E7CDE154FA4FE52430EABA6A /* Headers */,
+				6CB853E4D5572C84985660FC /* Sources */,
+				AFFD80478A6137E7A281442D /* Frameworks */,
+				27E822650374D4FB132B1BDB /* Headers */,
 			);
 			buildRules = (
 			);
@@ -380,16 +399,16 @@
 			);
 			name = "Pods-AnimationTest-FaceAwareFill";
 			productName = "Pods-AnimationTest-FaceAwareFill";
-			productReference = E7D33FE0559C0400CC3DCBAE /* libPods-AnimationTest-FaceAwareFill.a */;
+			productReference = 94628B15B2C2D895B5B31BBA /* libPods-AnimationTest-FaceAwareFill.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		7EDD696EBB218F980CFD5EAC /* Pods-AnimationTest-Haneke */ = {
+		696F73F59FD1BF6A0ED9765F /* Pods-AnimationTest-Haneke */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 30D0CA4748F9DA493B97CB65 /* Build configuration list for PBXNativeTarget "Pods-AnimationTest-Haneke" */;
+			buildConfigurationList = FC587813FD42C83667B459AB /* Build configuration list for PBXNativeTarget "Pods-AnimationTest-Haneke" */;
 			buildPhases = (
-				1F8A29112F2B966420366E52 /* Sources */,
-				648824C83AA3012A1C0A905C /* Frameworks */,
-				A8593C27F382793B2263A91C /* Headers */,
+				592571C6299E1CCC3261D28C /* Sources */,
+				95C1B70584D84227F68315BD /* Frameworks */,
+				2AD775A8CF2E996BBB1AC96D /* Headers */,
 			);
 			buildRules = (
 			);
@@ -397,172 +416,121 @@
 			);
 			name = "Pods-AnimationTest-Haneke";
 			productName = "Pods-AnimationTest-Haneke";
-			productReference = 5BDAC3CF0943273CF8A83165 /* libPods-AnimationTest-Haneke.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		80D0F495A9F27102BD2C8491 /* Pods-AnimationTest */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 264F7B7A145726951B79CE61 /* Build configuration list for PBXNativeTarget "Pods-AnimationTest" */;
-			buildPhases = (
-				410353D440DFE985A9CFD149 /* Sources */,
-				83662652AEC4290E1F831A1F /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4F87AA7A23BBCF4A1A0FAE87 /* PBXTargetDependency */,
-				3AAD08E2857982F7EC4FFEA5 /* PBXTargetDependency */,
-				4A74573CBBAA8C8CB38877C3 /* PBXTargetDependency */,
-			);
-			name = "Pods-AnimationTest";
-			productName = "Pods-AnimationTest";
-			productReference = C5BD365212A811231E6FC7D6 /* libPods-AnimationTest.a */;
+			productReference = 05941251BA9FA9CCF07E74AC /* libPods-AnimationTest-Haneke.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AD94BE0A7AFF0413BE913C18 /* Project object */ = {
+		EC29610875894C503FD61537 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = 2E8EB1EF1397C29C5CB61FC6 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 508A0B36DB89ADDA0C0F9BB8 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 459F7D48C1BFCA9947C34000;
-			productRefGroup = 1F746B1C28B203EEEB6C502B /* Products */;
+			mainGroup = 2FF8E99873331F9D7FB5BC59;
+			productRefGroup = 0E2E57873D8C9268ACEA08EE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				80D0F495A9F27102BD2C8491 /* Pods-AnimationTest */,
-				2A82EF99C583D732E1AD7FC8 /* Pods-AnimationTest-BlurImageProcessor */,
-				546622D051FA540D935C820C /* Pods-AnimationTest-FaceAwareFill */,
-				7EDD696EBB218F980CFD5EAC /* Pods-AnimationTest-Haneke */,
+				008D26902CF2129B194F9BFA /* Pods-AnimationTest */,
+				1506FBFF61310CCD705D69BA /* Pods-AnimationTest-BlurImageProcessor */,
+				193BB5A7DB2F15C8AFE3A15E /* Pods-AnimationTest-FaceAwareFill */,
+				696F73F59FD1BF6A0ED9765F /* Pods-AnimationTest-Haneke */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1F8A29112F2B966420366E52 /* Sources */ = {
+		592571C6299E1CCC3261D28C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D76DEA1ABD72E93F49487167 /* HNKCache.m in Sources */,
-				25EEF03EC447E3F59095CE6C /* HNKDiskCache.m in Sources */,
-				39DA90B14B5C392FCD4A9A12 /* HNKDiskFetcher.m in Sources */,
-				14473EE83D5ADD2CA40099A5 /* HNKNetworkFetcher.m in Sources */,
-				EC6A0DAAB1F0F9E2EEF6D928 /* HNKSimpleFetcher.m in Sources */,
-				4B0C2C524628C1CDA701447A /* Pods-AnimationTest-Haneke-dummy.m in Sources */,
-				A4C6FDC939FA1B9B2392BF14 /* UIButton+Haneke.m in Sources */,
-				03D4D4E47B7C05C7A60EC339 /* UIImageView+Haneke.m in Sources */,
-				0BBDB127855B4FADD7BE422E /* UIView+Haneke.m in Sources */,
+				F78DEFEE34F53CA285CA58BD /* HNKCache.m in Sources */,
+				C78ACBB4F7CF6A1B0C696884 /* HNKDiskCache.m in Sources */,
+				3E3C6454D2E9EBAF926B51B0 /* HNKDiskFetcher.m in Sources */,
+				8DBB178AE6C9E4194903FB3E /* HNKNetworkFetcher.m in Sources */,
+				8930114299AF312C865AE0E4 /* HNKSimpleFetcher.m in Sources */,
+				5310B960F7D5BEB3D7AA8AF8 /* Pods-AnimationTest-Haneke-dummy.m in Sources */,
+				4CAFF4C8F4F2D3D0025D83E3 /* UIButton+Haneke.m in Sources */,
+				8721C513B4B4DB6B8EE145A5 /* UIImageView+Haneke.m in Sources */,
+				E71E3331FCDFD74BD0627D99 /* UIView+Haneke.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		410353D440DFE985A9CFD149 /* Sources */ = {
+		6CB853E4D5572C84985660FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7CE4474DD1E399FE6C743CB /* Pods-AnimationTest-dummy.m in Sources */,
+				A5FC4025FE220ED5DDBE8EF8 /* Pods-AnimationTest-FaceAwareFill-dummy.m in Sources */,
+				1381E196819A9629B850473E /* UIImageView+UIImageView_FaceAwareFill.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C843E6BD7F73761FDB3AF575 /* Sources */ = {
+		A608355B89DFA4BB9C19455B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97E6BE344A4AA8F5E633030A /* Pods-AnimationTest-FaceAwareFill-dummy.m in Sources */,
-				CF1F638D29212EC1241880FA /* UIImageView+UIImageView_FaceAwareFill.m in Sources */,
+				0C1967A0EAE38EF564F241E6 /* ALDBlurImageProcessor.m in Sources */,
+				A395028694D31F81BD1005BC /* Pods-AnimationTest-BlurImageProcessor-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CF612D610B80379CCA57E61A /* Sources */ = {
+		F987F9D7CA11151D385D15D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B92AA404335B5ACF659128A /* ALDBlurImageProcessor.m in Sources */,
-				43959E18E67D619FC63543FC /* Pods-AnimationTest-BlurImageProcessor-dummy.m in Sources */,
+				D820FECEF6A8010F4652E4F8 /* Pods-AnimationTest-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3AAD08E2857982F7EC4FFEA5 /* PBXTargetDependency */ = {
+		3D9CB09BC3853670BCC31FA6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-AnimationTest-FaceAwareFill";
-			target = 546622D051FA540D935C820C /* Pods-AnimationTest-FaceAwareFill */;
-			targetProxy = 5DC49291153E8BCF508B56C5 /* PBXContainerItemProxy */;
+			target = 193BB5A7DB2F15C8AFE3A15E /* Pods-AnimationTest-FaceAwareFill */;
+			targetProxy = 0E445FEC1F0504E3C9711DE0 /* PBXContainerItemProxy */;
 		};
-		4A74573CBBAA8C8CB38877C3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-AnimationTest-Haneke";
-			target = 7EDD696EBB218F980CFD5EAC /* Pods-AnimationTest-Haneke */;
-			targetProxy = B32204F45E9869883A5E536F /* PBXContainerItemProxy */;
-		};
-		4F87AA7A23BBCF4A1A0FAE87 /* PBXTargetDependency */ = {
+		550B17345D5201F5445BA8BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-AnimationTest-BlurImageProcessor";
-			target = 2A82EF99C583D732E1AD7FC8 /* Pods-AnimationTest-BlurImageProcessor */;
-			targetProxy = 102EF59EE4892B9290D6DB87 /* PBXContainerItemProxy */;
+			target = 1506FBFF61310CCD705D69BA /* Pods-AnimationTest-BlurImageProcessor */;
+			targetProxy = 59DC0CE53EBD0208453B7C7F /* PBXContainerItemProxy */;
+		};
+		D1B69387B944C3BA05430F70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AnimationTest-Haneke";
+			target = 696F73F59FD1BF6A0ED9765F /* Pods-AnimationTest-Haneke */;
+			targetProxy = 98CCAC5FBFEA2EA403C9D76E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3E27489E42074680C514DD7A /* Release */ = {
+		0710F8909D973F4217268C0F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CCE3480BE47AD1C1053D6F3 /* Pods-AnimationTest-FaceAwareFill-Private.xcconfig */;
+			baseConfigurationReference = CEE627BCACD1EBF301EA21BF /* Pods-AnimationTest.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-AnimationTest-FaceAwareFill/Pods-AnimationTest-FaceAwareFill-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
-		4AFB5C28CBAFAE673C9DC649 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 863E8DDAF9EA17F718EEDB52 /* Pods-AnimationTest-BlurImageProcessor-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-AnimationTest-BlurImageProcessor/Pods-AnimationTest-BlurImageProcessor-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		52A27AA99F43C1625F9EA9FC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BA5C1DD9472877C4352CB26 /* Pods-AnimationTest-Haneke-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-AnimationTest-Haneke/Pods-AnimationTest-Haneke-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		57E10DBA18EAF8FDD6E02ADA /* Debug */ = {
+		0772861D9D1C0470F606DFFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -601,23 +569,103 @@
 			};
 			name = Debug;
 		};
-		6FA26FB4F138AB5C5ACF75FA /* Debug */ = {
+		2F102E1F7D8ECE75D33A6A33 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AFFC675BCE6CFB53064E0874 /* Pods-AnimationTest.debug.xcconfig */;
+			baseConfigurationReference = 35BE8125714362F659904CDB /* Pods-AnimationTest-BlurImageProcessor-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AnimationTest-BlurImageProcessor/Pods-AnimationTest-BlurImageProcessor-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		81C560D5D5FFFF9E6F724D3A /* Release */ = {
+		3D1408BFBC766B2ECB24EE39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D72AA964FAB84BF49D7A791 /* Pods-AnimationTest-FaceAwareFill-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AnimationTest-FaceAwareFill/Pods-AnimationTest-FaceAwareFill-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3FEFCE902253A481AF04D3F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50DB38F62E288E3D20CF9602 /* Pods-AnimationTest-Haneke-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AnimationTest-Haneke/Pods-AnimationTest-Haneke-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		65D17C7977AC46CF578ED4B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D72AA964FAB84BF49D7A791 /* Pods-AnimationTest-FaceAwareFill-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AnimationTest-FaceAwareFill/Pods-AnimationTest-FaceAwareFill-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BF10ED64EB2B4AB56805F276 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35BE8125714362F659904CDB /* Pods-AnimationTest-BlurImageProcessor-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AnimationTest-BlurImageProcessor/Pods-AnimationTest-BlurImageProcessor-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D67ADC348EF569B013FCC4C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50DB38F62E288E3D20CF9602 /* Pods-AnimationTest-Haneke-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AnimationTest-Haneke/Pods-AnimationTest-Haneke-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D8F7B1BF689A4137663A8371 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -651,9 +699,9 @@
 			};
 			name = Release;
 		};
-		A3B7DF4027DAD459337F3E19 /* Release */ = {
+		F72533FC65580EA246405F0A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69AE29EC150CCE632B348BEF /* Pods-AnimationTest.release.xcconfig */;
+			baseConfigurationReference = E9F008700CA07AEEEA35F36A /* Pods-AnimationTest.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -667,103 +715,55 @@
 			};
 			name = Release;
 		};
-		E0E0E7682EA51376EBC2E6EB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CCE3480BE47AD1C1053D6F3 /* Pods-AnimationTest-FaceAwareFill-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-AnimationTest-FaceAwareFill/Pods-AnimationTest-FaceAwareFill-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		E2AF55B2A50DFD858111A807 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 863E8DDAF9EA17F718EEDB52 /* Pods-AnimationTest-BlurImageProcessor-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-AnimationTest-BlurImageProcessor/Pods-AnimationTest-BlurImageProcessor-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		FD1C834599E0A4BEECA95699 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BA5C1DD9472877C4352CB26 /* Pods-AnimationTest-Haneke-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-AnimationTest-Haneke/Pods-AnimationTest-Haneke-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		17DC920A034565E57209E19E /* Build configuration list for PBXNativeTarget "Pods-AnimationTest-FaceAwareFill" */ = {
+		2F8B6DCBC5E99D9E5FDA7623 /* Build configuration list for PBXNativeTarget "Pods-AnimationTest-FaceAwareFill" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E0E0E7682EA51376EBC2E6EB /* Debug */,
-				3E27489E42074680C514DD7A /* Release */,
+				65D17C7977AC46CF578ED4B0 /* Debug */,
+				3D1408BFBC766B2ECB24EE39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		264F7B7A145726951B79CE61 /* Build configuration list for PBXNativeTarget "Pods-AnimationTest" */ = {
+		508A0B36DB89ADDA0C0F9BB8 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6FA26FB4F138AB5C5ACF75FA /* Debug */,
-				A3B7DF4027DAD459337F3E19 /* Release */,
+				0772861D9D1C0470F606DFFF /* Debug */,
+				D8F7B1BF689A4137663A8371 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E8EB1EF1397C29C5CB61FC6 /* Build configuration list for PBXProject "Pods" */ = {
+		A267DE1CB0ED6EB040AE7B1E /* Build configuration list for PBXNativeTarget "Pods-AnimationTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				57E10DBA18EAF8FDD6E02ADA /* Debug */,
-				81C560D5D5FFFF9E6F724D3A /* Release */,
+				0710F8909D973F4217268C0F /* Debug */,
+				F72533FC65580EA246405F0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		30D0CA4748F9DA493B97CB65 /* Build configuration list for PBXNativeTarget "Pods-AnimationTest-Haneke" */ = {
+		F90A4A0D81C603E76BA5BEE8 /* Build configuration list for PBXNativeTarget "Pods-AnimationTest-BlurImageProcessor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FD1C834599E0A4BEECA95699 /* Debug */,
-				52A27AA99F43C1625F9EA9FC /* Release */,
+				2F102E1F7D8ECE75D33A6A33 /* Debug */,
+				BF10ED64EB2B4AB56805F276 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4FC5A7A8D14BC74A92E60901 /* Build configuration list for PBXNativeTarget "Pods-AnimationTest-BlurImageProcessor" */ = {
+		FC587813FD42C83667B459AB /* Build configuration list for PBXNativeTarget "Pods-AnimationTest-Haneke" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E2AF55B2A50DFD858111A807 /* Debug */,
-				4AFB5C28CBAFAE673C9DC649 /* Release */,
+				D67ADC348EF569B013FCC4C1 /* Debug */,
+				3FEFCE902253A481AF04D3F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AD94BE0A7AFF0413BE913C18 /* Project object */;
+	rootObject = EC29610875894C503FD61537 /* Project object */;
 }

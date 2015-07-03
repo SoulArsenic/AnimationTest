@@ -8,12 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface LayerTest : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
-@property (weak, nonatomic) IBOutlet UIView *mView;
-@property (weak, nonatomic) IBOutlet UIView *hView;
-@property (weak, nonatomic) IBOutlet UIView *clockView;
-@property (weak, nonatomic) IBOutlet UIView *mControlView;
-@property (weak, nonatomic) IBOutlet UIView *hControlView;
+
 
 @end
